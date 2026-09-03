@@ -14,11 +14,12 @@ page-layout: article
 <div class="hero-title">Associate Professor of Education Policy<br>College of Education, University of Maryland, College Park</div>
 
 <a class="btn-accent" href="mailto:dblazar@umd.edu">Email</a>&nbsp;
-<a class="btn-outline" href="files/David-Blazar-CV.pdf">Download CV</a>
+<a class="btn-outline" href="files/David-Blazar-CV.pdf">Download CV</a>&nbsp;
+<a class="btn-outline" href="https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en">Google Scholar</a>
 :::
 :::
 
-David Blazar is an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park, where he also directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep) and holds affiliate appointments in the Department of Economics and the School of Public Policy. His research examines the effective, efficient, and equitable allocation of resources in schools — particularly resources related to teachers — spanning three broad areas: the characteristics of effective teachers and teaching practices; whether and how instructional resources such as coaching, curricula, and evaluation systems improve teacher practice and student outcomes; and the labor market policies and practices that shape who becomes, and remains, a teacher.
+David Blazar is an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park, where he also directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep), serves as principal investigator for the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/), and holds an affiliate appointment in the School of Public Policy. His research examines the effective, efficient, and equitable allocation of resources in schools — particularly resources related to teachers — spanning three broad areas: the characteristics of effective teachers and teaching practices; whether and how instructional resources such as coaching, curricula, and evaluation systems improve teacher practice and student outcomes; and the labor market policies and practices that shape who becomes, and remains, a teacher.
 
 Before entering academia, David taught high school English Language Arts in New York City. He holds a doctorate in Quantitative Policy Analysis in Education and a master's degree in Education Policy and Management, both from the Harvard Graduate School of Education, and a bachelor's degree in History and Literature from Harvard College.
 
@@ -36,6 +37,7 @@ Before entering academia, David taught high school English Language Arts in New 
 ## Recognition
 
 - Named one of the most influential education scholars in the United States, *Education Week*
+- Reviewer of the Year, *Journal of Research on Educational Effectiveness*, 2025
 - Excellence in Scholarship Award (Pre-Tenure Faculty), UMD College of Education, 2021
 - Jean Flanigan Outstanding Dissertation Award, Association for Education Finance and Policy, 2017
 
@@ -51,5 +53,6 @@ Before entering academia, David taught high school English Language Arts in New 
 <li>🎓 <a href="https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en">Google Scholar</a></li>
 <li>📄 <a href="https://edworkingpapers.com/users/david-blazar">EdWorkingPapers</a></li>
 <li>🏛️ <a href="https://education.umd.edu/directory/david-blazar">UMD Faculty Profile</a></li>
+<li>📍 <a href="https://education.umd.edu/research/centers/mep">Maryland Equity Project</a></li>
 </ul>
 :::

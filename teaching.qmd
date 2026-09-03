@@ -7,17 +7,29 @@ title: "Teaching & Advising"
 At the University of Maryland, in the Department of Teaching and Learning, Policy and Leadership (TLPL):
 
 <ul class="pub-list">
-<li><strong>TLPL 670 — Economics of Education</strong><br><span class="pub-authors">3 credits · taught 2017–present</span></li>
-<li><strong>TLPL 766 — Impact Evaluation for Education and Public Policy</strong><br><span class="pub-authors">3 credits · taught 2018–present</span></li>
-<li><strong>TLPL 788D — Data Management for Social Science Research</strong><br><span class="pub-authors">1 credit · taught 2018–present</span></li>
-<li><strong>TLPL 788Z — Education Policy Research, Writing, and Presentation Seminar</strong><br><span class="pub-authors">2 credits · developed from scratch</span></li>
-<li><strong>TLPL 788I — Research Apprenticeship with the Maryland Longitudinal Data System Center</strong><br><span class="pub-authors">2 credits · developed from scratch</span></li>
+<li><strong>TLPL 670 — Economics of Education</strong><br><span class="pub-authors">3 credits · taught 2017–present · substantially revised</span></li>
+<li><strong>TLPL 766 — Impact Evaluation for Education and Public Policy</strong><br><span class="pub-authors">3 credits · taught 2018–2021, 2024 · developed from scratch</span></li>
+<li><strong>TLPL 788D — Data Management for Social Science Research</strong><br><span class="pub-authors">1 credit · taught 2018–present · developed from scratch</span></li>
+<li><strong>TLPL 788Z — Education Policy Research, Writing, and Presentation Seminar</strong><br><span class="pub-authors">2 credits · taught 2019–present · developed from scratch</span></li>
+<li><strong>TLPL 788I — Research Apprenticeship with the Maryland Longitudinal Data System Center</strong><br><span class="pub-authors">2 credits · taught 2019–2020 · developed from scratch</span></li>
 </ul>
 
 <hr class="section-rule">
 
-## Advising
+## Program Development
 
-David advises doctoral and master's students in the Education Policy program, chairing dissertation committees on topics spanning teacher effectiveness, educator diversity, and education labor markets. He also regularly serves as a committee member for students in Public Policy and in Measurement, Statistics, and Evaluation.
+<ul class="pub-list">
+<li><strong>College of Education Undergraduate Degree in Educational Studies</strong><br><span class="pub-authors">Collaborating with the College of Education and School of Public Policy to build an Education Policy concentration crossing both schools (2021–present)</span></li>
+<li><strong>TLPL Master's Degree in Education Policy</strong><br><span class="pub-authors">Cross-listed concentration developed with colleagues across the College of Education and School of Public Policy (2020–present)</span></li>
+<li><strong>TLPL Quantitative Research Methods sequence</strong><br><span class="pub-authors">Built a four-course sequence with colleagues (2018–present)</span></li>
+</ul>
+
+<hr class="section-rule">
+
+## Advising & Mentoring
+
+David chairs dissertation committees for doctoral students in the Education Policy program — currently including Sarah Montana, Deborah Euzebio, Ditra Backup, Tracee Matthias, Nandi Carson, Kathleen Perry, Danett Song, Jiehui Zhao, Renata Lyons, and Erin Janulis — and regularly serves as a committee member for students in Public Policy, Economics, and Measurement, Statistics, and Evaluation.
+
+He also mentors junior faculty (currently Meghan Comstock and Jing Liu) and postdoctoral fellows — recent postdocs include Kayla Bill (2023–2025, now at Florida State University) and Francisco Lagos (2022–2024, placed at the Inter-American Development Bank).
 
 Prospective students interested in teacher labor markets, causal inference in education, or educator diversity are welcome to reach out — see the [Contact](index.qmd) section on the home page.

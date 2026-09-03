@@ -2,56 +2,84 @@
 title: "Research"
 ---
 
-David's work sits at the intersection of education policy and economics, using large administrative datasets and, where possible, experimental or quasi-experimental designs to understand what makes teachers and teaching effective — and how policy can help recruit, develop, and retain a more effective and more diverse teacher workforce.
+David's work sits at the intersection of education policy and economics, using large administrative datasets and, where possible, experimental or quasi-experimental designs to understand what makes teachers and teaching effective — and how policy can help recruit, develop, and retain a more effective and more diverse teacher workforce. This page draws on his July 2025 CV plus more recent publications; the [CV](cv.qmd) and [Google Scholar](https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en) remain the most complete record.
 
-## Recent Working Papers
+## In Progress
 
 <ul class="pub-list">
-<li><strong>Teacher Localness, Early-Career Effectiveness, and Retention</strong> (2026)<br><span class="pub-authors">with Nicolas Dominguez-Mel, Wesley T. Morris, and Sarah Montana</span></li>
-<li><strong>Localized Teacher Recruitment through "Grow-Your-Own": Impacts of the High School Teacher Academy of Maryland Program</strong> (2026)<br><span class="pub-authors">with Wenjing Gao, Seth Gershenson, Ramon Goings, and Francisco Lagos</span></li>
-<li><strong>Disparate Pathways: Understanding Racial Disparities in Teaching</strong> (2026)<br><span class="pub-authors">with Max Anthenelli, Wenjing Gao, Ramon Goings, and Seth Gershenson</span></li>
-<li><strong>Differential Responses to Teacher Evaluation Incentives: Expectancy, Race, Experience, and Task</strong> (2024)<br><span class="pub-authors">with Melinda Adnot, Max Anthenelli, and Xinyi Zhong</span></li>
-<li><strong>Pathways into the CTE Teaching Profession: A Descriptive Analysis of Degrees, Licenses, and Race in Maryland</strong> (2024)<br><span class="pub-authors">with Danett Song, Ramon Goings, Jay Plasman, and Michael A. Gottfried</span></li>
-<li><strong>Teachers of Color, Culturally Responsive Teaching, and Student Outcomes: Experimental Evidence from the Random Assignment of Teachers to Classes</strong> (2024)</li>
+<li><strong><a href="https://edworkingpapers.com/ai26-1501">Teacher Localness, Early-Career Effectiveness, and Retention</a></strong><br><span class="pub-authors">with Nicolas Dominguez-Mel, Wesley T. Morris, and Sarah Montana</span></li>
+<li><strong><a href="https://edworkingpapers.com/ai21-501">Teachers of Color, Culturally Responsive Teaching, and Student Outcomes: Experimental Evidence from the Random Assignment of Teachers to Classes</a></strong></li>
+<li><strong>Disparities in Investments in Children and Youth in the U.S.</strong><br><span class="pub-authors">with Michel Boudreaux, Steven Klees, Jennifer Rice, Marvin Titus, and Jiehui Zhao — revise &amp; resubmit, <em>Nature Communications</em></span></li>
+<li><strong>Computer Science for All? The Impact of High School Computer Science Courses on College Majors and Earnings</strong><br><span class="pub-authors">with Jing Liu and Christina Conrad</span></li>
 </ul>
-
-<a class="btn-outline" href="https://edworkingpapers.com/users/david-blazar">See all working papers →</a>
 
 <hr class="section-rule">
 
-## Selected Journal Articles
+## Journal Articles
+
+<span style="color:#6b6b6b; font-size:0.9rem;">In reverse chronological order; linked where an open or published version is available.</span>
 
 <ul class="pub-list">
-<li>Blazar, D., & Archer, C. (2020). Teaching to support students with diverse academic needs. <em>Educational Researcher, 49</em>(5), 297–311.</li>
-<li>Kraft, M. A., Blazar, D., & Hogan, D. (2018). The effect of teacher coaching on instruction and achievement: A meta-analysis of the causal evidence. <em>Review of Educational Research, 88</em>(4), 547–588.<span class="pub-note">Most-read article published in Review of Educational Research, and second most-read across all AERA journals, in 2018.</span></li>
-<li>Blazar, D., & Kraft, M. A. (2017). Teacher and teaching effects on students' attitudes and behaviors. <em>Educational Evaluation and Policy Analysis, 39</em>(1), 146–170.<span class="pub-note">Most-read article published in Educational Evaluation and Policy Analysis in 2017.</span></li>
-<li>Blazar, D., Litke, E., & Barmore, J. (2016). What does it mean to be ranked a "high" or "low" value-added teacher? Observing differences in instructional quality across districts. <em>American Educational Research Journal, 53</em>(2), 324–359.</li>
-<li>Blazar, D. (2015). Effective teaching in elementary mathematics: Identifying classroom practices that support student achievement. <em>Economics of Education Review, 48</em>, 16–29.</li>
-<li>Blazar, D. (2015). Grade assignments and the teacher pipeline: A low-cost lever to improve student achievement? <em>Educational Researcher, 44</em>(4), 213–227.</li>
-<li>Blazar, D., & Kraft, M. A. (2015). Exploring mechanisms of effective teacher coaching: A tale of two cohorts from a randomized experiment. <em>Educational Evaluation and Policy Analysis, 37</em>(4), 542–566.</li>
+<li>Blazar, D., Anthenelli, M., Gao, W., Goings, R., &amp; Gershenson, S. (2026). <a href="https://doi.org/10.3102/01623737251412443">Disparate pathways: Understanding racial disparities in teaching</a>. <em>Educational Researcher</em>.</li>
+<li>Blazar, D., Gao, W., Gershenson, S., Goings, R., &amp; Lagos, F. (2026). <a href="https://doi.org/10.1002/pam.70084">Localized teacher recruitment through "grow-your-own": Impacts of the High School Teacher Academy of Maryland program</a>. <em>Journal of Policy Analysis and Management, 45</em>(2), e70084.</li>
+<li>Lagos, F., &amp; Blazar, D. (2026). <a href="https://education.umd.edu/sites/default/files/uploads/inline-files/Lagos%20Blazar_2026_Professional%20Staff%20Diversity_ER.pdf">Professional staff diversity and student outcomes: Extending our understanding of race/ethnicity-matching effects in education</a>. <em>Educational Researcher</em>.</li>
+<li>Blazar, D., Song, D., Goings, R., Plasman, J., &amp; Gottfried, M. (Online 2025). Pathways into the CTE teaching profession: A descriptive analysis of degrees, licenses, and race in Maryland. <em>AERA Open</em>.</li>
+<li>Blazar, D., Adnot, M., Anthenelli, M., &amp; Zhong, X. (Online 2024). Differential responses to teacher evaluation incentives: Expectancy, race, experience, and task. <em>Educational Evaluation and Policy Analysis</em>.</li>
+<li>Blazar, D. (2024). <a href="https://doi.org/10.3102/0013189X241261336">Why Black teachers matter</a>. <em>Educational Researcher, 53</em>(8), 450-463.<span class="pub-note">Open-access version: <a href="https://education.umd.edu/sites/default/files/uploads/inline-files/Blazar_2024_Why%20Black%20Teachers%20Matter_ER.pdf">PDF</a></span></li>
+<li>Blazar, D., McNamara, D., &amp; Blue, G. (2024). Instructional coaching personnel and program scalability. <em>Education Finance and Policy, 19</em>(3), 492-523.</li>
+<li>Blazar, D., &amp; Schueler, B. (Online 2023). Effective school district policies and practices: Synthesizing theoretical frameworks and empirical findings across disciplines. <em>Journal of Research on Educational Effectiveness</em>.</li>
+<li>Blazar, D., &amp; Pollard, C. (2023). Challenges and tradeoffs of "good" teaching: The pursuit of multiple educational outcomes. <em>Journal of Teacher Education, 74</em>(3), 229-244.</li>
+<li>Gottfried, M., Plasman, J., &amp; Blazar, D. (2022). Exclusive versus mixed, general versus CTE: Building a new taxonomy of STEMM high school teachers. <em>Journal of Education Human Resources</em>.</li>
+<li>Blazar, D., &amp; Archer, C. (2020). <a href="https://doi.org/10.3102/0013189X20931226">Teaching to support students with diverse academic needs</a>. <em>Educational Researcher, 49</em>(5), 297-311.</li>
+<li>Blazar, D., Heller, B., Kane, T. J., Polikoff, M., &amp; Staiger, D. O. (2020). Curriculum reform in the Common Core era: Evaluating elementary math textbooks across six U.S. states. <em>Journal of Policy Analysis and Management, 39</em>(4), 966-1019.</li>
+<li>Kane, T. J., Blazar, D., Gehlbach, H., Greenberg, M., Quinn, D., &amp; Thal, D. (2020). Substituting teacher-collected video for formal classroom observations: An experimental evaluation. <em>Education Finance and Policy, 15</em>(3), 397-427.</li>
+<li>Blazar, D., &amp; Kraft, M. A. (2019). Balancing rigor, replication, and relevance: A case for multiple-cohort, longitudinal experiments. <em>AERA Open, 5</em>(3), 1-18.</li>
+<li>Blazar, D. (2018). Validating teacher effects on students' attitudes and behaviors: Evidence from random assignment of teachers to students. <em>Education Finance and Policy, 13</em>(3), 281-309.</li>
+<li>Blazar, D., Gilbert, B., Herlihy, C., &amp; Gogolen, C. (2018). Exploring the potential for video-based classroom observations. <em>International Journal of Education in Mathematics, Science and Technology, 6</em>(2), 122-135.</li>
+<li>Kraft, M. A., Blazar, D., &amp; Hogan, D. (2018). <a href="https://doi.org/10.3102/0034654318759268">The effect of teacher coaching on instruction and achievement: A meta-analysis of the causal evidence</a>. <em>Review of Educational Research, 88</em>(4), 547-588.<span class="pub-note">Most-read article in Review of Educational Research (and 2nd most-read across all AERA journals) in 2018 · Cited in the 2025 Economic Report of the President</span></li>
+<li>Blazar, D., Braslow, D., Charalambous, C. Y., &amp; Hill, H. C. (2017). Attending to general and mathematics-specific dimensions of teaching: Exploring factors across two observation instruments. <em>Educational Assessment, 22</em>(2), 71-94.</li>
+<li>Blazar, D., &amp; Kraft, M. A. (2017). <a href="https://doi.org/10.3102/0162373716670260">Teacher and teaching effects on students' attitudes and behaviors</a>. <em>Educational Evaluation and Policy Analysis, 39</em>(1), 146-170.<span class="pub-note">Most-read article in Educational Evaluation and Policy Analysis in 2017</span></li>
+<li>Blazar, D., &amp; Pollard, C. (2017). Does test preparation mean low-quality instruction? <em>Educational Researcher, 46</em>(8), 420-433.</li>
+<li>Kraft, M. A., &amp; Blazar, D. (2017). Individualized coaching to improve teacher practice across grades and subjects: New experimental evidence. <em>Educational Policy, 31</em>(7), 1033-1068.</li>
+<li>Lynch, K., Chin, M., &amp; Blazar, D. (2017). Relationship between observations of elementary teacher mathematics instruction and student achievement: Exploring variability across districts. <em>American Journal of Education, 123</em>(4), 615-646.</li>
+<li>Blazar, D., Litke, E., &amp; Barmore, J. (2016). <a href="https://doi.org/10.3102/0002831216630407">What does it mean to be ranked a "high" or "low" value-added teacher? Observing differences in instructional quality across districts</a>. <em>American Educational Research Journal, 53</em>(2), 324-359.</li>
+<li>Blazar, D. (2015). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0272775715000710">Effective teaching in elementary mathematics: Identifying classroom practices that support student achievement</a>. <em>Economics of Education Review, 48</em>, 16-29.</li>
+<li>Blazar, D. (2015). <a href="https://doi.org/10.3102/0013189X15580944">Grade assignments and the teacher pipeline: A low-cost lever to improve student achievement?</a> <em>Educational Researcher, 44</em>(4), 213-227.</li>
+<li>Blazar, D., &amp; Kraft, M. A. (2015). <a href="https://doi.org/10.3102/0162373715579487">Exploring mechanisms of effective teacher coaching: A tale of two cohorts from a randomized experiment</a>. <em>Educational Evaluation and Policy Analysis, 37</em>(4), 542-566.</li>
+<li>Hill, H. C., Blazar, D., &amp; Lynch, K. (2015). Resources for teaching: Examining personal and institutional predictors of high-quality instruction. <em>AERA Open, 1</em>(4), 1-23.</li>
+<li>Hill, H. C., Charalambous, C. Y., Blazar, D., McGinn, D., Beisiegel, M., Humez, A., Kraft, M., Litke, E., &amp; Lynch, K. (2012). Validating arguments for observational instruments: Attending to multiple sources of variation. <em>Educational Assessment, 17</em>(2-3), 88-106.</li>
+<li>Blazar, D. (2011). Using theatre to engage cultural identity: Implications for students and teachers. <em>English Education, 43</em>(3), 294-304.</li>
+<li>Blazar, D. (2009). Self-discovery through character connections: Opening up to gayness in Angels in America. <em>English Journal, 98</em>(4), 77-84.</li>
 </ul>
 
-<a class="btn-outline" href="files/David-Blazar-CV.pdf">Full publication list (CV) →</a>
+### Invited Articles in Refereed Journals
+
+<ul class="pub-list">
+<li>Blazar, D. (2020). Teacher coaching to improve instruction at scale: Opportunities and challenges in a policy context. <em>Teachers College Record, 122</em>(10). <span class="pub-note">Introduction to a special issue edited by Sarah L. Woulfin, Ayesha K. Hashim, and Susan Mecenas-Bush</span></li>
+<li>Kraft, M., &amp; Blazar, D. (2018). Taking teacher coaching to scale: Can personalized training become standard practice? <em>Education Next, 18</em>(4).</li>
+</ul>
 
 <hr class="section-rule">
 
-## Policy Briefs & Public Writing
+## Current & Recent Funded Research
 
 <ul class="pub-list">
-<li>Kraft, M., & Blazar, D. (2018). Taking teacher coaching to scale: Can personalized training become standard practice? <em>Education Next, 18</em>(4).</li>
-<li>Blazar, D. (2017). Should noncognitive measures be used for teacher accountability? Brookings Brown Center Chalkboard.</li>
-<li>Blazar, D., & Kraft, M. A. (2016). Social and emotional skills in school: Pivoting from accountability to development. Albert Shanker Institute.</li>
+<li><strong>CALDER Recruitment and Retention Center</strong> — Institute of Education Sciences ($10M total; $749,032 UMD subcontract; 2024–2029)<br><span class="pub-authors">Investigator and UMD PI; Dan Goldhaber (AIR/CALDER), overall PI</span></li>
+<li><strong>Computer Science for All?</strong> — Google Foundation ($300,000; 2024–2027)<br><span class="pub-authors">Co-Principal Investigator, with PI Jing Liu (UMD)</span></li>
+<li><strong>Using Maryland's SLDS to Strengthen and Diversify the Teacher Workforce through High School to Career Pathways</strong> — Institute of Education Sciences ($1M total; $185,190 subcontract; 2024–2026)<br><span class="pub-authors">Co-Principal Investigator, with PI Jane Lincove</span></li>
+<li><strong>Transforming Education Systems: Promoting Teacher Diversity through Culturally Responsive Pathways, Pedagogies, and Policymaking</strong> — Spencer Foundation ($70,000; 2024–2025)<br><span class="pub-authors">Principal Investigator</span></li>
+<li><strong>Who Will Teach? A Community-Engaged Study to Expand and Diversify the Teacher Workforce</strong> — UMD Research Development Grant program ($30,000; 2025)<br><span class="pub-authors">Principal Investigator</span></li>
 </ul>
 
-<a class="btn-outline" href="https://www.educationnext.org/author/dblazar/">More writing at Education Next →</a>
+<a class="btn-outline" href="files/David-Blazar-CV.pdf">Full grant history (CV) →</a>
 
 <hr class="section-rule">
 
 ## Research Centers & Affiliations
 
 - Faculty Director, [Maryland Equity Project](https://education.umd.edu/research/centers/mep)
-- Faculty Affiliate, Maryland Population Research Center, UMD
-- Affiliate faculty, Department of Economics, UMD
-- Affiliate faculty, School of Public Policy, UMD
+- Research Branch Principal Investigator, [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/)
+- Affiliate, School of Public Policy, UMD
+- Editorial Board, *Journal of Research on Educational Effectiveness* (2025–present)
+- Editorial Board, *Educational Researcher* (2021–present)
 - Research affiliate, [CALDER Center](https://caldercenter.org/experts/david-blazar)
-- Associate Editor, *American Educational Research Journal*

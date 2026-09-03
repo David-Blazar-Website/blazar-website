@@ -1,0 +1,40 @@
+---
+title: "Media & Public Writing"
+---
+
+Alongside peer-reviewed research, David writes for policy and practitioner audiences and contributes to applied briefs through the [Maryland Equity Project](https://education.umd.edu/research/centers/mep). This page collects that public-facing work; his [Research](research.qmd) page covers the peer-reviewed record.
+
+## Policy Briefs — Maryland Equity Project
+
+<ul class="pub-list">
+<li>Bill, K., Blazar, D., Euzebio, D., &amp; Liu, J. (2024). <em>Raising teacher salaries is important. It may also require tradeoffs.</em> Maryland Equity Project.</li>
+<li>Bill, K., Blazar, D., &amp; Scribner, C. (2024). <em>With large Blueprint investments in education, why are some Maryland districts struggling to fund their schools?</em> Maryland Equity Project.</li>
+<li>Bill, K., Rodriguez, S., Blazar, D., &amp; Carson, N. (2024). <em>Community school expansion in Maryland: Promise and precarity.</em> Maryland Equity Project.</li>
+<li>Bill, K., Tirrell-Corbin, C., &amp; Blazar, D. (2024). <em>Expanding pre-k in public schools will require expanding the pre-k teacher workforce. But how, and by how much?</em> Maryland Equity Project.</li>
+<li>Bill, K., &amp; Blazar, D. (2024). <em>Expanding CTE pathways requires prioritization and a program-specific approach.</em> Maryland Equity Project.</li>
+</ul>
+
+<hr class="section-rule">
+
+## Research Briefs & Public Writing
+
+<ul class="pub-list">
+<li>Blazar, D., Gao, W., Gershenson, S., Goings, R., &amp; Lagos, F. (2024). <em>Empowering local talent: Evaluating the impact of grow-your-own teacher programs.</em> IZA World of Labor.</li>
+<li>Blazar, D., Gershenson, S., &amp; Goings, R. (2024). <em>The educational and labor market outcomes of Maryland's grow-your-own teacher recruitment program.</em> Urban Institute.</li>
+<li>Liu, J., Conrad, C., &amp; Blazar, D. (2024). <em>High school computer science impacts college majors and increases earnings.</em> Brookings Brown Center Chalkboard.</li>
+<li>Kraft, M., &amp; Blazar, D. (2018). <em>Taking teacher coaching to scale: Can personalized training become standard practice?</em> Education Next, 18(4).</li>
+<li>Blazar, D. (2017). <em>Should noncognitive measures be used for teacher accountability?</em> Brookings Brown Center Chalkboard.</li>
+<li>Blazar, D., &amp; Kraft, M. A. (2016). <em>Social and emotional skills in school: Pivoting from accountability to development.</em> Albert Shanker Institute.</li>
+</ul>
+
+<hr class="section-rule">
+
+## In the News
+
+<ul class="pub-list">
+<li><a href="https://education.umd.edu/news/02-25-26-teacher-academy-maryland-grow-your-own-gyo-teacher-program">The Teacher Academy of Maryland: A Grow-Your-Own (GYO) Teacher Program</a> — UMD College of Education</li>
+<li><a href="https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win">This Maryland "Grow Your Own" teacher program may be a win-win-win</a> — Thomas B. Fordham Institute commentary on David's research</li>
+<li>Named one of the most influential education scholars in the United States — <em>Education Week</em></li>
+</ul>
+
+<span style="color:#6b6b6b; font-size:0.85rem;">This list is illustrative, not comprehensive — add press hits and interviews as they come up.</span>

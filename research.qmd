@@ -2,9 +2,11 @@
 title: "Research"
 ---
 
-David's work sits at the intersection of education policy and economics, using large administrative datasets and, where possible, experimental or quasi-experimental designs to understand what makes teachers and teaching effective — and how policy can help recruit, develop, and retain a more effective and more diverse teacher workforce. This page draws on his July 2025 CV plus more recent publications; the [CV](cv.qmd) and [Google Scholar](https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en) remain the most complete record.
+David's work sits at the intersection of education policy and economics, using large administrative datasets and, where possible, experimental or quasi-experimental designs to understand what makes teachers and teaching effective — and how policy can help recruit, develop, and retain a more effective and more diverse teacher workforce. This page draws on his July 2025 CV plus more recent publications; the [CV](cv.qmd) and [Google Scholar](https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en) remain the most complete record. Below: what's currently in progress, the published record it builds on, how that work gets funded, and where else David is active in the field.
 
 ## In Progress
+
+Four projects are currently under review or in preparation:
 
 <ul class="pub-list">
 <li><strong><a href="https://edworkingpapers.com/ai26-1501">Teacher Localness, Early-Career Effectiveness, and Retention</a></strong><br><span class="pub-authors">with Nicolas Dominguez-Mel, Wesley T. Morris, and Sarah Montana</span></li>
@@ -17,7 +19,7 @@ David's work sits at the intersection of education policy and economics, using l
 
 ## Journal Articles
 
-<span style="color:#6b6b6b; font-size:0.9rem;">In reverse chronological order; linked where an open or published version is available.</span>
+That in-progress work builds on a substantial publication record. Below is the full list, in reverse chronological order and linked where an open or published version is available.
 
 <ul class="pub-list">
 <li>Blazar, D., Anthenelli, M., Gao, W., Goings, R., &amp; Gershenson, S. (2026). <a href="https://doi.org/10.3102/01623737251412443">Disparate pathways: Understanding racial disparities in teaching</a>. <em>Educational Researcher</em>.</li>
@@ -52,7 +54,7 @@ David's work sits at the intersection of education policy and economics, using l
 <li>Blazar, D. (2009). Self-discovery through character connections: Opening up to gayness in Angels in America. <em>English Journal, 98</em>(4), 77-84.</li>
 </ul>
 
-### Invited Articles in Refereed Journals
+David has also written two invited pieces synthesizing this work for broader audiences:
 
 <ul class="pub-list">
 <li>Blazar, D. (2020). Teacher coaching to improve instruction at scale: Opportunities and challenges in a policy context. <em>Teachers College Record, 122</em>(10). <span class="pub-note">Introduction to a special issue edited by Sarah L. Woulfin, Ayesha K. Hashim, and Susan Mecenas-Bush</span></li>
@@ -62,6 +64,8 @@ David's work sits at the intersection of education policy and economics, using l
 <hr class="section-rule">
 
 ## Current & Recent Funded Research
+
+Much of this research is made possible by external and internal grants. Five current or recent examples:
 
 <ul class="pub-list">
 <li><strong>CALDER Recruitment and Retention Center</strong> — Institute of Education Sciences ($10M total; $749,032 UMD subcontract; 2024–2029)<br><span class="pub-authors">Investigator and UMD PI; Dan Goldhaber (AIR/CALDER), overall PI</span></li>
@@ -75,11 +79,6 @@ David's work sits at the intersection of education policy and economics, using l
 
 <hr class="section-rule">
 
-## Research Centers & Affiliations
+## Beyond His Own Studies
 
-- Faculty Director, [Maryland Equity Project](https://education.umd.edu/research/centers/mep)
-- Research Branch Principal Investigator, [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/)
-- Affiliate, School of Public Policy, UMD
-- Editorial Board, *Journal of Research on Educational Effectiveness* (2025–present)
-- Editorial Board, *Educational Researcher* (2021–present)
-- Research affiliate, [CALDER Center](https://caldercenter.org/experts/david-blazar)
+David also contributes to the field's shared infrastructure and gatekeeping. He directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep) and serves as principal investigator for the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/), both housed at UMD, and holds an affiliate appointment in the School of Public Policy. He's a research affiliate of the [CALDER Center](https://caldercenter.org/experts/david-blazar), and sits on the editorial boards of the *Journal of Research on Educational Effectiveness* (2025–present) and *Educational Researcher* (2021–present).

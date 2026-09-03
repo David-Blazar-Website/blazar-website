@@ -41,18 +41,6 @@ Before entering academia, David taught high school English Language Arts in New 
 
 ::: {.news-card-h}
 ::: {.news-outlet-h}
-Thomas B. Fordham Institute
-:::
-::: {.news-headline-h}
-[This Maryland "Grow Your Own" Teacher Program May Be a Win-Win-Win](https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win)
-:::
-::: {.news-date-h}
-September 2026
-:::
-:::
-
-::: {.news-card-h}
-::: {.news-outlet-h}
 The Hill
 :::
 ::: {.news-headline-h}
@@ -132,6 +120,18 @@ UMD College of Education
 :::
 ::: {.news-date-h}
 February 2026
+:::
+:::
+
+::: {.news-card-h}
+::: {.news-outlet-h}
+Thomas B. Fordham Institute
+:::
+::: {.news-headline-h}
+[This Maryland "Grow Your Own" Teacher Program May Be a Win-Win-Win](https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win)
+:::
+::: {.news-date-h}
+May 2024
 :::
 :::
 

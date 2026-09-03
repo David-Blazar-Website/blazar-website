@@ -6,12 +6,11 @@ David's work sits at the intersection of education policy and economics, using l
 
 ## In Progress
 
-Four projects are currently under review or in preparation:
+Three projects are currently under review or in preparation:
 
 <ul class="pub-list">
 <li><strong><a href="https://edworkingpapers.com/ai26-1501">Teacher Localness, Early-Career Effectiveness, and Retention</a></strong><br><span class="pub-authors">with Nicolas Dominguez-Mel, Wesley T. Morris, and Sarah Montana</span></li>
 <li><strong><a href="https://edworkingpapers.com/ai21-501">Teachers of Color, Culturally Responsive Teaching, and Student Outcomes: Experimental Evidence from the Random Assignment of Teachers to Classes</a></strong></li>
-<li><strong>Disparities in Investments in Children and Youth in the U.S.</strong><br><span class="pub-authors">with Michel Boudreaux, Steven Klees, Jennifer Rice, Marvin Titus, and Jiehui Zhao — revise &amp; resubmit, <em>Nature Communications</em></span></li>
 <li><strong>Computer Science for All? The Impact of High School Computer Science Courses on College Majors and Earnings</strong><br><span class="pub-authors">with Jing Liu and Christina Conrad</span></li>
 </ul>
 
@@ -22,6 +21,7 @@ Four projects are currently under review or in preparation:
 That in-progress work builds on a substantial publication record. Below is the full list, in reverse chronological order and linked where an open or published version is available.
 
 <ul class="pub-list">
+<li>Blazar, D., Boudreaux, M., Klees, S., Rice, J. K., Titus, M., &amp; Zhao, J. (2026). <a href="https://doi.org/10.1038/s41467-026-70316-3">Disparities in childhood human capital investments in the United States</a>. <em>Nature Communications, 17</em>, Article 2746.<span class="pub-note">Widely covered in the press — see the <a href="media.qmd">Media</a> page</span></li>
 <li>Blazar, D., Anthenelli, M., Gao, W., Goings, R., &amp; Gershenson, S. (2026). <a href="https://doi.org/10.3102/01623737251412443">Disparate pathways: Understanding racial disparities in teaching</a>. <em>Educational Researcher</em>.</li>
 <li>Blazar, D., Gao, W., Gershenson, S., Goings, R., &amp; Lagos, F. (2026). <a href="https://doi.org/10.1002/pam.70084">Localized teacher recruitment through "grow-your-own": Impacts of the High School Teacher Academy of Maryland program</a>. <em>Journal of Policy Analysis and Management, 45</em>(2), e70084.</li>
 <li>Lagos, F., &amp; Blazar, D. (2026). <a href="https://education.umd.edu/sites/default/files/uploads/inline-files/Lagos%20Blazar_2026_Professional%20Staff%20Diversity_ER.pdf">Professional staff diversity and student outcomes: Extending our understanding of race/ethnicity-matching effects in education</a>. <em>Educational Researcher</em>.</li>

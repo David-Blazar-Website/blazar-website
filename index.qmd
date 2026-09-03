@@ -11,7 +11,7 @@ page-layout: article
 ::: {.hero-text}
 # David Blazar
 
-<div class="hero-title">Associate Professor of Education Policy<br>College of Education, University of Maryland, College Park</div>
+<div class="hero-title">Malen Professor for Urban Education Policy<br>College of Education, University of Maryland, College Park</div>
 
 <a class="btn-accent" href="mailto:dblazar@umd.edu">Email</a>&nbsp;
 <a class="btn-outline" href="files/David-Blazar-CV.pdf">Download CV</a>&nbsp;
@@ -19,7 +19,7 @@ page-layout: article
 :::
 :::
 
-David Blazar is an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park, where he also directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep), serves as principal investigator for the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/), and holds an affiliate appointment in the School of Public Policy. His research examines the effective, efficient, and equitable allocation of resources in schools — particularly resources related to teachers — spanning three broad areas: the characteristics of effective teachers and teaching practices; whether and how instructional resources such as coaching, curricula, and evaluation systems improve teacher practice and student outcomes; and the labor market policies and practices that shape who becomes, and remains, a teacher.
+David Blazar is the Malen Professor for Urban Education Policy and an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park, where he also directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep), serves as principal investigator for the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/), and holds an affiliate appointment in the School of Public Policy. His research examines the effective, efficient, and equitable allocation of resources in schools — particularly resources related to teachers — spanning three broad areas: the characteristics of effective teachers and teaching practices; whether and how instructional resources such as coaching, curricula, and evaluation systems improve teacher practice and student outcomes; and the labor market policies and practices that shape who becomes, and remains, a teacher.
 
 Before entering academia, David taught high school English Language Arts in New York City. He holds a doctorate in Quantitative Policy Analysis in Education and a master's degree in Education Policy and Management, both from the Harvard Graduate School of Education.
 
@@ -41,10 +41,70 @@ Before entering academia, David taught high school English Language Arts in New 
 
 ::: {.news-card-h}
 ::: {.news-outlet-h}
-UMD College of Education
+Thomas B. Fordham Institute
 :::
 ::: {.news-headline-h}
-[Dean and Education Policy Researcher Ranked Among Most Influential U.S. Education Scholars](https://education.umd.edu/news/02-17-26-umd-college-education-dean-and-education-policy-researcher-ranked-among-most)
+[This Maryland "Grow Your Own" Teacher Program May Be a Win-Win-Win](https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win)
+:::
+::: {.news-date-h}
+September 2026
+:::
+:::
+
+::: {.news-card-h}
+::: {.news-outlet-h}
+The Hill
+:::
+::: {.news-headline-h}
+[Congress Debates Childhood by Budget Lines. Children Don't Live That Way.](https://thehill.com/opinion/congress-blog/economy-budget/6017347-childhood-investment-gap-analysis/)
+:::
+::: {.news-date-h}
+August 2026
+:::
+:::
+
+::: {.news-card-h}
+::: {.news-outlet-h}
+Spotlight on Poverty
+:::
+::: {.news-headline-h}
+[New Study Examines the Investment Gap for Children in Poverty](https://spotlightonpoverty.org/spotlight-exclusives/new-study-examines-the-investment-gap-for-children-in-poverty)
+:::
+::: {.news-date-h}
+May 2026
+:::
+:::
+
+::: {.news-card-h}
+::: {.news-outlet-h}
+Chalkbeat
+:::
+::: {.news-headline-h}
+[For Children in Poverty, the Biggest Resource Gaps Are Outside of School](https://www.chalkbeat.org/2026/04/21/poor-children-face-investment-and-resource-gaps-outside-school/)
+:::
+::: {.news-date-h}
+April 2026
+:::
+:::
+
+::: {.news-card-h}
+::: {.news-outlet-h}
+K-12 Dive
+:::
+::: {.news-headline-h}
+[Maryland Sees Return on Investment in Grow-Your-Own Programs](https://www.k12dive.com/news/maryland-sees-return-on-investment-in-grow-your-own-programs/815602/)
+:::
+::: {.news-date-h}
+March 2026
+:::
+:::
+
+::: {.news-card-h}
+::: {.news-outlet-h}
+JPAM's Closer Look (Podcast)
+:::
+::: {.news-headline-h}
+[The Teacher Academy of Maryland: A Grow-Your-Own (GYO) Teacher Program](https://www.appam.org/news-publications/jpam/jpam-closer-look-podcast/)
 :::
 ::: {.news-date-h}
 February 2026
@@ -65,13 +125,13 @@ February 2026
 
 ::: {.news-card-h}
 ::: {.news-outlet-h}
-Thomas B. Fordham Institute
+UMD College of Education
 :::
 ::: {.news-headline-h}
-[This Maryland "Grow Your Own" Teacher Program May Be a Win-Win-Win](https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win)
+[Dean and Education Policy Researcher Ranked Among Most Influential U.S. Education Scholars](https://education.umd.edu/news/02-17-26-umd-college-education-dean-and-education-policy-researcher-ranked-among-most)
 :::
 ::: {.news-date-h}
-September 2026
+February 2026
 :::
 :::
 
@@ -84,6 +144,7 @@ September 2026
   var track = document.querySelector('.news-track');
   var fade = document.querySelector('.news-scroll-fade');
   if (!track || !fade) return;
+
   function update() {
     var hasMore = track.scrollWidth - track.scrollLeft - track.clientWidth > 4;
     fade.classList.toggle('is-visible', hasMore);
@@ -91,6 +152,26 @@ September 2026
   update();
   track.addEventListener('scroll', update);
   window.addEventListener('resize', update);
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion) {
+    var timer = null;
+    function step() {
+      var card = track.querySelector('.news-card-h');
+      var gap = 16;
+      var amount = card ? card.getBoundingClientRect().width + gap : 226;
+      var atEnd = track.scrollWidth - track.scrollLeft - track.clientWidth < 4;
+      track.scrollTo({ left: atEnd ? 0 : track.scrollLeft + amount, behavior: 'smooth' });
+    }
+    function start() { stop(); timer = setInterval(step, 3500); }
+    function stop() { if (timer) clearInterval(timer); timer = null; }
+    start();
+    track.addEventListener('mouseenter', stop);
+    track.addEventListener('mouseleave', start);
+    track.addEventListener('touchstart', stop, { passive: true });
+    track.addEventListener('focusin', stop);
+    track.addEventListener('focusout', start);
+  }
 })();
 </script>
 

@@ -2,10 +2,6 @@
 title: "Research"
 ---
 
-::: {.editor-note}
-**Placeholder list.** Pulled from EdWorkingPapers and David's 2022 CV — the working papers below may since have been published in journals, and newer work almost certainly exists. Update titles/links and add anything missing. Full lists live on [Google Scholar](https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en) and [EdWorkingPapers](https://edworkingpapers.com/users/david-blazar).
-:::
-
 David's work sits at the intersection of education policy and economics, using large administrative datasets and, where possible, experimental or quasi-experimental designs to understand what makes teachers and teaching effective — and how policy can help recruit, develop, and retain a more effective and more diverse teacher workforce.
 
 ## Recent Working Papers

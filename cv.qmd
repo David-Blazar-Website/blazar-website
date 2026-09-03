@@ -2,10 +2,6 @@
 title: "CV"
 ---
 
-::: {.editor-note}
-**This is David's last publicly available CV (dated May 2022).** It's included here as a real placeholder so the page isn't empty, but it's missing four-plus years of publications, grants, and service. Replace `files/David-Blazar-CV.pdf` with a current file — same filename, and the link below keeps working automatically.
-:::
-
 <a class="btn-accent" href="files/David-Blazar-CV.pdf">Download CV (PDF)</a>
 
 <div style="margin-top: 1.5rem; border: 1px solid rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">

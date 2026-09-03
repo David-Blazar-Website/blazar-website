@@ -2,10 +2,6 @@
 title: "Teaching & Advising"
 ---
 
-::: {.editor-note}
-**Placeholder list**, current as of David's 2022 CV. Confirm which courses are still active and add anything taught more recently.
-:::
-
 ## Courses Taught
 
 At the University of Maryland, in the Department of Teaching and Learning, Policy and Leadership (TLPL):

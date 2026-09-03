@@ -23,9 +23,9 @@ website:
       - icon: envelope
         href: mailto:dblazar@umd.edu
         aria-label: Email
-      - icon: twitter-x
-        href: https://x.com/david_blazar
-        aria-label: X (Twitter)
+      - icon: bluesky
+        href: https://bsky.app/profile/davidblazar.bsky.social
+        aria-label: Bluesky
       - icon: linkedin
         href: https://www.linkedin.com/in/david-blazar-69958ba
         aria-label: LinkedIn
@@ -36,9 +36,9 @@ website:
       - icon: envelope
         href: mailto:dblazar@umd.edu
         aria-label: Email
-      - icon: twitter-x
-        href: https://x.com/david_blazar
-        aria-label: X (Twitter)
+      - icon: bluesky
+        href: https://bsky.app/profile/davidblazar.bsky.social
+        aria-label: Bluesky
       - icon: linkedin
         href: https://www.linkedin.com/in/david-blazar-69958ba
         aria-label: LinkedIn

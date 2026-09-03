@@ -3,13 +3,9 @@ title: ""
 page-layout: article
 ---
 
-::: {.editor-note}
-**Site shell, not final content.** This page was assembled from public sources (UMD faculty directory, CALDER Center, Google Scholar, EdWorkingPapers) to give you a working starting point. Swap in your own headshot, refine the bio voice, and update anything that's out of date — see `README.md` in this project for a full checklist.
-:::
-
 ::: {.hero}
 ::: {.hero-photo}
-<img src="files/headshot-placeholder.svg" alt="Placeholder headshot for David Blazar">
+<img src="files/headshot.jpg" alt="David Blazar">
 :::
 
 ::: {.hero-text}
@@ -50,7 +46,7 @@ Before entering academia, David taught high school English Language Arts in New 
 
 <ul class="connect-links">
 <li>📧 <a href="mailto:dblazar@umd.edu">dblazar@umd.edu</a></li>
-<li>🐦 <a href="https://x.com/david_blazar">X / Twitter</a></li>
+<li>🦋 <a href="https://bsky.app/profile/davidblazar.bsky.social">Bluesky</a></li>
 <li>💼 <a href="https://www.linkedin.com/in/david-blazar-69958ba">LinkedIn</a></li>
 <li>🎓 <a href="https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en">Google Scholar</a></li>
 <li>📄 <a href="https://edworkingpapers.com/users/david-blazar">EdWorkingPapers</a></li>

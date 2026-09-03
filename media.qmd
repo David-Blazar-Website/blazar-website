@@ -34,6 +34,7 @@ Alongside peer-reviewed research, David writes for policy and practitioner audie
 ## In the News
 
 <ul class="pub-list">
+<li><a href="https://www.k12dive.com/news/the-emerging-promise-of-teacher-apprenticeship-programs/828540/">The Emerging Promise of Teacher Apprenticeship Programs</a> — K-12 Dive (August 2026)<span class="pub-note">Links directly to David's EdWorkingPapers study on teacher localness (with Wesley T. Morris and others), though it doesn't name the authors in the text</span></li>
 <li><a href="https://thehill.com/opinion/congress-blog/economy-budget/6017347-childhood-investment-gap-analysis/">Congress Debates Childhood by Budget Lines. Children Don't Live That Way.</a> — The Hill, on the childhood investment gap study (August 2026)</li>
 <li><a href="https://spotlightonpoverty.org/spotlight-exclusives/new-study-examines-the-investment-gap-for-children-in-poverty">New Study Examines the Investment Gap for Children in Poverty</a> — Spotlight on Poverty and Opportunity (May 2026)</li>
 <li><a href="https://nepc.colorado.edu/publication/newsletter-child-cost-050726">How Much Does It Really Cost to Raise a Child?</a> — National Education Policy Center newsletter, on the childhood investment gap study (May 2026)</li>

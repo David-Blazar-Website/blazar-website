@@ -41,6 +41,18 @@ Before entering academia, David taught high school English Language Arts in New 
 
 ::: {.news-card-h}
 ::: {.news-outlet-h}
+K-12 Dive
+:::
+::: {.news-headline-h}
+[The Emerging Promise of Teacher Apprenticeship Programs](https://www.k12dive.com/news/the-emerging-promise-of-teacher-apprenticeship-programs/828540/)
+:::
+::: {.news-date-h}
+August 2026
+:::
+:::
+
+::: {.news-card-h}
+::: {.news-outlet-h}
 The Hill
 :::
 ::: {.news-headline-h}
@@ -123,17 +135,6 @@ February 2026
 :::
 :::
 
-::: {.news-card-h}
-::: {.news-outlet-h}
-Thomas B. Fordham Institute
-:::
-::: {.news-headline-h}
-[This Maryland "Grow Your Own" Teacher Program May Be a Win-Win-Win](https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win)
-:::
-::: {.news-date-h}
-May 2024
-:::
-:::
 
 </div>
 <div class="news-scroll-fade" aria-hidden="true"></div>

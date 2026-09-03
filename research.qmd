@@ -1,0 +1,61 @@
+---
+title: "Research"
+---
+
+::: {.editor-note}
+**Placeholder list.** Pulled from EdWorkingPapers and David's 2022 CV — the working papers below may since have been published in journals, and newer work almost certainly exists. Update titles/links and add anything missing. Full lists live on [Google Scholar](https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en) and [EdWorkingPapers](https://edworkingpapers.com/users/david-blazar).
+:::
+
+David's work sits at the intersection of education policy and economics, using large administrative datasets and, where possible, experimental or quasi-experimental designs to understand what makes teachers and teaching effective — and how policy can help recruit, develop, and retain a more effective and more diverse teacher workforce.
+
+## Recent Working Papers
+
+<ul class="pub-list">
+<li><strong>Teacher Localness, Early-Career Effectiveness, and Retention</strong> (2026)<br><span class="pub-authors">with Nicolas Dominguez-Mel, Wesley T. Morris, and Sarah Montana</span></li>
+<li><strong>Localized Teacher Recruitment through "Grow-Your-Own": Impacts of the High School Teacher Academy of Maryland Program</strong> (2026)<br><span class="pub-authors">with Wenjing Gao, Seth Gershenson, Ramon Goings, and Francisco Lagos</span></li>
+<li><strong>Disparate Pathways: Understanding Racial Disparities in Teaching</strong> (2026)<br><span class="pub-authors">with Max Anthenelli, Wenjing Gao, Ramon Goings, and Seth Gershenson</span></li>
+<li><strong>Differential Responses to Teacher Evaluation Incentives: Expectancy, Race, Experience, and Task</strong> (2024)<br><span class="pub-authors">with Melinda Adnot, Max Anthenelli, and Xinyi Zhong</span></li>
+<li><strong>Pathways into the CTE Teaching Profession: A Descriptive Analysis of Degrees, Licenses, and Race in Maryland</strong> (2024)<br><span class="pub-authors">with Danett Song, Ramon Goings, Jay Plasman, and Michael A. Gottfried</span></li>
+<li><strong>Teachers of Color, Culturally Responsive Teaching, and Student Outcomes: Experimental Evidence from the Random Assignment of Teachers to Classes</strong> (2024)</li>
+</ul>
+
+<a class="btn-outline" href="https://edworkingpapers.com/users/david-blazar">See all working papers →</a>
+
+<hr class="section-rule">
+
+## Selected Journal Articles
+
+<ul class="pub-list">
+<li>Blazar, D., & Archer, C. (2020). Teaching to support students with diverse academic needs. <em>Educational Researcher, 49</em>(5), 297–311.</li>
+<li>Kraft, M. A., Blazar, D., & Hogan, D. (2018). The effect of teacher coaching on instruction and achievement: A meta-analysis of the causal evidence. <em>Review of Educational Research, 88</em>(4), 547–588.<span class="pub-note">Most-read article published in Review of Educational Research, and second most-read across all AERA journals, in 2018.</span></li>
+<li>Blazar, D., & Kraft, M. A. (2017). Teacher and teaching effects on students' attitudes and behaviors. <em>Educational Evaluation and Policy Analysis, 39</em>(1), 146–170.<span class="pub-note">Most-read article published in Educational Evaluation and Policy Analysis in 2017.</span></li>
+<li>Blazar, D., Litke, E., & Barmore, J. (2016). What does it mean to be ranked a "high" or "low" value-added teacher? Observing differences in instructional quality across districts. <em>American Educational Research Journal, 53</em>(2), 324–359.</li>
+<li>Blazar, D. (2015). Effective teaching in elementary mathematics: Identifying classroom practices that support student achievement. <em>Economics of Education Review, 48</em>, 16–29.</li>
+<li>Blazar, D. (2015). Grade assignments and the teacher pipeline: A low-cost lever to improve student achievement? <em>Educational Researcher, 44</em>(4), 213–227.</li>
+<li>Blazar, D., & Kraft, M. A. (2015). Exploring mechanisms of effective teacher coaching: A tale of two cohorts from a randomized experiment. <em>Educational Evaluation and Policy Analysis, 37</em>(4), 542–566.</li>
+</ul>
+
+<a class="btn-outline" href="files/David-Blazar-CV.pdf">Full publication list (CV) →</a>
+
+<hr class="section-rule">
+
+## Policy Briefs & Public Writing
+
+<ul class="pub-list">
+<li>Kraft, M., & Blazar, D. (2018). Taking teacher coaching to scale: Can personalized training become standard practice? <em>Education Next, 18</em>(4).</li>
+<li>Blazar, D. (2017). Should noncognitive measures be used for teacher accountability? Brookings Brown Center Chalkboard.</li>
+<li>Blazar, D., & Kraft, M. A. (2016). Social and emotional skills in school: Pivoting from accountability to development. Albert Shanker Institute.</li>
+</ul>
+
+<a class="btn-outline" href="https://www.educationnext.org/author/dblazar/">More writing at Education Next →</a>
+
+<hr class="section-rule">
+
+## Research Centers & Affiliations
+
+- Faculty Director, [Maryland Equity Project](https://education.umd.edu/research/centers/mep)
+- Faculty Affiliate, Maryland Population Research Center, UMD
+- Affiliate faculty, Department of Economics, UMD
+- Affiliate faculty, School of Public Policy, UMD
+- Research affiliate, [CALDER Center](https://caldercenter.org/experts/david-blazar)
+- Associate Editor, *American Educational Research Journal*

@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "David Blazar"
+  site-url: "https://example.com"
+  description: "David Blazar, Associate Professor of Education Policy, University of Maryland College of Education"
+  favicon: files/favicon.svg
+  navbar:
+    background: light
+    logo: files/favicon.svg
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "CV"
+        href: cv.qmd
+    right:
+      - icon: envelope
+        href: mailto:dblazar@umd.edu
+        aria-label: Email
+      - icon: twitter-x
+        href: https://x.com/david_blazar
+        aria-label: X (Twitter)
+      - icon: linkedin
+        href: https://www.linkedin.com/in/david-blazar-69958ba
+        aria-label: LinkedIn
+
+  page-footer:
+    left: "© 2026 David Blazar"
+    right:
+      - icon: envelope
+        href: mailto:dblazar@umd.edu
+        aria-label: Email
+      - icon: twitter-x
+        href: https://x.com/david_blazar
+        aria-label: X (Twitter)
+      - icon: linkedin
+        href: https://www.linkedin.com/in/david-blazar-69958ba
+        aria-label: LinkedIn
+    background: light
+
+format:
+  html:
+    theme: [litera, styles.scss]
+    css: styles.css
+    toc: false
+    page-layout: article
+    fontsize: 1.05rem
+    linkcolor: "#B5502D"

@@ -1,0 +1,42 @@
+/*-- scss:defaults --*/
+
+$theme: "litera" !default;
+
+// Palette
+$body-bg: #FAF6EF;
+$body-color: #232323;
+$link-color: #B5502D;
+$navbar-bg: #FAF6EF;
+$navbar-fg: #232323;
+$navbar-hl: #B5502D;
+$footer-bg: #FAF6EF;
+$footer-fg: #6b6b6b;
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-serif: "Fraunces", Georgia, "Times New Roman", serif;
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 600;
+$headings-color: #1F2421;
+
+$h1-font-size: 2.4rem;
+$h2-font-size: 1.7rem;
+$h3-font-size: 1.25rem;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap');
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-title {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}

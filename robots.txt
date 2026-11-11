@@ -1,1 +1,1 @@
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://wesleytmorris.com/blazar-website/sitemap.xml

@@ -1,1 +1,1 @@
-Sitemap: https://wesleytmorris.com/blazar-website/sitemap.xml
+Sitemap: https://david-blazar-website.github.io/blazar-website/sitemap.xml

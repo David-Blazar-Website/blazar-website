@@ -2,11 +2,9 @@
 title: "Research"
 ---
 
-David's work sits at the intersection of education policy and economics, using large administrative datasets and, where possible, experimental or quasi-experimental designs to understand what makes teachers and teaching effective — and how policy can help recruit, develop, and retain a more effective and more diverse teacher workforce. This page draws on his July 2025 CV plus more recent publications; the [CV](cv.qmd) and [Google Scholar](https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en) remain the most complete record. Below: what's currently in progress, the published record it builds on, how that work gets funded, and where else David is active in the field.
+David's research draws on education policy and economics. Using large administrative datasets and, where possible, experimental or quasi-experimental designs, he studies what makes teaching effective and how policy can help schools recruit, develop, and keep a strong and diverse teaching workforce. For a complete record, see his [CV](cv.qmd) or [Google Scholar](https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en) profile.
 
-## In Progress
-
-Three projects are currently under review or in preparation:
+## Work in Progress
 
 <ul class="pub-list">
 <li><strong><a href="https://edworkingpapers.com/ai26-1501">Teacher Localness, Early-Career Effectiveness, and Retention</a></strong><br><span class="pub-authors">with Nicolas Dominguez-Mel, Wesley T. Morris, and Sarah Montana</span></li>
@@ -18,10 +16,10 @@ Three projects are currently under review or in preparation:
 
 ## Journal Articles
 
-That in-progress work builds on a substantial publication record. Below is the full list, in reverse chronological order and linked where an open or published version is available.
+Listed newest first. Titles link to the published or open-access version where one is available.
 
 <ul class="pub-list">
-<li>Blazar, D., Boudreaux, M., Klees, S., Rice, J. K., Titus, M., &amp; Zhao, J. (2026). <a href="https://doi.org/10.1038/s41467-026-70316-3">Disparities in childhood human capital investments in the United States</a>. <em>Nature Communications, 17</em>, Article 2746.<span class="pub-note">Widely covered in the press — see the <a href="media.qmd">Media</a> page</span></li>
+<li>Blazar, D., Boudreaux, M., Klees, S., Rice, J. K., Titus, M., &amp; Zhao, J. (2026). <a href="https://doi.org/10.1038/s41467-026-70316-3">Disparities in childhood human capital investments in the United States</a>. <em>Nature Communications, 17</em>, Article 2746.<span class="pub-note">Covered by Chalkbeat, The Hill, and others (see <a href="media.qmd">Media</a>)</span></li>
 <li>Blazar, D., Anthenelli, M., Gao, W., Goings, R., &amp; Gershenson, S. (2026). <a href="https://doi.org/10.3102/01623737251412443">Disparate pathways: Understanding racial disparities in teaching</a>. <em>Educational Researcher</em>.</li>
 <li>Blazar, D., Gao, W., Gershenson, S., Goings, R., &amp; Lagos, F. (2026). <a href="https://doi.org/10.1002/pam.70084">Localized teacher recruitment through "grow-your-own": Impacts of the High School Teacher Academy of Maryland program</a>. <em>Journal of Policy Analysis and Management, 45</em>(2), e70084.</li>
 <li>Lagos, F., &amp; Blazar, D. (2026). <a href="https://education.umd.edu/sites/default/files/uploads/inline-files/Lagos%20Blazar_2026_Professional%20Staff%20Diversity_ER.pdf">Professional staff diversity and student outcomes: Extending our understanding of race/ethnicity-matching effects in education</a>. <em>Educational Researcher</em>.</li>
@@ -54,7 +52,7 @@ That in-progress work builds on a substantial publication record. Below is the f
 <li>Blazar, D. (2009). Self-discovery through character connections: Opening up to gayness in Angels in America. <em>English Journal, 98</em>(4), 77-84.</li>
 </ul>
 
-David has also written two invited pieces synthesizing this work for broader audiences:
+### Invited Articles
 
 <ul class="pub-list">
 <li>Blazar, D. (2020). Teacher coaching to improve instruction at scale: Opportunities and challenges in a policy context. <em>Teachers College Record, 122</em>(10). <span class="pub-note">Introduction to a special issue edited by Sarah L. Woulfin, Ayesha K. Hashim, and Susan Mecenas-Bush</span></li>
@@ -63,9 +61,9 @@ David has also written two invited pieces synthesizing this work for broader aud
 
 <hr class="section-rule">
 
-## Current & Recent Funded Research
+## Selected Grants
 
-Much of this research is made possible by external and internal grants. Five current or recent examples:
+Current and recent funding:
 
 <ul class="pub-list">
 <li><strong>CALDER Recruitment and Retention Center</strong> — Institute of Education Sciences ($10M total; $749,032 UMD subcontract; 2024–2029)<br><span class="pub-authors">Investigator and UMD PI; Dan Goldhaber (AIR/CALDER), overall PI</span></li>
@@ -79,6 +77,6 @@ Much of this research is made possible by external and internal grants. Five cur
 
 <hr class="section-rule">
 
-## Beyond His Own Studies
+## Service and Affiliations
 
-David also contributes to the field's shared infrastructure and gatekeeping. He directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep) and serves as principal investigator for the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/), both housed at UMD, and holds an affiliate appointment in the School of Public Policy. He's a research affiliate of the [CALDER Center](https://caldercenter.org/experts/david-blazar), and sits on the editorial boards of the *Journal of Research on Educational Effectiveness* (2025–present) and *Educational Researcher* (2021–present).
+In addition to directing the [Maryland Equity Project](https://education.umd.edu/research/centers/mep) and leading the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/), David is a research affiliate of the [CALDER Center](https://caldercenter.org/experts/david-blazar). He serves on the editorial boards of *Educational Researcher* (since 2021) and the *Journal of Research on Educational Effectiveness* (since 2025).

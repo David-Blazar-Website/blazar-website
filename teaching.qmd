@@ -19,14 +19,14 @@ At the University of Maryland, in the Department of Teaching and Learning, Polic
 ## Program Development
 
 <ul class="pub-list">
-<li><strong>College of Education Undergraduate Degree in Educational Studies</strong><br><span class="pub-authors">Collaborating with the College of Education and School of Public Policy to build an Education Policy concentration crossing both schools (2021–present)</span></li>
-<li><strong>TLPL Quantitative Research Methods sequence</strong><br><span class="pub-authors">Built a four-course sequence with colleagues (2018–present)</span></li>
+<li><strong>College of Education Undergraduate Degree in Educational Studies</strong><br><span class="pub-authors">Developing an Education Policy concentration shared by the College of Education and the School of Public Policy (2021–present)</span></li>
+<li><strong>TLPL Quantitative Research Methods sequence</strong><br><span class="pub-authors">Designed a four-course sequence with departmental colleagues (2018–present)</span></li>
 </ul>
 
 <hr class="section-rule">
 
 ## Advising & Mentoring
 
-David chairs dissertation committees for doctoral students in the Education Policy program and regularly serves as a committee member for students in Public Policy, Economics, and Measurement, Statistics, and Evaluation. He also mentors junior faculty and postdoctoral fellows within the department.
+David chairs dissertation committees in the Education Policy program and serves on committees for students in Public Policy, Economics, and Measurement, Statistics, and Evaluation. He also mentors junior faculty and postdoctoral fellows in the department.
 
-Prospective students interested in teacher labor markets, causal inference in education, or educator diversity are welcome to reach out — see the [Contact](index.qmd) section on the home page.
+Prospective students interested in teacher labor markets, educator diversity, or causal inference in education are welcome to get in touch. Contact details are on the [home page](index.qmd).

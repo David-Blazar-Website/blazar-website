@@ -2,7 +2,7 @@
 title: "Media & Public Writing"
 ---
 
-Alongside peer-reviewed research, David writes for policy and practitioner audiences and contributes to applied briefs through the [Maryland Equity Project](https://education.umd.edu/research/centers/mep). This page collects that public-facing work; his [Research](research.qmd) page covers the peer-reviewed record.
+David also writes for policymakers, practitioners, and the public, including applied briefs for the [Maryland Equity Project](https://education.umd.edu/research/centers/mep). That work is collected here. Peer-reviewed articles are on the [Research](research.qmd) page.
 
 ## Policy Briefs — Maryland Equity Project
 
@@ -34,16 +34,16 @@ Alongside peer-reviewed research, David writes for policy and practitioner audie
 ## In the News
 
 <ul class="pub-list">
-<li><a href="https://www.k12dive.com/news/the-emerging-promise-of-teacher-apprenticeship-programs/828540/">The Emerging Promise of Teacher Apprenticeship Programs</a> — K-12 Dive (August 2026)<span class="pub-note">Links directly to David's EdWorkingPapers study on teacher localness (with Wesley T. Morris and others), though it doesn't name the authors in the text</span></li>
+<li><a href="https://www.k12dive.com/news/the-emerging-promise-of-teacher-apprenticeship-programs/828540/">The Emerging Promise of Teacher Apprenticeship Programs</a> — K-12 Dive (August 2026)<span class="pub-note">Cites the EdWorkingPapers study on teacher localness, early-career effectiveness, and retention</span></li>
 <li><a href="https://thehill.com/opinion/congress-blog/economy-budget/6017347-childhood-investment-gap-analysis/">Congress Debates Childhood by Budget Lines. Children Don't Live That Way.</a> — The Hill, on the childhood investment gap study (August 2026)</li>
 <li><a href="https://spotlightonpoverty.org/spotlight-exclusives/new-study-examines-the-investment-gap-for-children-in-poverty">New Study Examines the Investment Gap for Children in Poverty</a> — Spotlight on Poverty and Opportunity (May 2026)</li>
 <li><a href="https://nepc.colorado.edu/publication/newsletter-child-cost-050726">How Much Does It Really Cost to Raise a Child?</a> — National Education Policy Center newsletter, on the childhood investment gap study (May 2026)</li>
-<li><a href="https://www.chalkbeat.org/2026/04/21/poor-children-face-investment-and-resource-gaps-outside-school/">For Children in Poverty, the Biggest Resource Gaps Are Outside of School</a> — Chalkbeat (April 2026)<span class="pub-note">Extensive quotes from David on the Nature Communications study</span></li>
+<li><a href="https://www.chalkbeat.org/2026/04/21/poor-children-face-investment-and-resource-gaps-outside-school/">For Children in Poverty, the Biggest Resource Gaps Are Outside of School</a> — Chalkbeat (April 2026)<span class="pub-note">David discusses the <em>Nature Communications</em> study</span></li>
 <li><a href="https://www.k12dive.com/news/maryland-sees-return-on-investment-in-grow-your-own-programs/815602/">Maryland Sees Return on Investment in Grow-Your-Own Programs</a> — K-12 Dive (March 2026)</li>
 <li><a href="https://www.appam.org/news-publications/jpam/jpam-closer-look-podcast/">JPAM's Closer Look Podcast: The Teacher Academy of Maryland</a> — host Seth Gershenson interviews David about their JPAM study (February 2026)</li>
 <li><a href="https://education.umd.edu/news/02-25-26-teacher-academy-maryland-grow-your-own-gyo-teacher-program">The Teacher Academy of Maryland: A Grow-Your-Own (GYO) Teacher Program</a> — UMD College of Education (February 2026)</li>
-<li><a href="https://education.umd.edu/news/02-17-26-umd-college-education-dean-and-education-policy-researcher-ranked-among-most">Dean and Education Policy Researcher Ranked Among Most Influential U.S. Education Scholars</a> — UMD College of Education (February 2026)<span class="pub-note">David's first appearance on Education Week's RHSU Edu-Scholar Public Influence Rankings</span></li>
+<li><a href="https://education.umd.edu/news/02-17-26-umd-college-education-dean-and-education-policy-researcher-ranked-among-most">Dean and Education Policy Researcher Ranked Among Most Influential U.S. Education Scholars</a> — UMD College of Education (February 2026)<span class="pub-note">On David's first appearance in the RHSU Edu-Scholar Public Influence Rankings (Education Week)</span></li>
 <li><a href="https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win">This Maryland "Grow Your Own" Teacher Program May Be a Win-Win-Win</a> — Thomas B. Fordham Institute commentary on David's research (May 2024)</li>
 </ul>
 
-<span style="color:#6b6b6b; font-size:0.85rem;">This list is illustrative, not comprehensive — add press hits and interviews as they come up.</span>
+<span style="color:#6b6b6b; font-size:0.85rem;">Selected coverage. Media inquiries are welcome at <a href="mailto:dblazar@umd.edu">dblazar@umd.edu</a>.</span>

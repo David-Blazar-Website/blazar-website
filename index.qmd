@@ -19,9 +19,11 @@ page-layout: article
 :::
 :::
 
-David Blazar is the Malen Professor for Urban Education Policy and an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park, where he also directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep), serves as principal investigator for the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/), and holds an affiliate appointment in the School of Public Policy. His research examines the effective, efficient, and equitable allocation of resources in schools — particularly resources related to teachers — spanning three broad areas: the characteristics of effective teachers and teaching practices; whether and how instructional resources such as coaching, curricula, and evaluation systems improve teacher practice and student outcomes; and the labor market policies and practices that shape who becomes, and remains, a teacher.
+David Blazar is the Malen Professor for Urban Education Policy and an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park. He directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep), leads the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/) as principal investigator, and holds an affiliate appointment in the School of Public Policy.
 
-Before entering academia, David taught high school English Language Arts in New York City. He holds a doctorate in Quantitative Policy Analysis in Education and a master's degree in Education Policy and Management, both from the Harvard Graduate School of Education.
+His research asks how schools can use their resources, and especially their teachers, effectively and equitably. He studies what effective teachers do in the classroom, whether supports such as coaching, curricula, and evaluation actually improve teaching and student learning, and how labor market policies shape who enters teaching and who stays.
+
+David began his career teaching high school English in New York City. He earned his doctorate in Quantitative Policy Analysis in Education and his master's in Education Policy and Management at the Harvard Graduate School of Education.
 
 <div class="tag-row">
 <span class="tag-chip">Teacher effectiveness</span>
@@ -176,7 +178,7 @@ February 2026
 })();
 </script>
 
-<span style="color:#6b6b6b; font-size:0.85rem;">More press mentions and public writing on the [Media](media.qmd) page.</span>
+<span style="color:#6b6b6b; font-size:0.85rem;">See the [Media](media.qmd) page for more coverage and public writing.</span>
 
 <hr class="section-rule">
 

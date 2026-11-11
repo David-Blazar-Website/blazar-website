@@ -1,0 +1,283 @@
+/* Layout tweaks and homepage-specific components not covered by scss:rules */
+
+.content {
+  max-width: 900px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1.5rem 0 2.5rem 0;
+  flex-wrap: wrap;
+}
+
+.hero-photo {
+  flex: 0 0 auto;
+}
+
+.hero-photo img,
+.hero-photo .avatar-placeholder {
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 6px 24px rgba(31, 36, 33, 0.12);
+}
+
+.hero-text {
+  flex: 1 1 320px;
+}
+
+.hero-text h1 {
+  margin-bottom: 0.15rem;
+}
+
+.hero-title {
+  font-size: 1.15rem;
+  color: #5a5a5a;
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+}
+
+/* ---------- Tag chips (research interests) ---------- */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.tag-chip {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(181, 80, 45, 0.1);
+  color: #953f21;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(181, 80, 45, 0.18);
+}
+
+/* ---------- Section divider ---------- */
+.section-rule {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.09);
+  margin: 2.5rem 0;
+}
+
+/* ---------- Connect card ---------- */
+.connect-card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0;
+}
+
+.connect-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+  margin-top: 0.75rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.connect-links li {
+  margin: 0;
+}
+
+.connect-links a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.connect-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Publication list ---------- */
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pub-list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  line-height: 1.55;
+}
+
+.pub-list li:first-child {
+  padding-top: 0;
+}
+
+.pub-note {
+  display: block;
+  font-size: 0.85rem;
+  color: #953f21;
+  margin-top: 0.15rem;
+}
+
+.pub-authors {
+  color: #4a4a4a;
+}
+
+/* ---------- Callout / editor note ---------- */
+.editor-note {
+  background: #FFF6EC;
+  border: 1px solid #EFD8B8;
+  border-left: 4px solid #B5502D;
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.92rem;
+  margin: 1.5rem 0 2rem 0;
+  color: #4a3a2b;
+}
+
+.editor-note strong {
+  color: #953f21;
+}
+
+/* ---------- Buttons ---------- */
+.btn-accent {
+  display: inline-block;
+  background: #B5502D;
+  color: #fff !important;
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.btn-accent:hover {
+  background: #953f21;
+}
+
+.btn-outline {
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.2);
+  color: #232323 !important;
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.btn-outline:hover {
+  border-color: #B5502D;
+  color: #B5502D !important;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .tag-row {
+    justify-content: center;
+  }
+}
+
+/* ---------- In the News carousel (horizontal) ---------- */
+.news-carousel {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.news-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 0.15rem 0.15rem 0.9rem 0.15rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(181, 80, 45, 0.4) transparent;
+}
+
+.news-track::-webkit-scrollbar {
+  height: 6px;
+}
+
+.news-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-track::-webkit-scrollbar-thumb {
+  background-color: rgba(181, 80, 45, 0.35);
+  border-radius: 3px;
+}
+
+.news-track::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(181, 80, 45, 0.6);
+}
+
+.news-card-h {
+  flex: 0 0 210px;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid #B5502D;
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.news-card-h:hover {
+  box-shadow: 0 6px 18px rgba(31, 36, 33, 0.08);
+  transform: translateY(-1px);
+}
+
+.news-outlet-h {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #953f21;
+}
+
+.news-headline-h {
+  flex-grow: 1;
+}
+
+.news-headline-h a {
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 0.92rem;
+}
+
+.news-date-h {
+  font-size: 0.78rem;
+  color: #8a8a8a;
+}
+
+.news-scroll-fade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0.9rem;
+  width: 48px;
+  background: linear-gradient(to right, rgba(250, 246, 239, 0), #FAF6EF);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.news-scroll-fade.is-visible {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .news-card-h {
+    flex-basis: 190px;
+  }
+}

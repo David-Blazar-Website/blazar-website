@@ -1,6 +1,17 @@
 ---
 title: ""
 page-layout: article
+listing:
+  - id: carousel
+    contents:
+      - data/research.yml
+      - data/media.yml
+    include:
+      featured: true
+    sort: "date desc"
+    max-items: 8
+    type: custom
+    template: _listings/carousel.ejs
 ---
 
 ::: {.hero}
@@ -12,12 +23,29 @@ page-layout: article
 # David Blazar
 
 <div class="hero-title">Malen Professor for Urban Education Policy<br>College of Education, University of Maryland, College Park</div>
+<div class="hero-roles">Faculty Director, <a href="https://education.umd.edu/research/centers/mep">Maryland Equity Project</a> · Research Branch PI, <a href="https://mldscenter.maryland.gov/">Maryland Longitudinal Data System Center</a></div>
 
-<a class="btn-accent" href="mailto:dblazar@umd.edu">Email</a>&nbsp;
-<a class="btn-outline" href="files/David-Blazar-CV.pdf">Download CV</a>&nbsp;
-<a class="btn-outline" href="https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en">Google Scholar</a>
+<div class="social-row">
+<a class="social-btn" href="mailto:dblazar@umd.edu"><i class="bi bi-envelope-fill"></i><span>Email</span></a>
+<a class="social-btn" href="https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en"><i class="bi bi-mortarboard-fill"></i><span>Google Scholar</span></a>
+<a class="social-btn" href="https://bsky.app/profile/davidblazar.bsky.social"><i class="bi bi-bluesky"></i><span>Bluesky</span></a>
+<a class="social-btn" href="https://www.linkedin.com/in/david-blazar-69958ba"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a>
+<a class="social-btn" href="https://edworkingpapers.com/users/david-blazar"><i class="bi bi-file-earmark-text-fill"></i><span>EdWorkingPapers</span></a>
+<a class="social-btn social-btn-accent" href="files/David-Blazar-CV.pdf"><i class="bi bi-download"></i><span>CV</span></a>
+</div>
 :::
 :::
+
+<div class="section-kicker">Latest</div>
+
+::: {#carousel}
+:::
+
+<div class="carousel-more"><a href="research.qmd">All research →</a><a href="media.qmd">All media →</a></div>
+
+<hr class="section-rule">
+
+## About
 
 David Blazar is the Malen Professor for Urban Education Policy and an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park. He directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep), leads the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/) as principal investigator, and holds an affiliate appointment in the School of Public Policy.
 
@@ -33,165 +61,3 @@ David began his career teaching high school English in New York City. He earned 
 <span class="tag-chip">Causal inference</span>
 <span class="tag-chip">Education policy</span>
 </div>
-
-<hr class="section-rule">
-
-## In the News
-
-<div class="news-carousel">
-<div class="news-track">
-
-::: {.news-card-h}
-::: {.news-outlet-h}
-K-12 Dive
-:::
-::: {.news-headline-h}
-[The Emerging Promise of Teacher Apprenticeship Programs](https://www.k12dive.com/news/the-emerging-promise-of-teacher-apprenticeship-programs/828540/)
-:::
-::: {.news-date-h}
-August 2026
-:::
-:::
-
-::: {.news-card-h}
-::: {.news-outlet-h}
-The Hill
-:::
-::: {.news-headline-h}
-[Congress Debates Childhood by Budget Lines. Children Don't Live That Way.](https://thehill.com/opinion/congress-blog/economy-budget/6017347-childhood-investment-gap-analysis/)
-:::
-::: {.news-date-h}
-August 2026
-:::
-:::
-
-::: {.news-card-h}
-::: {.news-outlet-h}
-Spotlight on Poverty
-:::
-::: {.news-headline-h}
-[New Study Examines the Investment Gap for Children in Poverty](https://spotlightonpoverty.org/spotlight-exclusives/new-study-examines-the-investment-gap-for-children-in-poverty)
-:::
-::: {.news-date-h}
-May 2026
-:::
-:::
-
-::: {.news-card-h}
-::: {.news-outlet-h}
-Chalkbeat
-:::
-::: {.news-headline-h}
-[For Children in Poverty, the Biggest Resource Gaps Are Outside of School](https://www.chalkbeat.org/2026/04/21/poor-children-face-investment-and-resource-gaps-outside-school/)
-:::
-::: {.news-date-h}
-April 2026
-:::
-:::
-
-::: {.news-card-h}
-::: {.news-outlet-h}
-K-12 Dive
-:::
-::: {.news-headline-h}
-[Maryland Sees Return on Investment in Grow-Your-Own Programs](https://www.k12dive.com/news/maryland-sees-return-on-investment-in-grow-your-own-programs/815602/)
-:::
-::: {.news-date-h}
-March 2026
-:::
-:::
-
-::: {.news-card-h}
-::: {.news-outlet-h}
-JPAM's Closer Look (Podcast)
-:::
-::: {.news-headline-h}
-[The Teacher Academy of Maryland: A Grow-Your-Own (GYO) Teacher Program](https://www.appam.org/news-publications/jpam/jpam-closer-look-podcast/)
-:::
-::: {.news-date-h}
-February 2026
-:::
-:::
-
-::: {.news-card-h}
-::: {.news-outlet-h}
-UMD College of Education
-:::
-::: {.news-headline-h}
-[The Teacher Academy of Maryland: A Grow-Your-Own (GYO) Teacher Program](https://education.umd.edu/news/02-25-26-teacher-academy-maryland-grow-your-own-gyo-teacher-program)
-:::
-::: {.news-date-h}
-February 2026
-:::
-:::
-
-::: {.news-card-h}
-::: {.news-outlet-h}
-UMD College of Education
-:::
-::: {.news-headline-h}
-[Dean and Education Policy Researcher Ranked Among Most Influential U.S. Education Scholars](https://education.umd.edu/news/02-17-26-umd-college-education-dean-and-education-policy-researcher-ranked-among-most)
-:::
-::: {.news-date-h}
-February 2026
-:::
-:::
-
-
-</div>
-<div class="news-scroll-fade" aria-hidden="true"></div>
-</div>
-
-<script>
-(function () {
-  var track = document.querySelector('.news-track');
-  var fade = document.querySelector('.news-scroll-fade');
-  if (!track || !fade) return;
-
-  function update() {
-    var hasMore = track.scrollWidth - track.scrollLeft - track.clientWidth > 4;
-    fade.classList.toggle('is-visible', hasMore);
-  }
-  update();
-  track.addEventListener('scroll', update);
-  window.addEventListener('resize', update);
-
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduceMotion) {
-    var timer = null;
-    function step() {
-      var card = track.querySelector('.news-card-h');
-      var gap = 16;
-      var amount = card ? card.getBoundingClientRect().width + gap : 226;
-      var atEnd = track.scrollWidth - track.scrollLeft - track.clientWidth < 4;
-      track.scrollTo({ left: atEnd ? 0 : track.scrollLeft + amount, behavior: 'smooth' });
-    }
-    function start() { stop(); timer = setInterval(step, 3500); }
-    function stop() { if (timer) clearInterval(timer); timer = null; }
-    start();
-    track.addEventListener('mouseenter', stop);
-    track.addEventListener('mouseleave', start);
-    track.addEventListener('touchstart', stop, { passive: true });
-    track.addEventListener('focusin', stop);
-    track.addEventListener('focusout', start);
-  }
-})();
-</script>
-
-<span style="color:#6b6b6b; font-size:0.85rem;">See the [Media](media.qmd) page for more coverage and public writing.</span>
-
-<hr class="section-rule">
-
-::: {.connect-card}
-### Connect
-
-<ul class="connect-links">
-<li>📧 <a href="mailto:dblazar@umd.edu">dblazar@umd.edu</a></li>
-<li>🦋 <a href="https://bsky.app/profile/davidblazar.bsky.social">Bluesky</a></li>
-<li>💼 <a href="https://www.linkedin.com/in/david-blazar-69958ba">LinkedIn</a></li>
-<li>🎓 <a href="https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en">Google Scholar</a></li>
-<li>📄 <a href="https://edworkingpapers.com/users/david-blazar">EdWorkingPapers</a></li>
-<li>🏛️ <a href="https://education.umd.edu/directory/david-blazar">UMD Faculty Profile</a></li>
-<li>📍 <a href="https://education.umd.edu/research/centers/mep">Maryland Equity Project</a></li>
-</ul>
-:::

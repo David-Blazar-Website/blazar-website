@@ -1,0 +1,32 @@
+<%
+const bold = (a) => (a || "").replace("Blazar, D.", "<strong>Blazar, D.</strong>");
+%>
+<ul class="paper-list">
+<% for (const item of items) {
+const working = item.status === "working";
+let source = "";
+if (!working) {
+source = "<em>" + item.journal;
+if (item.volume) source += ", " + item.volume + "</em>" + (item.issue ? "(" + item.issue + ")" : "");
+else source += "</em>";
+if (item.pages) source += ", " + item.pages;
+source += ".";
+if (item.online) source += " Advance online publication.";
+}
+%>
+<li class="paper" id="<%- item.id %>">
+<a class="paper-thumb" <% if (item.link) { %>href="<%= item.link %>"<% } %> tabindex="-1" aria-hidden="true"><img src="<%= item.image %>" alt="" loading="lazy"></a>
+<div class="paper-body">
+<p class="paper-cite"><%= bold(item.authors) %> (<%- working ? "Working paper" : item.year %>). <% if (working) { %><em><%- item.title %></em>.<% } else { %><%- item.title %>. <%= source %><% } %></p>
+<% if (item.note) { %><p class="paper-note"><%- item.note %></p><% } %>
+<% if (item.link || item.oa_link) { %>
+<div class="paper-links">
+<% if (item.link) { %><a class="paper-btn" href="<%= item.link %>"><%- working ? "Read the working paper" : "Read the paper" %></a><% } %>
+<% if (item.oa_link) { %><a class="paper-btn paper-btn-quiet" href="<%= item.oa_link %>">Free PDF</a><% } %>
+<% if (item.open_access) { %><span class="oa-badge">Open access</span><% } %>
+</div>
+<% } %>
+</div>
+</li>
+<% } %>
+</ul>

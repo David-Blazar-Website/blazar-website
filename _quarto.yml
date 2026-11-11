@@ -4,7 +4,7 @@ project:
 
 website:
   title: "David Blazar"
-  site-url: "https://wesleytmorris.com/blazar-website"
+  site-url: "https://david-blazar-website.github.io/blazar-website"
   description: "David Blazar, Associate Professor of Education Policy, University of Maryland College of Education"
   favicon: files/favicon.svg
   navbar:

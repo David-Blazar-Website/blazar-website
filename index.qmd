@@ -1,6 +1,6 @@
 ---
 title: ""
-page-layout: article
+page-layout: full
 listing:
   - id: carousel
     contents:
@@ -14,7 +14,7 @@ listing:
     template: _listings/carousel.ejs
 ---
 
-::: {.hero}
+::: {.hero .column-page}
 ::: {.hero-photo}
 <img src="files/headshot.jpg" alt="David Blazar">
 :::
@@ -23,7 +23,7 @@ listing:
 # David Blazar
 
 <div class="hero-title">Malen Professor for Urban Education Policy<br>College of Education, University of Maryland, College Park</div>
-<div class="hero-roles">Faculty Director, <a href="https://education.umd.edu/research/centers/mep">Maryland Equity Project</a> · Research Branch PI, <a href="https://mldscenter.maryland.gov/">Maryland Longitudinal Data System Center</a></div>
+<div class="hero-roles">Faculty Director, <a href="https://education.umd.edu/research/centers/mep">Maryland Equity Project</a></div>
 
 <div class="social-row">
 <a class="social-btn" href="mailto:dblazar@umd.edu"><i class="bi bi-envelope-fill"></i><span>Email</span></a>
@@ -36,22 +36,15 @@ listing:
 :::
 :::
 
-<div class="section-kicker">Latest</div>
-
-::: {#carousel}
-:::
-
-<div class="carousel-more"><a href="research.qmd">All research →</a><a href="media.qmd">All media →</a></div>
-
-<hr class="section-rule">
-
+::: {.home-grid .column-page}
+::: {.home-about}
 ## About
 
-David Blazar is the Malen Professor for Urban Education Policy and an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park. He directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep), leads the research branch of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/) as principal investigator, and holds an affiliate appointment in the School of Public Policy.
+David Blazar is the Malen Professor for Urban Education Policy and an Associate Professor of Education Policy in the College of Education at the University of Maryland, College Park. He directs the [Maryland Equity Project](https://education.umd.edu/research/centers/mep), holds affiliate appointments in the School of Public Policy and the Department of Economics, and is a member of the research team of the [Maryland Longitudinal Data System](https://mldscenter.maryland.gov/).
 
 His research asks how schools can use their resources, and especially their teachers, effectively and equitably. He studies what effective teachers do in the classroom, whether supports such as coaching, curricula, and evaluation actually improve teaching and student learning, and how labor market policies shape who enters teaching and who stays.
 
-David began his career teaching high school English in New York City. He earned his doctorate in Quantitative Policy Analysis in Education and his master's in Education Policy and Management at the Harvard Graduate School of Education.
+David began his career teaching high school English in New York City. He earned his doctorate in Quantitative Policy Analysis in Education and his master’s in Education Policy and Management at the Harvard Graduate School of Education.
 
 <div class="tag-row">
 <span class="tag-chip">Teacher effectiveness</span>
@@ -61,3 +54,14 @@ David began his career teaching high school English in New York City. He earned 
 <span class="tag-chip">Causal inference</span>
 <span class="tag-chip">Education policy</span>
 </div>
+:::
+
+::: {.home-latest}
+<div class="section-kicker">Latest</div>
+
+::: {#carousel}
+:::
+
+<div class="carousel-more"><a href="research.qmd">All research →</a><a href="media.qmd">All media →</a></div>
+:::
+:::

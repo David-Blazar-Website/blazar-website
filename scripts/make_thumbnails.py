@@ -140,20 +140,37 @@ def finding_chart(item):
     n = len(bars)
     slot = (bottom - top) / n
     bh = min(46, slot * 0.62)
-    label_w = 230
+    label_w = min(380, max(150, 12.6 * max(len(str(b[0])) for b in bars) + 20))
     x0, x1 = 40 + label_w, W - 130
-    vmax = max(v for _, v in bars)
+    vmax = max(b[1] for b in bars)
     unit = f.get("unit", "")
-    for i, (lab, v) in enumerate(bars):
+    for i, bar in enumerate(bars):
+        lab, v = bar[0], bar[1]
+        fill = c if len(bar) < 3 or bar[2] == "a" else MUTED
         y = top + i * slot + (slot - bh) / 2
         w = max(6, (x1 - x0) * v / vmax)
         s += f'<text x="{x0-16}" y="{y+bh/2+9}" text-anchor="end" font-family="{SANS}" font-size="25" fill="{INK}">{esc(lab)}</text>'
-        s += f'<path d="M{x0} {y} h{w-4} a4 4 0 0 1 4 4 v{bh-8} a4 4 0 0 1 -4 4 h{-(w-4)} Z" fill="{c}"/>'
+        s += f'<path d="M{x0} {y} h{w-4} a4 4 0 0 1 4 4 v{bh-8} a4 4 0 0 1 -4 4 h{-(w-4)} Z" fill="{fill}"/>'
         val = f"{v:g}{unit}"
         s += f'<text x="{x0+w+12}" y="{y+bh/2+10}" font-family="{SANS}" font-size="28" font-weight="700" fill="{INK}">{esc(val)}</text>'
     s += f'<line x1="{x0}" y1="{top-6}" x2="{x0}" y2="{bottom+4}" stroke="{MUTED}" stroke-opacity="0.5" stroke-width="2"/>'
     if f.get("note"):
         s += f'<text x="40" y="{H-22}" font-family="{SANS}" font-size="20" fill="{MUTED}">{esc(f["note"])}</text>'
+    return s + "</svg>"
+
+
+def stat_card(item):
+    """A single headline number. finding: {kind: stat, value, caption}"""
+    f = item["finding"]
+    bg, c, label = TOPICS[item.get("topic", "methods")]
+    s = svg_open(bg)
+    s += f'<text x="48" y="78" font-family="{SANS}" font-size="24" font-weight="600" letter-spacing="2" fill="{c}">{esc(label.upper())}</text>'
+    size = 150 if len(f["value"]) <= 8 else 112
+    s += f'<text x="44" y="250" font-family="{SERIF}" font-size="{size}" font-weight="700" fill="{c}">{esc(f["value"])}</text>'
+    y = 320
+    for line in wrap(f["caption"], 46)[:4]:
+        s += f'<text x="48" y="{y}" font-family="{SANS}" font-size="27" fill="{INK}">{esc(line)}</text>'
+        y += 38
     return s + "</svg>"
 
 
@@ -169,7 +186,7 @@ def media_card(item):
     for line in lines:
         s += f'<text x="64" y="{y:.0f}" font-family="{SERIF}" font-size="{size}" font-weight="600" fill="#FFFFFF">{esc(line)}</text>'
         y += size * 1.1
-    s += f'<text x="64" y="{H-64}" font-family="{SANS}" font-size="24" fill="#FFFFFF" fill-opacity="0.8">{esc(item.get("date_label", ""))}</text>'
+    s += f'<text x="64" y="{H-64}" font-family="{SANS}" font-size="24" fill="#FFFFFF" fill-opacity="0.8">{esc(item.get("date_label") or "")}</text>'
     return s + "</svg>"
 
 
@@ -180,7 +197,8 @@ def main():
         out = item["image"]
         if out in KEEP:
             continue
-        svg = finding_chart(item) if item.get("finding") else topic_card(item)
+        f = item.get("finding")
+        svg = (stat_card(item) if f.get("kind") == "stat" else finding_chart(item)) if f else topic_card(item)
         open(out, "w").write(svg)
     for item in yaml.safe_load(open("data/media.yml")):
         out = item["image"]

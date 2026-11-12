@@ -5,6 +5,7 @@ Personal academic website for David Blazar (University of Maryland College of Ed
 - **Repo:** https://github.com/David-Blazar-Website/blazar-website. The org owners are David Blazar (`davidblazar`) and Wesley Morris (`WesleyTMorris`).
 - **Live site:** https://davidblazar.com once DNS is switched over (held until David approves launch). The default address, https://david-blazar-website.github.io/blazar-website/, redirects there.
 - More than one person edits this repo, so **always `git pull` before changing anything.**
+- **Read `DECISIONS.md` first.** It records what David has decided about the site (structure, link rules, what goes where). Add to it when he makes a new call.
 
 ## Workflow
 
@@ -59,10 +60,11 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 - **Don't add facts that aren't confirmed.** Titles, dates, grant amounts, co-authors and journal details must come from David's CV, the publication itself or another source David has confirmed. If something is uncertain, ask rather than guess.
 - When a working paper is published, change its `status` to `published`, add the journal details and link, and move it into the published block.
 - Working papers listed on the site must also be on David's CV.
-- When you replace the CV, replace `files/David-Blazar-CV.pdf`. The editable Word version is kept in David's "Personal Website" Claude project, not in this public repo.
+- When you replace the CV, replace `files/David-Blazar-CV.pdf`. The editable Word version is in David's local folder (Documents/Claude/Personal Website), not in this public repo.
 
 ## To-do
 - [ ] **Custom domain** `davidblazar.com` (GoDaddy). Done: `site-url` set; domain verified at the org level (TXT record `_github-pages-challenge-david-blazar-website`, keep it); custom domain entered in repo Settings → Pages. Remaining, only when David approves launch: at GoDaddy delete the "WebsiteBuilder Site" A record, add A records for `@` → 185.199.108.153, .109.153, .110.153, .111.153, and point `www` (CNAME) to `david-blazar-website.github.io`; then turn on Enforce HTTPS. Don't touch other records. No `CNAME` file is needed with Actions deploys.
 - [ ] Higher-resolution headshot (the current one is 260×260 px, from the UMD directory).
 - [ ] Confirm the Bluesky handle (`davidblazar.bsky.social`) and the other social links; consider adding ORCID.
-- [ ] Replace topic icons with key-finding charts as David supplies paper PDFs or figures (add a `finding:` block per paper).
+- [ ] Key-finding visuals: 11 papers have them; the rest use topic icons. Paper PDFs are in David's local folder (Documents/Claude/Personal Website/Papers).
+- [ ] Accepted manuscripts for paywalled papers with no free version (rule c in DECISIONS.md), hosted in `files/papers/`.

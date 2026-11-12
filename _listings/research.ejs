@@ -13,18 +13,23 @@ if (item.pages) source += ", " + item.pages;
 source += ".";
 if (item.online) source += " Advance online publication.";
 }
+const thumbHref = item.open_access ? item.link : (item.free_link || item.manuscript || item.link);
 %>
 <li class="paper" id="<%- item.id %>">
-<a class="paper-thumb" <% if (item.link) { %>href="<%= item.link %>"<% } %> tabindex="-1" aria-hidden="true"><img src="<%= item.image %>" alt="" loading="lazy"></a>
+<a class="paper-thumb" <% if (thumbHref) { %>href="<%= thumbHref %>"<% } %> tabindex="-1" aria-hidden="true"><img src="<%= item.image %>" alt="" loading="lazy"></a>
 <div class="paper-body">
 <p class="paper-cite"><%= bold(item.authors) %> (<%- working ? "Working paper" : item.year %>). <% if (working) { %><em><%- item.title %></em>.<% } else { %><%- item.title %>. <%= source %><% } %></p>
 <% if (item.note) { %><p class="paper-note"><%- item.note %></p><% } %>
-<% if (item.link || item.oa_link) { %>
+<% if (item.link || item.free_link || item.manuscript) { %>
 <div class="paper-links">
-<% if (item.link) { %><a class="paper-btn" href="<%= item.link %>"><%- working ? "Read the working paper" : "Read the paper" %></a><% } %>
-<% if (item.oa_link) { %><a class="paper-btn paper-btn-quiet" href="<%= item.oa_link %>">Free PDF</a><% } %>
-<% if (item.open_access) { %><span class="oa-badge">Open access</span><% } %>
+<% if (working && item.link) { %><a class="paper-btn" href="<%= item.link %>">Read the working paper</a><% } %>
+<% if (!working && item.open_access) { %><a class="paper-btn" href="<%= item.link %>">Read the paper</a><span class="oa-badge">Open access</span><% } %>
+<% if (!working && !item.open_access && (item.free_link || item.manuscript)) { %><a class="paper-btn" href="<%= item.free_link || item.manuscript %>">Free version<% if (item.free_label) { %> · <%- item.free_label %><% } %></a><% } %>
+<% if (!working && !item.open_access && item.link) { %><a class="paper-btn paper-btn-quiet" href="<%= item.link %>">Journal version</a><% if (!(item.free_link || item.manuscript)) { %><span class="paywall-note">Subscription may be required</span><% } %><% } %>
 </div>
+<% } %>
+<% if (item.related) { %>
+<p class="paper-related">Related: <% item.related.forEach((r, k) => { %><%- k ? " · " : "" %><a href="<%= r.link %>"><%- r.label %></a><% }) %></p>
 <% } %>
 </div>
 </li>

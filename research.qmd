@@ -10,43 +10,10 @@ listing:
     sort: false
     type: custom
     template: _listings/research.ejs
-  - id: pub-workforce
+  - id: published
     contents: data/research.yml
     include:
       status: published
-      area: workforce
-    sort: false
-    type: custom
-    template: _listings/research.ejs
-  - id: pub-development
-    contents: data/research.yml
-    include:
-      status: published
-      area: development
-    sort: false
-    type: custom
-    template: _listings/research.ejs
-  - id: pub-teaching
-    contents: data/research.yml
-    include:
-      status: published
-      area: teaching
-    sort: false
-    type: custom
-    template: _listings/research.ejs
-  - id: pub-resources
-    contents: data/research.yml
-    include:
-      status: published
-      area: resources
-    sort: false
-    type: custom
-    template: _listings/research.ejs
-  - id: pub-early
-    contents: data/research.yml
-    include:
-      status: published
-      area: early
     sort: false
     type: custom
     template: _listings/research.ejs
@@ -60,14 +27,22 @@ David's research draws on education policy and economics. Using large administra
 :::
 :::
 
-<nav class="topic-jump" aria-label="Research topics">
-<a href="#working-papers-section">Working papers</a>
-<a href="#workforce">Teacher labor markets and educator diversity</a>
-<a href="#development">Coaching, evaluation, and teacher development</a>
-<a href="#teaching">Effective teaching and its effects on students</a>
-<a href="#resources">Policy, resources, and student opportunity</a>
-<a href="#early">Earlier work</a>
-</nav>
+<div class="research-controls" hidden>
+<div class="rc-group" role="group" aria-label="Order papers by">
+<span class="rc-label">Order by</span>
+<button type="button" class="rc-btn" data-view="recent" aria-pressed="true">Most recent</button>
+<button type="button" class="rc-btn" data-view="topic" aria-pressed="false">Topic</button>
+</div>
+<div class="rc-group rc-topics" role="group" aria-label="Show topic">
+<span class="rc-label">Show</span>
+<button type="button" class="rc-btn" data-area="all" aria-pressed="true">All topics</button>
+<button type="button" class="rc-btn" data-area="workforce" aria-pressed="false">Teacher workforce & diversity</button>
+<button type="button" class="rc-btn" data-area="development" aria-pressed="false">Coaching & evaluation</button>
+<button type="button" class="rc-btn" data-area="teaching" aria-pressed="false">Effective teaching</button>
+<button type="button" class="rc-btn" data-area="resources" aria-pressed="false">Policy & resources</button>
+<button type="button" class="rc-btn" data-area="early" aria-pressed="false">Teaching English</button>
+</div>
+</div>
 
 ## Working Papers {#working-papers-section}
 
@@ -76,31 +51,9 @@ David's research draws on education policy and economics. Using large administra
 
 <hr class="section-rule">
 
-## Published Articles
+## Published Articles {#published-section}
 
-### Teacher labor markets and educator diversity {#workforce .topic-head}
-
-::: {#pub-workforce}
-:::
-
-### Coaching, evaluation, and teacher development {#development .topic-head}
-
-::: {#pub-development}
-:::
-
-### Effective teaching and its effects on students {#teaching .topic-head}
-
-::: {#pub-teaching}
-:::
-
-### Policy, resources, and student opportunity {#resources .topic-head}
-
-::: {#pub-resources}
-:::
-
-### Earlier work: Teaching English {#early .topic-head}
-
-::: {#pub-early}
+::: {#published}
 :::
 
 <p class="page-footnote">For the complete record, see the <a href="files/David-Blazar-CV.pdf">CV</a> or <a href="https://scholar.google.com/citations?user=W73YpjsAAAAJ&hl=en">Google Scholar</a>.</p>
@@ -125,5 +78,60 @@ cap.textContent = f ? f.textContent : '';
 dlg.showModal();
 });
 dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.closest('.card-viewer-close')) dlg.close(); });
+})();
+</script>
+
+<script>
+// Research page: order papers by date or by topic, and filter by topic (2026-11-12).
+// Without JavaScript the page shows every paper, newest first.
+(function () {
+var AREAS = [["workforce", "Teacher labor markets and educator diversity"], ["development", "Coaching, evaluation, and teacher development"], ["teaching", "Effective teaching and its effects on students"], ["resources", "Policy, resources, and student opportunity"], ["early", "Earlier work: Teaching English"]];
+var controls = document.querySelector('.research-controls');
+var pubList = document.querySelector('#listing-published .paper-list');
+if (!controls || !pubList) return;
+controls.hidden = false;
+var host = pubList.parentNode;
+var papers = Array.prototype.slice.call(pubList.children); // newest first
+var view = 'recent', area = 'all', topicWrap = null;
+function render() {
+  if (view === 'recent') {
+    if (topicWrap) { topicWrap.remove(); topicWrap = null; }
+    papers.forEach(function (p) { pubList.appendChild(p); });
+    pubList.hidden = false;
+  } else {
+    pubList.hidden = true;
+    if (!topicWrap) {
+      topicWrap = document.createElement('div');
+      AREAS.forEach(function (a) {
+        var items = papers.filter(function (p) { return p.dataset.area === a[0]; });
+        if (!items.length) return;
+        var h = document.createElement('h3');
+        h.className = 'topic-head'; h.id = 'topic-' + a[0]; h.dataset.area = a[0]; h.textContent = a[1];
+        var ul = document.createElement('ul'); ul.className = 'paper-list'; ul.dataset.area = a[0];
+        items.forEach(function (p) { ul.appendChild(p); });
+        topicWrap.appendChild(h); topicWrap.appendChild(ul);
+      });
+      host.appendChild(topicWrap);
+    }
+  }
+  document.querySelectorAll('.paper').forEach(function (p) { p.hidden = area !== 'all' && p.dataset.area !== area; });
+  if (topicWrap) topicWrap.querySelectorAll('[data-area]').forEach(function (el) { el.hidden = area !== 'all' && el.dataset.area !== area; });
+  var wp = document.getElementById('working-papers-section');
+  if (wp) { var any = wp.querySelector('.paper:not([hidden])'); wp.hidden = !any; var hr = wp.nextElementSibling; if (hr && hr.tagName === 'HR') hr.hidden = !any; }
+  controls.querySelectorAll('[data-view]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.view === view); });
+  controls.querySelectorAll('[data-area]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.area === area); });
+}
+controls.addEventListener('click', function (e) {
+  var b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.view) view = b.dataset.view;
+  if (b.dataset.area) area = b.dataset.area;
+  render();
+});
+// a topic tag on a paper shows just that topic
+document.addEventListener('click', function (e) {
+  var t = e.target.closest('.paper-tag'); if (!t) return;
+  e.preventDefault(); area = t.dataset.area; render();
+  controls.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
 })();
 </script>

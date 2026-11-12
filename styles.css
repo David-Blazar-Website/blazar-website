@@ -622,3 +622,15 @@ a.card-zoom:hover img { box-shadow: 0 0 0 2px #B5502D; }
 .card-viewer-caption { margin: 0.8rem 0 0 0; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 0.95rem; line-height: 1.5; color: #232323; }
 .card-viewer-close { position: absolute; top: 0.3rem; right: 0.5rem; border: none; background: transparent; font-size: 1.6rem; line-height: 1; color: #555; cursor: pointer; }
 .card-viewer-close:hover { color: #B5502D; }
+
+/* ---------- Research: order-by and topic controls, topic tags (2026-11-12) ---------- */
+.research-controls { display: flex; flex-wrap: wrap; gap: 0.6rem 1.5rem; align-items: center; margin: 1.4rem 0 1.4rem 0; padding: 0.8rem 1rem; background: #fff; border: 1px solid #ECE3D6; border-radius: 10px; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.rc-group { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.rc-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #7a7a7a; margin-right: 0.2rem; }
+.rc-btn { font-size: 0.84rem; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid #E3C9BC; background: #FAF6EF; color: #953f21; cursor: pointer; }
+.rc-btn:hover { border-color: #B5502D; }
+.rc-btn[aria-pressed="true"] { background: #B5502D; border-color: #B5502D; color: #fff; }
+.paper-tags { margin: 0.3rem 0 0 0; }
+.paper-tag { display: inline-block; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 0.72rem; padding: 0.12rem 0.55rem; border-radius: 999px; background: #F3E6DE; color: #953f21; text-decoration: none; }
+.paper-tag:hover { background: #B5502D; color: #fff; }
+.research-page [hidden] { display: none !important; }

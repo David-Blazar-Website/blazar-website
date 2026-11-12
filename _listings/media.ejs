@@ -2,7 +2,7 @@
 const bold = (a) => (a || "").replace("Blazar, D.", "<strong>Blazar, D.</strong>");
 const cta = { opinion: "Read", podcast: "Listen", news: "Read", brief: "Read" };
 // News shows the newest SHOW items; the rest open in place with the "Show all" button below the list.
-const SHOW = 6;
+const SHOW = 10;
 const fold = items.length > SHOW && items[0].type === "news";
 %>
 <ul class="media-list<%- fold ? ' is-folded' : '' %>">

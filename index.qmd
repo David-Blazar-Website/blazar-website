@@ -26,10 +26,10 @@ listing:
 <div class="hero-roles">Faculty Director, <a href="https://education.umd.edu/research/centers/mep">Maryland Equity Project</a></div>
 
 <div class="social-row">
-<a class="social-btn" href="mailto:dblazar@umd.edu"><i class="bi bi-envelope-fill"></i><span>Email</span></a>
-<a class="social-btn" href="https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en"><i class="bi bi-mortarboard-fill"></i><span>Google Scholar</span></a>
-<a class="social-btn" href="https://bsky.app/profile/davidblazar.bsky.social"><i class="bi bi-bluesky"></i><span>Bluesky</span></a>
+<a class="social-btn" href="mailto:dblazar@umd.edu" title="Email David"><i class="bi bi-envelope-fill"></i><span>dblazar@umd.edu</span></a>
+<a class="social-btn" href="https://scholar.google.com/citations?user=W73YpjsAAAAJ&hl=en"><i class="bi bi-mortarboard-fill"></i><span>Google Scholar</span></a>
 <a class="social-btn" href="https://www.linkedin.com/in/david-blazar-69958ba"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a>
+<a class="social-btn" href="https://bsky.app/profile/davidblazar.bsky.social"><i class="bi bi-bluesky"></i><span>Bluesky</span></a>
 <a class="social-btn" href="https://edworkingpapers.com/users/david-blazar"><i class="bi bi-file-earmark-text-fill"></i><span>EdWorkingPapers</span></a>
 <a class="social-btn social-btn-accent" href="files/David-Blazar-CV.pdf"><i class="bi bi-download"></i><span>CV</span></a>
 </div>
@@ -57,11 +57,10 @@ David began his career teaching high school English in New York City. He earned 
 :::
 
 ::: {.home-latest}
-<div class="section-kicker">Latest</div>
+<div class="latest-head"><h2 class="home-h2">Latest</h2><div class="carousel-more"><a href="research.qmd">All research →</a><a href="media.qmd">All media →</a></div></div>
 
 ::: {#carousel}
 :::
 
-<div class="carousel-more"><a href="research.qmd">All research →</a><a href="media.qmd">All media →</a></div>
 :::
 :::

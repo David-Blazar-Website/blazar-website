@@ -507,3 +507,51 @@ main.page-full .hero, main.page-full .home-grid {
   max-width: 1180px;
 }
 main.content.page-full { max-width: none; }
+
+/* ---------- Home: About and Latest share a heading style and height (2026-11-12) ---------- */
+.home-about h2, .home-latest h2.home-h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #232323;
+  margin: 0 0 0.75rem 0;
+  border: none;
+  padding: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (min-width: 992px) {
+  /* About is a little wider than Latest, and the carousel stretches to the About column's height */
+  .home-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2.5rem; align-items: stretch; }
+  .home-latest { display: flex; flex-direction: column; }
+  .home-latest #listing-carousel { flex: 1 1 auto; display: flex; flex-direction: column; }
+  .home-latest .feature-carousel { flex: 1 1 auto; display: flex; flex-direction: column; }
+  .home-latest .fc-viewport { flex: 1 1 auto; display: flex; }
+  .home-latest .fc-track { flex: 1 1 auto; width: 100%; }
+  .home-latest .fc-slide { grid-template-columns: 1.1fr 1fr; align-items: center; }
+  .home-latest .fc-media img { aspect-ratio: 16 / 10; }
+}
+
+.latest-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.latest-head .carousel-more { margin: 0; padding: 0; }
+
+/* ---------- Research page: denser list, two columns on wide screens (2026-11-12) ---------- */
+.research-page main.content { max-width: 1180px !important; margin-left: auto; margin-right: auto; }
+.research-page #title-block-header, .research-page main.content > * { grid-column: body-content-start / body-content-end; }
+.research-intro { max-width: 880px; }
+.research-page .paper { grid-template-columns: 132px 1fr; gap: 0.95rem; padding: 0.85rem 0; }
+.research-page .paper-thumb img { border-radius: 6px; }
+.research-page .paper-cite { font-size: 0.92rem; line-height: 1.45; }
+.research-page .paper-links { margin-top: 0.4rem; gap: 0.4rem; }
+.research-page .paper-btn { font-size: 0.78rem; padding: 0.22rem 0.6rem; }
+.research-page .paywall-note, .research-page .paper-related, .research-page .paper-note { font-size: 0.8rem; }
+@media (min-width: 1000px) {
+  .research-page .paper-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 2.5rem; }
+  .research-page .paper:first-child { padding-top: 0.85rem; }
+}
+@media (max-width: 576px) {
+  .research-page .paper { grid-template-columns: 96px 1fr; }
+  .research-page .paper-thumb img { max-width: 96px; }
+}
+.paper-links > p { display: contents; }
+.research-page .paper-related { margin-top: 0.35rem; }

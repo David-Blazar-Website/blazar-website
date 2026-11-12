@@ -1,5 +1,7 @@
 ---
 title: "Research"
+page-layout: full
+body-classes: research-page
 listing:
   - id: working-papers
     contents: data/research.yml
@@ -17,10 +19,12 @@ listing:
     template: _listings/research.ejs
 ---
 
-David's research draws on education policy and economics. Using large administrative datasets and, where possible, experimental or quasi-experimental designs, he studies what makes teaching effective and how policy can help schools recruit, develop, and keep a strong and diverse teaching workforce.
+::: {.research-intro}
+David's research draws on education policy and economics. Using large administrative datasets and, where possible, experimental or quasi-experimental designs, he studies what makes teaching effective and how policy can help schools recruit, develop, and keep a strong and racially diverse teaching workforce.
 
 ::: {.brief-note}
 **Short on time?** Shorter, plain-language versions of many of these studies are available from the [Maryland Equity Project](https://education.umd.edu/research/centers/mep) and the [Maryland Longitudinal Data System Center](https://mldscenter.maryland.gov/Research&ReportingSummaries.html).
+:::
 :::
 
 ## Working Papers
@@ -35,4 +39,4 @@ David's research draws on education policy and economics. Using large administra
 ::: {#published}
 :::
 
-<p class="page-footnote">For the complete record, see the <a href="files/David-Blazar-CV.pdf">CV</a> or <a href="https://scholar.google.com/citations?user=atIXv0UAAAAJ&hl=en">Google Scholar</a>.</p>
+<p class="page-footnote">For the complete record, see the <a href="files/David-Blazar-CV.pdf">CV</a> or <a href="https://scholar.google.com/citations?user=W73YpjsAAAAJ&hl=en">Google Scholar</a>.</p>

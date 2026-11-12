@@ -165,7 +165,7 @@ def stat_card(item):
     bg, c, label = TOPICS[item.get("topic", "methods")]
     s = svg_open(bg)
     s += f'<text x="48" y="78" font-family="{SANS}" font-size="24" font-weight="600" letter-spacing="2" fill="{c}">{esc(label.upper())}</text>'
-    size = 150 if len(f["value"]) <= 8 else 112
+    size = min(150, int((W - 90) / (0.6 * len(f["value"]))))
     s += f'<text x="44" y="250" font-family="{SERIF}" font-size="{size}" font-weight="700" fill="{c}">{esc(f["value"])}</text>'
     y = 320
     for line in wrap(f["caption"], 46)[:4]:
@@ -181,7 +181,9 @@ def media_card(item):
     s += f'<text x="64" y="104" font-family="{SANS}" font-size="26" font-weight="600" letter-spacing="3" fill="#FFFFFF" fill-opacity="0.85">{esc(label.upper())}</text>'
     outlet = item.get("outlet_short", item["outlet"])
     lines = wrap(outlet, 16)
-    size = 92 if len(lines) == 1 and len(outlet) <= 14 else 70
+    # size the outlet name so the longest line fits inside the frame (about 0.62 em per character)
+    longest = max(len(l) for l in lines)
+    size = min(92 if len(lines) == 1 else 70, int((W - 150) / (0.62 * longest)))
     y = 290 - (len(lines) - 1) * size * 0.55
     for line in lines:
         s += f'<text x="64" y="{y:.0f}" font-family="{SERIF}" font-size="{size}" font-weight="600" fill="#FFFFFF">{esc(line)}</text>'

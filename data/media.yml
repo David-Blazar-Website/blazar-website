@@ -111,6 +111,14 @@
   date_label: October 2016
   link: https://www.shankerinstitute.org/blog/social-and-emotional-skills-school-pivoting-accountability-development
   image: images/media/shanker-2016-sel.svg
+- id: faculti-staff-diversity
+  type: podcast
+  title: Staff diversity beyond teachers boosts minority student outcomes
+  outlet: Faculti
+  date: 2026-11-03
+  date_label: November 2026
+  link: https://faculti.net/staff-diversity-beyond-teachers-boosts-minority-student-outcomes
+  image: images/media/faculti-staff-diversity.svg
 - id: edsurge-2026-tutoring
   type: podcast
   title: What happens to high-impact tutoring when the pandemic money is gone?
@@ -130,14 +138,43 @@
   date_label: February 2026
   link: https://jpamscloserlook.podbean.com/e/the-teacher-academy-of-maryland-a-grow-your-own-gyo-teacher-program/
   image: images/media/jpam-2026-closer-look.svg
-- id: faculti-staff-diversity
-  type: podcast
-  title: Staff diversity beyond teachers boosts minority student outcomes
-  outlet: Faculti
-  date: '2026-01-01'
-  date_label: ''
-  link: https://faculti.net/staff-diversity-beyond-teachers-boosts-minority-student-outcomes
-  image: images/media/faculti-staff-diversity.svg
+- id: fordham-2026-localness
+  type: news
+  title: Hiring teachers from the local community may not always be the very best option
+  outlet: Thomas B. Fordham Institute
+  outlet_short: Fordham Institute
+  date: 2026-11-05
+  date_label: November 2026
+  link: https://fordhaminstitute.org/national/commentary/hiring-teachers-local-community-may-not-always-be-very-best-option
+  image: images/media/fordham-2026-localness.svg
+  featured: true
+  summary: 'Fordham on the Maryland teacher-localness study: local hires stay longer, but preparation predicts how well they teach.'
+- id: edweek-2026-coaching
+  type: news
+  title: A major teacher-coaching program flopped. What went wrong?
+  outlet: Education Week
+  date: 2026-10-27
+  date_label: October 2026
+  link: https://www.edweek.org/leadership/a-major-teacher-coaching-program-flopped-what-went-wrong/2026/10
+  image: images/media/edweek-2026-coaching.svg
+  featured: true
+  summary: Education Week on a large coaching program that showed no benefits; David notes that coaching effects tend to shrink as programs grow.
+- id: edweek-2026-academies
+  type: news
+  title: High school teacher academies work. But there’s a break in the pipeline
+  outlet: Education Week
+  date: 2026-09-21
+  date_label: September 2026
+  link: https://www.edweek.org/leadership/high-school-teacher-academies-work-but-theres-a-break-in-the-pipeline/2026/09
+  image: images/media/edweek-2026-academies.svg
+- id: futureed-2026-localness
+  type: news
+  title: 'Research notes: Local teacher hires stay longer, not necessarily more effective, study finds'
+  outlet: FutureEd
+  date: 2026-08-10
+  date_label: August 2026
+  link: https://www.future-ed.org/research-notes-local-teacher-hires-stay-longer-are-less-effective-study-finds/
+  image: images/media/futureed-2026-localness.svg
 - id: k12dive-2026-apprenticeship
   type: news
   title: The emerging promise of teacher apprenticeship programs
@@ -181,16 +218,30 @@
   date_label: April 2026
   link: https://www.chalkbeat.org/2026/04/21/poor-children-face-investment-and-resource-gaps-outside-school/
   image: images/media/chalkbeat-2026-resource-gaps.svg
-  featured: true
-  summary: 'Chalkbeat on the Nature Communications study: children from low-income families have roughly $80,000 less invested in them.'
 - id: edweek-2026-tam
   type: news
   title: This state invested in helping high schoolers become teachers. Did it work?
   outlet: Education Week
   date: 2026-04-09
   date_label: April 2026
-  link: https://education.umd.edu/news/04-09-26-state-invested-helping-high-schoolers-become-teachers-did-it-work
+  link: https://www.edweek.org/leadership/this-state-invested-in-helping-high-schoolers-become-teachers-did-it-work/2026/04
   image: images/media/edweek-2026-tam.svg
+- id: k12dive-2026-early-childhood
+  type: news
+  title: Gaps in early childhood investment drive up K-12 costs
+  outlet: K-12 Dive
+  date: 2026-04-09
+  date_label: April 2026
+  link: https://www.k12dive.com/news/gaps-in-early-childhood-investment-drive-up-k-12-costs/817097/
+  image: images/media/k12dive-2026-early-childhood.svg
+- id: umd-2026-investments
+  type: news
+  title: Young children from different backgrounds face large disparities in investments in education, well-being, UMD study finds
+  outlet: Maryland Today
+  date: 2026-03-31
+  date_label: March 2026
+  link: https://today.umd.edu/young-children-from-different-backgrounds-face-large-disparities-in-investments-in-education-well-being-umd-study-finds
+  image: images/media/umd-2026-investments.svg
 - id: k12dive-2026-gyo-roi
   type: news
   title: Maryland sees return on investment in grow-your-own programs
@@ -208,6 +259,31 @@
   link: https://education.umd.edu/news/02-17-26-umd-college-education-dean-and-education-policy-researcher-ranked-among-most
   note: On David’s first appearance in the RHSU Edu-Scholar Public Influence Rankings
   image: images/media/umd-2026-edu-scholar.svg
+- id: beacon-2025-dei
+  type: news
+  title: Kansas City Public Schools finds itself embroiled in a DEI fight
+  outlet: The Beacon (Kansas City)
+  outlet_short: The Beacon
+  date: 2025-03-20
+  date_label: March 2025
+  link: https://thebeaconnews.org/stories/2025/03/20/kansas-city-public-schools-targeted-by-dei-complaint/
+  image: images/media/beacon-2025-dei.svg
+- id: weareteachers-2024-black-teachers
+  type: news
+  title: New research says Black teachers have a profound impact on all students
+  outlet: We Are Teachers
+  date: 2024-08-13
+  date_label: August 2024
+  link: https://www.weareteachers.com/black-teachers-impact/
+  image: images/media/weareteachers-2024-black-teachers.svg
+- id: edweek-2024-pipeline
+  type: news
+  title: 4 keys to building a pipeline from high school to the teaching profession
+  outlet: Education Week
+  date: 2024-06-06
+  date_label: June 2024
+  link: https://www.edweek.org/leadership/4-keys-to-building-a-pipeline-from-high-school-to-the-teaching-profession/2024/06
+  image: images/media/edweek-2024-pipeline.svg
 - id: fordham-2024-gyo
   type: news
   title: This Maryland “grow your own” teacher program may be a win-win-win
@@ -217,6 +293,59 @@
   date_label: May 2024
   link: https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win
   image: images/media/fordham-2024-gyo.svg
+- id: cns-2024-blueprint
+  type: news
+  title: 'Maryland’s teacher shortage: Will the Blueprint’s plan for better pay, training do enough?'
+  outlet: Capital News Service
+  date: 2024-03-18
+  date_label: March 2024
+  link: https://baltimorefishbowl.com/stories/marylands-teacher-shortage-will-the-blueprints-plan-for-better-pay-training-do-enough/
+  note: Republished by Baltimore Fishbowl
+  image: images/media/cns-2024-blueprint.svg
+- id: nctq-2022-good-teaching
+  type: news
+  title: Measuring “good” teaching is complicated
+  outlet: National Council on Teacher Quality
+  outlet_short: NCTQ
+  date: 2022-11-17
+  date_label: November 2022
+  link: https://www.nctq.org/research-insights/measuring-good-teaching-is-complicated/
+  image: images/media/nctq-2022-good-teaching.svg
+- id: nctq-2022-coaches
+  type: news
+  title: If you want to help new teachers improve, invest in great coaches
+  outlet: National Council on Teacher Quality
+  outlet_short: NCTQ
+  date: 2022-04-28
+  date_label: April 2022
+  link: https://nctq.org/blog/If-you-want-to-help-new-teachers-improve,-invest-in-great-coaches
+  image: images/media/nctq-2022-coaches.svg
+- id: fordham-2022-teachers-of-color
+  type: news
+  title: Evidence suggests that teachers of color improve outcomes for students of all races
+  outlet: Thomas B. Fordham Institute
+  outlet_short: Fordham Institute
+  date: 2022-03-03
+  date_label: March 2022
+  link: https://fordhaminstitute.org/national/commentary/evidence-suggests-teachers-color-improve-outcomes-students-all-races
+  image: images/media/fordham-2022-teachers-of-color.svg
+- id: edweek-2018-coaching
+  type: news
+  title: Instructional coaching works, says a new analysis. But there’s a catch
+  outlet: Education Week
+  date: 2018-07-31
+  date_label: July 2018
+  link: https://www.edweek.org/leadership/instructional-coaching-works-says-a-new-analysis-but-theres-a-catch/2018/07
+  image: images/media/edweek-2018-coaching.svg
+- id: hechinger-2018-coaching
+  type: news
+  title: Does every teacher need a coach?
+  outlet: The Hechinger Report
+  outlet_short: Hechinger Report
+  date: 2018-03-05
+  date_label: March 2018
+  link: https://hechingerreport.org/every-teacher-need-coach/
+  image: images/media/hechinger-2018-coaching.svg
 - id: mlds-2024-gyo
   type: brief
   title: “Grow-your-own” programs can help expand and diversify the teacher workforce

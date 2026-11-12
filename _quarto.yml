@@ -31,12 +31,12 @@ website:
       - icon: envelope
         href: mailto:dblazar@umd.edu
         aria-label: Email
-      - icon: bluesky
-        href: https://bsky.app/profile/davidblazar.bsky.social
-        aria-label: Bluesky
       - icon: linkedin
         href: https://www.linkedin.com/in/david-blazar-69958ba
         aria-label: LinkedIn
+      - icon: bluesky
+        href: https://bsky.app/profile/davidblazar.bsky.social
+        aria-label: Bluesky
 
   page-footer:
     left: "© 2026 David Blazar"
@@ -44,12 +44,12 @@ website:
       - icon: envelope
         href: mailto:dblazar@umd.edu
         aria-label: Email
-      - icon: bluesky
-        href: https://bsky.app/profile/davidblazar.bsky.social
-        aria-label: Bluesky
       - icon: linkedin
         href: https://www.linkedin.com/in/david-blazar-69958ba
         aria-label: LinkedIn
+      - icon: bluesky
+        href: https://bsky.app/profile/davidblazar.bsky.social
+        aria-label: Bluesky
     background: light
 
 format:

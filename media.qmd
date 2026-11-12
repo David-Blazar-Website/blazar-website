@@ -22,13 +22,6 @@ listing:
     sort: "date desc"
     type: custom
     template: _listings/media.ejs
-  - id: briefs
-    contents: data/media.yml
-    include:
-      type: brief
-    sort: "date desc"
-    type: custom
-    template: _listings/media.ejs
 ---
 
 ::: {.press-card}
@@ -52,11 +45,4 @@ listing:
 ## In the News
 
 ::: {#news}
-:::
-
-<hr class="section-rule">
-
-## Policy Briefs
-
-::: {#briefs}
 :::

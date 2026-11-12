@@ -10,13 +10,14 @@ Standing decisions for davidblazar.com. Check this before changing the site, and
 ## Site structure
 - **Three pages: Home, Research, Media** (2026-11-11). The CV is a navbar link to the PDF, not a page. No Teaching page; grants, service and teaching live in the CV.
 - **Home** (2026-11-12), top to bottom:
-  1. Headshot, name, title, a single affiliation line linking only the **Maryland Equity Project** (no MLDS link in the header), and large social buttons (Email, Google Scholar, Bluesky, LinkedIn, EdWorkingPapers, CV).
-  2. **About and the Latest carousel side by side** on desktop, so the About text sits high on the page and the carousel is visible without scrolling. On phones the carousel comes right after the header, then About.
+  1. Headshot, name, title, a single affiliation line linking only the **Maryland Equity Project** (no MLDS link in the header), and large social buttons (Email, Google Scholar, LinkedIn, Bluesky, EdWorkingPapers, CV). LinkedIn comes before Bluesky everywhere (header buttons, navbar, footer). The email button shows the address itself. No ORCID (2026-11-12).
+  2. **About and the Latest carousel side by side** on desktop, so the About text sits high on the page and the carousel is visible without scrolling. On phones the carousel comes right after the header, then About. The carousel column is narrower than About, and the two end at the same height. "About" and "Latest" use the same heading style (2026-11-12).
 - **About text is David's wording** (2026-11-12). Don't rewrite it; only change it when he sends edits.
 - **Carousel** rotates three tags: *New research*, *Opinion*, *In the news* (podcasts are tagged *In the news*). It shows items marked `featured: true` in the data files, newest first, up to 8.
-- **Research page** (2026-11-11): note at the top pointing to the shorter versions on the Maryland Equity Project and MLDS Center sites; then Working Papers; then Published Articles, newest first. Full-length papers only.
-- **Media page** (2026-11-12): press-inquiries line (dblazar@umd.edu), then **Opinion & Commentary**, **Podcasts & Interviews**, **In the News** (its own section), and **Policy Briefs** (Maryland Equity Project and MLDS Center).
-- **Commentary lives on the Media page once and is cross-linked from Research** (2026-11-12). A paper's entry shows "Related" links to the op-eds, briefs and podcasts about it, so readers see them in both places. Each paper's `related:` list in `data/research.yml` holds a label and link for each piece. Only link a piece to a paper when the piece is clearly about that study.
+- **Research page** (2026-11-11): note at the top pointing to the shorter versions on the Maryland Equity Project and MLDS Center sites; then Working Papers; then Published Articles, newest first. Full-length papers only. The intro says "a strong and racially diverse teaching workforce" (2026-11-12). Entries are compact and run in two columns on wide screens, to cut scrolling (2026-11-12).
+- **Media page** (2026-11-12): press-inquiries line (dblazar@umd.edu), then **Opinion & Commentary**, **Podcasts & Interviews** and **In the News** (its own section).
+- **Policy briefs are off the Media page for now** (2026-11-12). David will revisit them after fixing the Maryland Equity Project site. The brief entries stay in `data/media.yml` (type `brief`) but aren't shown.
+- **Commentary lives on the Media page once and is cross-linked from Research** (2026-11-12). A paper's entry shows "Related" links to the op-eds, podcasts and news coverage about it (news added 2026-11-12), so readers see them in both places. Each paper's `related:` list in `data/research.yml` holds a label and link for each piece. Only link a piece to a paper when the piece is clearly about that study.
 - **Maryland Equity Project briefs are listed without links for now** (2026-11-12): David is refreshing the MEP website and brief formatting; add links after that.
 - External briefs and commentary (Brookings, Education Next, IZA World of Labor, Urban Institute, Albert Shanker Institute, The Conversation, The Hill) go under **Opinion & Commentary**. Only Maryland Equity Project and MLDS Center briefs go under **Policy Briefs**.
 
@@ -29,21 +30,22 @@ Standing decisions for davidblazar.com. Check this before changing the site, and
 - **Keep a copy of free versions on the site** (2026-11-12): free versions posted on sites David can't fix if they move (co-authors' sites, UMD, NSF PAR, CEPR reports) are hosted in `files/papers/` and linked there. EdWorkingPapers versions are linked directly, with no copy. A copy of each hosted file is in David's folder `Papers/Free Versions/`.
 - **File names** for free versions: `Authors_Year_Short-Title_Journal_Version.pdf`. Version is one of Accepted-Manuscript, Author-Manuscript, Earlier-Version, Working-Paper or CEPR-Report. Year and journal are those of the published article. Manuscripts made from David's Word files have a cover page with the version label, citation and DOI, and a title page with authors and affiliations as published. The cleaned Word files are in `Papers/Final Manuscripts/Cleaned/`.
 - Papers with no free version David can find (IJEMST 2018, English Education 2011, English Journal 2009) show only the journal link (2026-11-12).
-- Lagos & Blazar (2026, ER) links the 2021 EdWorkingPaper on ERIC (ED616814) as the free version, labeled as an earlier version (2026-11-12).
+- Lagos & Blazar (2026, ER) uses David's September 2025 manuscript, hosted in `files/papers/` and labeled "Author manuscript, earlier version" (2026-11-12). It replaces the 2021 ERIC working paper, whose findings differ.
 
 ## Content sourcing
 - Facts (titles, dates, co-authors, journal details) come from David's CV, the publication itself, or a source David confirms. If something is uncertain, ask.
 - Link the **original outlet** first. For a republished op-ed, mention a major republication (e.g., *The Washington Post*) as a second link; don't list minor republications.
 - Working papers on the site must also be on the CV.
+- **Unposted working papers are held back** (2026-11-12): David isn't ready to share working papers with no public version (teaching tradeoffs, expanding educational opportunity, service scholarships, aide-to-teacher pathways, Troyer paper). Their entries are in `data/research-pending.yml`; the monthly task moves each back into `data/research.yml` once it is publicly posted.
 - The CV PDF on the site is the current version (October 2026). The editable Word file and the paper PDFs are in David's local folder `Documents/Claude/Personal Website` (papers in `Papers/`, unposted working papers in `Papers/Working Papers/`), not in the public repo.
 - Working papers use the title on EdWorkingPapers (or the latest draft) when it differs from the CV; David updates the CV (2026-11-12). Current author orders come from David (e.g., the aide-to-teacher paper: Morris, Montana, Dominguez-Mel, Blazar).
 - Titles, pages and DOIs follow the published article when the CV differs (e.g., EFP 2020 "Can video technology improve teacher evaluations?").
 
 ## Visuals
-- **Research thumbnails:** a key-finding chart redrawn in the site's style from numbers in the paper itself; a topic icon until the paper's figure is made.
+- **Research thumbnails:** a key-finding chart or headline number redrawn in the site's style from numbers in the paper itself; a topic icon until one is made (22 papers had one as of 2026-11-12).
 - **Media thumbnails:** typographic cards naming the outlet, colored by type (2026-11-12, David approved). No photos taken from news articles (they're licensed to the publisher).
 - Palette and fonts: cream `#FAF6EF`, terracotta `#B5502D`, near-black `#232323`; Fraunces headings, Inter body.
 
 ## Upkeep
-- Weekly scheduled task (Mondays, 7:40 am ET): finds new op-eds, podcasts and press; rotates `featured` to keep the carousel fresh; opens a pull request.
-- Monthly scheduled task (1st, 8:17 am ET): checks EdWorkingPapers and journals for new or newly published papers; asks David whether he has new papers; opens a pull request.
+- Weekly scheduled task (Mondays, 7:40 am ET): finds new op-eds, podcasts and press; rotates `featured` to keep the carousel fresh; opens a pull request. Searches go beyond David's name to paper titles and topics, co-authors and a list of outlets, since coverage often names only the study (2026-11-12).
+- Monthly scheduled task (1st, 8:17 am ET): checks EdWorkingPapers, CALDER and journals for new or newly published papers, and whether any held-back working paper is now posted; asks David whether he has new papers; opens a pull request.

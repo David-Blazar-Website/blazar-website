@@ -57,7 +57,9 @@
 - id: wp-teacher-pay
   status: working
   title: 'Layered reforms and the structure of teacher pay: Descriptive evidence from Maryland'
-  authors: Morris, W., & Blazar, D.
+  authors: Morris, W. T., & Blazar, D.
+  link: https://caldercenter.org/publications/layered-reforms-and-structure-teacher-pay-descriptive-evidence-maryland
+  note: CALDER Working Paper No. 348-1126
   topic: pay
   finding:
     kind: stat

@@ -69,4 +69,4 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 - [ ] Key-finding visuals: 11 papers have them; the rest use topic icons. Paper PDFs are in David's local folder (Documents/Claude/Personal Website/Papers).
 - Free versions: eight accepted manuscripts are hosted in `files/papers/` (AJE 2017, EP 2017, ER 2015, ER 2020, EFP 2020, EEPA 2015, EER 2015, TCR 2020). IJEMST 2018, English Education 2011 and English Journal 2009 have no free version; David decided they show the journal link only (2026-11-12).
 - [ ] Not yet copied to `files/papers/` (Chrome blocked the downloads): the RER 2018 and EEPA 2017 manuscripts on matthewakraft.com, and the three Harvard CEPR working papers (AERJ 2016, Educational Assessment 2017 and 2012).
-- [ ] Figures missing from two manuscripts (the Word files have only placeholders or titles): EFP 2020 Figure 1; EEPA 2015 Figures 1–4.
+- Figures added from David's image files (2026-11-12): EFP 2020 Figure 1; EEPA 2015 Figures 1–4 (in a Figures section before the appendices, with the published captions).

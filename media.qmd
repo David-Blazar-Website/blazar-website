@@ -1,49 +1,50 @@
 ---
-title: "Media & Public Writing"
+title: "Media"
+page-layout: full
+body-classes: media-page
+listing:
+  - id: opinion
+    contents: data/media.yml
+    include:
+      type: opinion
+    sort: "date desc"
+    type: custom
+    template: _listings/media.ejs
+  - id: podcasts
+    contents: data/media.yml
+    include:
+      type: podcast
+    sort: "date desc"
+    type: custom
+    template: _listings/media.ejs
+  - id: news
+    contents: data/media.yml
+    include:
+      type: news
+    sort: "date desc"
+    type: custom
+    template: _listings/media.ejs
 ---
 
-David also writes for policymakers, practitioners, and the public, including applied briefs for the [Maryland Equity Project](https://education.umd.edu/research/centers/mep). That work is collected here. Peer-reviewed articles are on the [Research](research.qmd) page.
+::: {.press-card}
+**Press inquiries** are welcome. Please contact David at [dblazar@umd.edu](mailto:dblazar@umd.edu).
+:::
 
-## Policy Briefs — Maryland Equity Project
+## Opinion & Commentary
 
-<ul class="pub-list">
-<li>Bill, K., Blazar, D., Euzebio, D., &amp; Liu, J. (2024). <em>Raising teacher salaries is important. It may also require tradeoffs.</em> Maryland Equity Project.</li>
-<li>Bill, K., Blazar, D., &amp; Scribner, C. (2024). <em>With large Blueprint investments in education, why are some Maryland districts struggling to fund their schools?</em> Maryland Equity Project.</li>
-<li>Bill, K., Rodriguez, S., Blazar, D., &amp; Carson, N. (2024). <em>Community school expansion in Maryland: Promise and precarity.</em> Maryland Equity Project.</li>
-<li>Bill, K., Tirrell-Corbin, C., &amp; Blazar, D. (2024). <em>Expanding pre-k in public schools will require expanding the pre-k teacher workforce. But how, and by how much?</em> Maryland Equity Project.</li>
-<li>Bill, K., &amp; Blazar, D. (2024). <em>Expanding CTE pathways requires prioritization and a program-specific approach.</em> Maryland Equity Project.</li>
-</ul>
+::: {#opinion}
+:::
 
 <hr class="section-rule">
 
-## Research Briefs & Public Writing
+## Podcasts & Interviews
 
-<ul class="pub-list">
-<li>Blazar, D. (2026). <em>Black teachers improve outcomes for all students, but the profession remains largely white.</em> The Conversation.</li>
-<li>Blazar, D. (2025). <em>Learning from teacher evaluations that work.</em> Brookings.</li>
-<li>Blazar, D., Gao, W., Gershenson, S., Goings, R., &amp; Lagos, F. (2024). <em>Empowering local talent: Evaluating the impact of grow-your-own teacher programs.</em> IZA World of Labor.</li>
-<li>Blazar, D., Gershenson, S., &amp; Goings, R. (2024). <em>The educational and labor market outcomes of Maryland's grow-your-own teacher recruitment program.</em> Urban Institute.</li>
-<li>Liu, J., Conrad, C., &amp; Blazar, D. (2024). <em>High school computer science impacts college majors and increases earnings.</em> Brookings Brown Center Chalkboard.</li>
-<li>Kraft, M., &amp; Blazar, D. (2018). <em>Taking teacher coaching to scale: Can personalized training become standard practice?</em> Education Next, 18(4).</li>
-<li>Blazar, D. (2017). <em>Should noncognitive measures be used for teacher accountability?</em> Brookings Brown Center Chalkboard.</li>
-<li>Blazar, D., &amp; Kraft, M. A. (2016). <em>Social and emotional skills in school: Pivoting from accountability to development.</em> Albert Shanker Institute.</li>
-</ul>
+::: {#podcasts}
+:::
 
 <hr class="section-rule">
 
 ## In the News
 
-<ul class="pub-list">
-<li><a href="https://www.k12dive.com/news/the-emerging-promise-of-teacher-apprenticeship-programs/828540/">The Emerging Promise of Teacher Apprenticeship Programs</a> — K-12 Dive (August 2026)<span class="pub-note">Cites the EdWorkingPapers study on teacher localness, early-career effectiveness, and retention</span></li>
-<li><a href="https://thehill.com/opinion/congress-blog/economy-budget/6017347-childhood-investment-gap-analysis/">Congress Debates Childhood by Budget Lines. Children Don't Live That Way.</a> — The Hill, on the childhood investment gap study (August 2026)</li>
-<li><a href="https://spotlightonpoverty.org/spotlight-exclusives/new-study-examines-the-investment-gap-for-children-in-poverty">New Study Examines the Investment Gap for Children in Poverty</a> — Spotlight on Poverty and Opportunity (May 2026)</li>
-<li><a href="https://nepc.colorado.edu/publication/newsletter-child-cost-050726">How Much Does It Really Cost to Raise a Child?</a> — National Education Policy Center newsletter, on the childhood investment gap study (May 2026)</li>
-<li><a href="https://www.chalkbeat.org/2026/04/21/poor-children-face-investment-and-resource-gaps-outside-school/">For Children in Poverty, the Biggest Resource Gaps Are Outside of School</a> — Chalkbeat (April 2026)<span class="pub-note">David discusses the <em>Nature Communications</em> study</span></li>
-<li><a href="https://www.k12dive.com/news/maryland-sees-return-on-investment-in-grow-your-own-programs/815602/">Maryland Sees Return on Investment in Grow-Your-Own Programs</a> — K-12 Dive (March 2026)</li>
-<li><a href="https://www.appam.org/news-publications/jpam/jpam-closer-look-podcast/">JPAM's Closer Look Podcast: The Teacher Academy of Maryland</a> — host Seth Gershenson interviews David about their JPAM study (February 2026)</li>
-<li><a href="https://education.umd.edu/news/02-25-26-teacher-academy-maryland-grow-your-own-gyo-teacher-program">The Teacher Academy of Maryland: A Grow-Your-Own (GYO) Teacher Program</a> — UMD College of Education (February 2026)</li>
-<li><a href="https://education.umd.edu/news/02-17-26-umd-college-education-dean-and-education-policy-researcher-ranked-among-most">Dean and Education Policy Researcher Ranked Among Most Influential U.S. Education Scholars</a> — UMD College of Education (February 2026)<span class="pub-note">On David's first appearance in the RHSU Edu-Scholar Public Influence Rankings (Education Week)</span></li>
-<li><a href="https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win">This Maryland "Grow Your Own" Teacher Program May Be a Win-Win-Win</a> — Thomas B. Fordham Institute commentary on David's research (May 2024)</li>
-</ul>
-
-<span style="color:#6b6b6b; font-size:0.85rem;">Selected coverage. Media inquiries are welcome at <a href="mailto:dblazar@umd.edu">dblazar@umd.edu</a>.</span>
+::: {#news}
+:::

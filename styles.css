@@ -185,99 +185,440 @@
   }
 }
 
-/* ---------- In the News carousel (horizontal) ---------- */
-.news-carousel {
-  position: relative;
-  margin: 0.5rem 0 1rem 0;
-}
-
-.news-track {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
-  padding: 0.15rem 0.15rem 0.9rem 0.15rem;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(181, 80, 45, 0.4) transparent;
-}
-
-.news-track::-webkit-scrollbar {
-  height: 6px;
-}
-
-.news-track::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.news-track::-webkit-scrollbar-thumb {
-  background-color: rgba(181, 80, 45, 0.35);
-  border-radius: 3px;
-}
-
-.news-track::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(181, 80, 45, 0.6);
-}
-
-.news-card-h {
-  flex: 0 0 210px;
-  scroll-snap-align: start;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-left: 3px solid #B5502D;
-  border-radius: 10px;
-  padding: 1rem 1.1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-}
-
-.news-card-h:hover {
-  box-shadow: 0 6px 18px rgba(31, 36, 33, 0.08);
-  transform: translateY(-1px);
-}
-
-.news-outlet-h {
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #953f21;
-}
-
-.news-headline-h {
-  flex-grow: 1;
-}
-
-.news-headline-h a {
-  font-weight: 500;
-  line-height: 1.4;
+/* ---------- Hero additions ---------- */
+.hero-roles {
   font-size: 0.92rem;
+  color: #5a5a5a;
+  margin: -0.4rem 0 1rem 0;
+  line-height: 1.5;
 }
 
-.news-date-h {
-  font-size: 0.78rem;
-  color: #8a8a8a;
+.social-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.news-scroll-fade {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0.9rem;
-  width: 48px;
-  background: linear-gradient(to right, rgba(250, 246, 239, 0), #FAF6EF);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s ease;
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: #ffffff;
+  color: #232323 !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: border-color 0.15s ease, color 0.15s ease;
 }
 
-.news-scroll-fade.is-visible {
-  opacity: 1;
-}
+.social-btn i { color: #B5502D; font-size: 1rem; }
+.social-btn:hover { border-color: #B5502D; color: #B5502D !important; }
+
+.social-btn-accent { background: #B5502D; border-color: #B5502D; color: #fff !important; }
+.social-btn-accent i { color: #fff; }
+.social-btn-accent:hover { background: #953f21; color: #fff !important; }
 
 @media (max-width: 576px) {
-  .news-card-h {
-    flex-basis: 190px;
-  }
+  .social-row { justify-content: center; }
 }
+
+/* ---------- Feature carousel (home) ---------- */
+.section-kicker {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #953f21;
+  margin: 0.5rem 0 0.75rem 0;
+  border: none;
+}
+
+.feature-carousel {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(31, 36, 33, 0.07);
+  overflow: hidden;
+}
+
+.fc-viewport { overflow: hidden; }
+
+.fc-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fc-track { transition: none; }
+}
+
+.fc-slide {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+}
+
+.fc-media { display: block; }
+.fc-media img { width: 100%; aspect-ratio: 16 / 10; height: auto; object-fit: cover; display: block; }
+
+.feature-carousel, .social-btn, .fc-body, .fc-controls, .paper-cite, .media-list { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.fc-title { font-family: "Fraunces", Georgia, serif; }
+
+.fc-body {
+  padding: 1.6rem 1.7rem 1.4rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.fc-tag {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
+.tag-research { background: #E6ECE4; color: #3B5640; }
+.tag-opinion  { background: #F3E3D9; color: #953f21; }
+.tag-news     { background: #E4EAF0; color: #34506A; }
+
+.fc-title {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin: 0.15rem 0 0 0;
+}
+
+.fc-title a { color: #1F2421; text-decoration: none; }
+.fc-title a:hover { color: #B5502D; }
+
+.fc-summary { color: #4a4a4a; font-size: 0.95rem; line-height: 1.5; margin: 0; flex-grow: 1; }
+.fc-meta { font-size: 0.82rem; color: #7a7a7a; }
+.fc-cta { font-weight: 600; font-size: 0.92rem; text-decoration: none; }
+
+.fc-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0 0.8rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.fc-btn {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  color: #232323;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.fc-pause { font-size: 0.6rem; letter-spacing: -1px; }
+.fc-btn:hover { border-color: #B5502D; color: #B5502D; }
+
+.fc-dots { display: flex; gap: 0.4rem; }
+
+.fc-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.fc-dot[aria-selected="true"] { background: #B5502D; width: 1.4rem; border-radius: 999px; }
+
+.carousel-more {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.4rem;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.carousel-more a { text-decoration: none; }
+
+@media (max-width: 700px) {
+  .fc-slide { grid-template-columns: 1fr; }
+  .fc-body { padding: 1.1rem 1.2rem; }
+}
+
+/* ---------- Research list ---------- */
+.brief-note {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #4F6B52;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin: 1.2rem 0 2rem 0;
+  font-size: 0.95rem;
+}
+
+.paper-list, .media-list { list-style: none; padding-left: 0; margin: 0; }
+
+.paper, .media-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.25rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  align-items: start;
+}
+
+.paper:first-child, .media-item:first-child { padding-top: 0.2rem; }
+
+.paper-thumb img, .media-thumb img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+.paper-cite { margin: 0; line-height: 1.55; }
+.paper-note { margin: 0.3rem 0 0 0; font-size: 0.85rem; color: #953f21; }
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.55rem;
+}
+
+.paper-btn {
+  display: inline-block;
+  background: #B5502D;
+  color: #fff !important;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.paper-btn:hover { background: #953f21; }
+.paper-btn-quiet { background: transparent; color: #953f21 !important; border: 1px solid rgba(181, 80, 45, 0.45); }
+.paper-btn-quiet:hover { background: rgba(181, 80, 45, 0.08); }
+
+.oa-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #3B5640;
+  background: #E6ECE4;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}
+
+.page-footnote { color: #6b6b6b; font-size: 0.88rem; margin-top: 1.5rem; }
+
+/* ---------- Media list ---------- */
+.press-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #B5502D;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin: 0.5rem 0 2rem 0;
+}
+
+.press-card p { margin: 0; }
+
+.media-meta { font-size: 0.8rem; color: #7a7a7a; text-transform: uppercase; letter-spacing: 0.05em; }
+.media-outlet { color: #953f21; font-weight: 600; }
+.media-title { margin: 0.25rem 0 0 0; font-weight: 500; line-height: 1.45; }
+.media-title a { color: #1F2421; text-decoration: none; }
+.media-title a:hover { color: #B5502D; }
+.media-authors, .media-note { margin: 0.2rem 0 0 0; font-size: 0.86rem; color: #5a5a5a; }
+.media-cta { display: inline-block; margin-top: 0.35rem; font-size: 0.88rem; font-weight: 600; text-decoration: none; }
+
+@media (max-width: 576px) {
+  .paper, .media-item { grid-template-columns: 1fr; }
+  .paper-thumb img, .media-thumb img { max-width: 320px; }
+}
+
+.fc-summary, .fc-cta, .fc-meta, .paper-cite, .media-title, .media-meta, .media-cta { font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+.paywall-note { font-size: 0.78rem; color: #7a7a7a; }
+.paper-related { margin: 0.45rem 0 0 0; font-size: 0.85rem; color: #5a5a5a; }
+.paper-related a { text-decoration: none; font-weight: 500; }
+.media-also { margin-left: 1rem; color: #5a5a5a !important; font-weight: 500; }
+
+/* ---------- Home layout: About beside the carousel ---------- */
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 0.5rem;
+}
+.home-about h2 { margin-top: 0; font-size: 1.35rem; }
+.home-about p { font-size: 0.97rem; line-height: 1.6; }
+.home-latest .section-kicker { margin-top: 0.35rem; }
+
+/* compact header on the home page */
+main.page-full .hero { padding: 1rem 0 1.4rem 0; gap: 2rem; }
+main.page-full .hero-photo img { width: 150px; height: 150px; }
+main.page-full .hero-text h1 { margin-bottom: 0.2rem; }
+
+/* carousel inside the narrower column: image on the left, text on the right */
+.home-latest .fc-slide { grid-template-columns: 1.05fr 1fr; }
+.home-latest .fc-body { padding: 1rem 1.1rem; gap: 0.4rem; }
+.home-latest .fc-title { font-size: 1.05rem; }
+.home-latest .fc-summary { font-size: 0.86rem; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+
+@media (max-width: 991px) {
+  .home-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .home-latest { order: -1; }
+}
+@media (max-width: 700px) {
+  .home-latest .fc-slide { grid-template-columns: 1fr; }
+}
+
+main.page-full #title-block-header { display: none; }
+.page-full #quarto-content { padding-top: 0.5rem; }
+main.page-full .hero { margin-top: 0; margin-bottom: 0.4rem; padding: 0.6rem 0 1rem 0; }
+main.page-full .hero-text h1 { font-size: 2.2rem; }
+main.page-full .hero-title { font-size: 1.05rem; }
+
+.page-layout-full > main.content { grid-column: screen-start-inset / screen-end-inset; }
+main.page-full .hero, main.page-full .home-grid {
+  grid-column: screen-start-inset / screen-end-inset;
+  justify-self: center;
+  width: 100%;
+  max-width: 1180px;
+}
+main.content.page-full { max-width: none; }
+
+/* ---------- Home: About and Latest share a heading style and height (2026-11-12) ---------- */
+.home-about h2, .home-latest h2.home-h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #232323;
+  margin: 0 0 0.75rem 0;
+  border: none;
+  padding: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+@media (min-width: 992px) {
+  /* About is a little wider than Latest, and the carousel stretches to the About column's height */
+  .home-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2.5rem; align-items: stretch; }
+  .home-latest { display: flex; flex-direction: column; }
+  .home-latest #listing-carousel { flex: 1 1 auto; display: flex; flex-direction: column; }
+  .home-latest .feature-carousel { flex: 1 1 auto; display: flex; flex-direction: column; }
+  .home-latest .fc-viewport { flex: 1 1 auto; display: flex; }
+  .home-latest .fc-track { flex: 1 1 auto; width: 100%; }
+  .home-latest .fc-slide { grid-template-columns: 1.1fr 1fr; align-items: center; }
+  .home-latest .fc-media img { aspect-ratio: 16 / 10; }
+}
+
+.latest-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.latest-head .carousel-more { margin: 0; padding: 0; }
+
+/* ---------- Research page: denser list, two columns on wide screens (2026-11-12) ---------- */
+.research-page main.content { max-width: 1180px !important; margin-left: auto; margin-right: auto; }
+.research-page #title-block-header, .research-page main.content > * { grid-column: body-content-start / body-content-end; }
+.research-intro { max-width: 880px; }
+.research-page .paper { grid-template-columns: 132px 1fr; gap: 0.95rem; padding: 0.85rem 0; }
+.research-page .paper-thumb img { border-radius: 6px; }
+.research-page .paper-cite { font-size: 0.92rem; line-height: 1.45; }
+.research-page .paper-links { margin-top: 0.4rem; gap: 0.4rem; }
+.research-page .paper-btn { font-size: 0.78rem; padding: 0.22rem 0.6rem; }
+.research-page .paywall-note, .research-page .paper-related, .research-page .paper-note { font-size: 0.8rem; }
+@media (min-width: 1000px) {
+  .research-page .paper-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 2.5rem; }
+  .research-page .paper:first-child { padding-top: 0.85rem; }
+}
+@media (max-width: 576px) {
+  .research-page .paper { grid-template-columns: 96px 1fr; }
+  .research-page .paper-thumb img { max-width: 96px; }
+}
+.paper-links > p { display: contents; }
+.research-page .paper-related { margin-top: 0.35rem; }
+
+/* ---------- Home carousel: tall portrait image beside the text on wide screens (2026-11-12) ---------- */
+/* The image takes the slide's full height and sets its own width (3:5), so nothing is cropped.
+   Below 1200px the About column gets tall and narrow, so the standard wide image is used instead. */
+@media (min-width: 1200px) {
+  .home-latest .fc-slide { display: flex; align-items: stretch; }
+  .home-latest .fc-media { flex: 0 0 auto; max-width: 52%; height: 100%; }
+  .home-latest .fc-media picture { display: block; height: 100%; }
+  .home-latest .fc-media img { height: 100%; width: auto; max-width: 100%; aspect-ratio: 3 / 5; object-fit: cover; }
+  .home-latest .fc-body { flex: 1 1 0; min-width: 0; justify-content: center; }
+  .home-latest .fc-summary { -webkit-line-clamp: 6; }
+}
+
+/* ---------- Media page: same compact two-column layout as Research (2026-11-12) ---------- */
+.media-page main.content { max-width: 1180px !important; margin-left: auto; margin-right: auto; }
+.media-page #title-block-header, .media-page main.content > * { grid-column: body-content-start / body-content-end; }
+.media-page .press-card { max-width: 880px; }
+.media-page .media-item { grid-template-columns: 132px 1fr; gap: 0.95rem; padding: 0.85rem 0; }
+.media-page .media-thumb img { border-radius: 6px; }
+.media-page .media-meta { font-size: 0.72rem; }
+.media-page .media-title { font-size: 0.95rem; line-height: 1.4; }
+.media-page .media-authors, .media-page .media-note { font-size: 0.8rem; }
+.media-page .media-cta { font-size: 0.82rem; margin-top: 0.25rem; }
+@media (min-width: 1000px) {
+  .media-page .media-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 2.5rem; }
+  .media-page .media-item:first-child { padding-top: 0.85rem; }
+}
+@media (max-width: 576px) {
+  .media-page .media-item { grid-template-columns: 96px 1fr; }
+  .media-page .media-thumb img { max-width: 96px; }
+}
+
+/* ---------- Research topics: jump links and topic headings (2026-11-12) ---------- */
+.topic-jump { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.4rem 0 0.4rem 0; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.topic-jump a { font-size: 0.85rem; padding: 0.35rem 0.85rem; border-radius: 999px; border: 1px solid #E3C9BC; background: #F6E9E1; color: #953f21; text-decoration: none; }
+.topic-jump a:hover { background: #B5502D; border-color: #B5502D; color: #fff; }
+.research-page h3.topic-head { font-family: "Fraunces", Georgia, serif; font-size: 1.2rem; font-weight: 600; color: #B5502D; margin: 2rem 0 0.2rem 0; padding-bottom: 0.35rem; border-bottom: 1px solid #E8DED2; }
+.research-page h2 + h3.topic-head, .research-page h2 + .section h3.topic-head { margin-top: 0.8rem; }
+.research-page h3.topic-head .anchorjs-link { display: none; }
+html { scroll-padding-top: 80px; }
+
+/* ---------- Media: news list shows the newest 6 until "Show all" is clicked (2026-11-12) ---------- */
+.media-list.is-folded .media-more { display: none; }
+.media-show-all { margin: 1rem 0 0.5rem 0; padding: 0.45rem 1.1rem; border-radius: 999px; border: 1px solid #B5502D; background: transparent; color: #B5502D; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 0.88rem; font-weight: 600; cursor: pointer; }
+.media-show-all:hover { background: #B5502D; color: #fff; }
+.research-page .topic-jump { margin-bottom: 1.6rem; }
+.research-page hr.section-rule, .media-page hr.section-rule { margin: 1.5rem 0 0.5rem 0; }
+.research-page h3.topic-head, .research-page #working-papers-section { scroll-margin-top: 90px; }
+
+/* ---------- Intro text and note boxes span the full content width (2026-11-12) ---------- */
+.research-intro { max-width: none; }
+.research-intro .brief-note, .media-page .press-card { max-width: none; }
+/* topic jump links stretch to fill each row, so the row spans the full content width (2026-11-12) */
+.research-page .topic-jump a { flex: 1 1 auto; text-align: center; }
+
+/* ---------- Research: key-finding line and enlarged card viewer (2026-11-12) ---------- */
+.paper-finding { margin: 0.35rem 0 0 0; font-size: 0.86rem; line-height: 1.45; color: #3d3d3d; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.paper-finding span { font-weight: 600; color: #953f21; }
+a.card-zoom { cursor: zoom-in; }
+a.card-zoom img { transition: box-shadow 0.15s ease; }
+a.card-zoom:hover img { box-shadow: 0 0 0 2px #B5502D; }
+.card-viewer { border: none; border-radius: 12px; padding: 1.2rem 1.2rem 1rem 1.2rem; width: min(820px, 94vw); background: #FAF6EF; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+.card-viewer::backdrop { background: rgba(35,35,35,0.55); }
+.card-viewer img { width: 100%; height: auto; display: block; border-radius: 8px; }
+.card-viewer-caption { margin: 0.8rem 0 0 0; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 0.95rem; line-height: 1.5; color: #232323; }
+.card-viewer-close { position: absolute; top: 0.3rem; right: 0.5rem; border: none; background: transparent; font-size: 1.6rem; line-height: 1; color: #555; cursor: pointer; }
+.card-viewer-close:hover { color: #B5502D; }

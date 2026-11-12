@@ -1,0 +1,40 @@
+<%
+const bold = (a) => (a || "").replace("Blazar, D.", "<strong>Blazar, D.</strong>");
+const cta = { opinion: "Read", podcast: "Listen", news: "Read", brief: "Read" };
+// News shows the newest SHOW items; the rest open in place with the "Show all" button below the list.
+const SHOW = 6;
+const fold = items.length > SHOW && items[0].type === "news";
+%>
+<ul class="media-list<%- fold ? ' is-folded' : '' %>">
+<% items.forEach((item, i) => { %>
+<li class="media-item<%- fold && i >= SHOW ? ' media-more' : '' %>" id="<%- item.id %>">
+<a class="media-thumb" <% if (item.link) { %>href="<%= item.link %>"<% } %> tabindex="-1" aria-hidden="true"><img src="<%= item.image %>" alt="" loading="lazy"></a>
+<div class="media-body">
+<div class="media-meta"><span class="media-outlet"><%- item.outlet %></span><% if (item["date_label"]) { %> · <%- item["date_label"] %><% } %></div>
+<p class="media-title"><% if (item.link) { %><a href="<%= item.link %>"><%- item.title %></a><% } else { %><%- item.title %><% } %></p>
+<% if (item.authors) { %><p class="media-authors"><%= bold(item.authors) %></p><% } %>
+<% if (item.note) { %><p class="media-note"><%- item.note %></p><% } %>
+<% if (item.link) { %><a class="media-cta" href="<%= item.link %>"><%- cta[item.type] %> →</a><% } %><% if (item.also_link) { %><a class="media-cta media-also" href="<%= item.also_link %>">Also in <%- item.also_label %> →</a><% } %>
+</div>
+</li>
+<% }) %>
+</ul>
+<% if (fold) { %>
+<button class="media-show-all" type="button" aria-expanded="false" data-more="Show all news stories" data-less="Show fewer">Show all news stories</button>
+<script>
+(function () {
+var btn = document.currentScript.previousElementSibling;
+var list = btn.previousElementSibling;
+// open the full list if someone arrives at a hidden story through a link or search result
+function openIfTarget() { var t = location.hash && document.getElementById(location.hash.slice(1)); if (t && t.classList.contains('media-more')) toggle(true); }
+function toggle(open) {
+list.classList.toggle('is-folded', !open);
+btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+btn.textContent = open ? btn.dataset.less : btn.dataset.more;
+}
+btn.addEventListener('click', function () { var open = list.classList.contains('is-folded'); toggle(open); if (!open) list.scrollIntoView({ block: 'start' }); });
+window.addEventListener('hashchange', openIfTarget);
+openIfTarget();
+})();
+</script>
+<% } %>

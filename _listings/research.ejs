@@ -1,0 +1,39 @@
+<%
+const bold = (a) => (a || "").replace("Blazar, D.", "<strong>Blazar, D.</strong>");
+%>
+<ul class="paper-list">
+<% for (const item of items) {
+const working = item.status === "working";
+let source = "";
+if (!working) {
+source = "<em>" + item.journal;
+if (item.volume) source += ", " + item.volume + "</em>" + (item.issue ? "(" + item.issue + ")" : "");
+else source += "</em>";
+if (item.pages) source += ", " + item.pages;
+source += ".";
+if (item.online) source += " Advance online publication.";
+}
+// the thumbnail opens the full key-finding card (see the viewer in research.qmd)
+const fullCard = item.image.replace(/\/([^\/]+)$/, "/full/$1");
+%>
+<li class="paper" id="<%- item.id %>">
+<a class="paper-thumb card-zoom" href="<%= fullCard %>" title="Enlarge the key-finding card" aria-label="Enlarge the key-finding card"><img src="<%= item.image %>" alt="" loading="lazy"></a>
+<div class="paper-body">
+<p class="paper-cite"><%= bold(item.authors) %> (<%- working ? "Working paper" : item.year %>). <% if (working) { %><em><%- item.title %></em>.<% } else { %><%- item.title %>. <%= source %><% } %></p>
+<% if (item.note) { %><p class="paper-note"><%- item.note %></p><% } %>
+<% if (item.key_finding) { %><p class="paper-finding"><span>Key finding:</span> <%- item.key_finding %></p><% } %>
+<% if (item.link || item.free_link || item.manuscript) { %>
+<div class="paper-links">
+<% if (working && item.link) { %><a class="paper-btn" href="<%= item.link %>">Read the working paper</a><% } %>
+<% if (!working && item.open_access) { %><a class="paper-btn" href="<%= item.link %>">Read the paper</a><span class="oa-badge">Open access</span><% } %>
+<% if (!working && !item.open_access && (item.free_link || item.manuscript)) { %><a class="paper-btn" href="<%= item.free_link || item.manuscript %>">Free version<% if (item.free_label) { %> · <%- item.free_label %><% } %></a><% } %>
+<% if (!working && !item.open_access && item.link) { %><a class="paper-btn paper-btn-quiet" href="<%= item.link %>">Journal version</a><% if (!(item.free_link || item.manuscript)) { %><span class="paywall-note">Subscription may be required</span><% } %><% } %>
+</div>
+<% } %>
+<% if (item.related) { %>
+<p class="paper-related">Related: <% item.related.forEach((r, k) => { %><%- k ? " · " : "" %><a href="<%= r.link %>"><%- r.label %></a><% }) %></p>
+<% } %>
+</div>
+</li>
+<% } %>
+</ul>

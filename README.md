@@ -4,14 +4,7 @@ A [Quarto](https://quarto.org) website shell built as a starting point, not a fi
 
 ## Structure
 
-- `index.qmd` — home page: bio, research tags, recognition, contact/social links
-- `research.qmd` — in-progress work, full journal article list, current grants, affiliations
-- `media.qmd` — policy briefs, public writing, press mentions
-- `teaching.qmd` — courses taught, program development, advising/mentoring
-- `cv.qmd` — embeds `files/David-Blazar-CV.pdf`
-- `styles.scss` / `styles.css` — theme (colors, fonts, layout helpers)
-- `files/` — CV PDF, headshot (from UMD directory), favicon (SVG initials)
-- `_quarto.yml` — site config, nav, footer
+Three pages (Home, Research, Media) built from `data/research.yml` and `data/media.yml`. See `CLAUDE.md` for the file map and how to add papers and media items.
 
 ## To preview locally
 
@@ -31,12 +24,11 @@ Output goes to `_site/`.
 
 1. **Photo** — `files/headshot.jpg` was pulled from the UMD faculty directory (260×260, so on the small side). Swap in a better/current one if David has one.
 2. **Bio voice** — the "About" paragraph on `index.qmd` is written in third person from public bio text. Rewrite it in David's own voice/framing.
-3. **CV** — `files/David-Blazar-CV.pdf` is David's July 2025 CV (the most recent one found publicly). Three papers have already been published since then (now reflected on `research.qmd`), so the CV itself is a bit behind the site — worth asking David for whatever's most current, and re-dating the "CV last updated" line on `cv.qmd` when you swap it in.
+3. **CV** — `files/David-Blazar-CV.pdf` is David's October 2026 CV (the Word source is kept outside this public repo).
 4. **Publications** — `research.qmd`'s journal article list and "In Progress" section reflect the July 2025 CV plus three papers confirmed published since (Disparate Pathways; Localized Teacher Recruitment/Grow-Your-Own; Professional Staff Diversity — all 2026). Re-check the "In Progress" list periodically, since those are the ones most likely to have moved to publication.
 5. **Media page** — `media.qmd` is new. The "In the News" section is intentionally thin (just what turned up in a general search) — David will know about interviews, podcast appearances, or press hits that don't show up that way.
 6. **Socials** — currently linked: email (dblazar@umd.edu), Bluesky (@davidblazar.bsky.social — found by handle/description match, not confirmed by David), LinkedIn, Google Scholar, EdWorkingPapers, UMD faculty profile, Maryland Equity Project. Confirm these are current, add/remove as needed (e.g., ORCID).
-7. **Teaching** — course list and advising roster on `teaching.qmd` reflect the July 2025 CV; both will drift as semesters pass.
-8. **Site URL / deploy** — `site-url` is `https://davidblazar.com`. Publishing is automatic: every push to `main` runs `.github/workflows/publish.yml`, which renders the site and deploys it to GitHub Pages (Repo Settings → Pages → Source must be "GitHub Actions"). No need to run `quarto publish`. To redeploy without a change, use "Run workflow" on the Actions tab.
+7. **Site URL / deploy** — `site-url` is `https://davidblazar.com`. Publishing is automatic: every push to `main` runs `.github/workflows/publish.yml`, which renders the site and deploys it to GitHub Pages (Repo Settings → Pages → Source must be "GitHub Actions"). No need to run `quarto publish`. To redeploy without a change, use "Run workflow" on the Actions tab.
 
 ## Design notes
 

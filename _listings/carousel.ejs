@@ -1,0 +1,86 @@
+<%
+const labelFor = (item) => {
+if (item.status) return "New research";
+if (item.type === "opinion") return "Opinion";
+return "In the news";
+};
+const tagClass = (item) => item.status ? "tag-research" : (item.type === "opinion" ? "tag-opinion" : "tag-news");
+const sourceFor = (item) => item.status ? item.journal : (item.type === "podcast" ? item.outlet + " (podcast)" : item.outlet);
+const linkFor = (item) => item.status ? (item.link || "research.html") : (item.link || "media.html");
+const ctaFor = (item) => item.status ? "Read the paper" : (item.type === "podcast" ? "Listen" : "Read");
+%>
+<div class="feature-carousel" role="region" aria-roledescription="carousel" aria-label="Latest research, opinion and news">
+<div class="fc-viewport">
+<div class="fc-track">
+<% items.forEach((item, i) => { %>
+<article class="fc-slide" role="group" aria-roledescription="slide" aria-label="<%- (i + 1) + ' of ' + items.length %>" <%- i === 0 ? '' : 'aria-hidden=true' %>>
+<a class="fc-media" href="<%= linkFor(item) %>" tabindex="-1" aria-hidden="true">
+<picture><source media="(min-width: 1200px)" srcset="<%= item.image.replace(/\/([^\/]+)$/, '/tall/$1') %>"><img src="<%= item.image.replace(/\/([^\/]+)$/, item.status ? '/full/$1' : '/plain/$1') %>" alt="" loading="<%- i === 0 ? 'eager' : 'lazy' %>"></picture>
+</a>
+<div class="fc-body">
+<span class="fc-tag <%- tagClass(item) %>"><%- labelFor(item) %></span>
+<h3 class="fc-title"><a href="<%= linkFor(item) %>"><%- item.title %></a></h3>
+<p class="fc-summary"><%- item.summary || "" %></p>
+<div class="fc-meta"><span><%- sourceFor(item) %></span><% if (item.date_label) { %> · <span><%- item["date_label"] %></span><% } %></div>
+<a class="fc-cta" href="<%= linkFor(item) %>"><%- ctaFor(item) %> →</a>
+</div>
+</article>
+<% }) %>
+</div>
+</div>
+<div class="fc-controls">
+<button class="fc-btn fc-prev" type="button" aria-label="Previous slide">‹</button>
+<div class="fc-dots" role="tablist">
+<% items.forEach((item, i) => { %>
+<button class="fc-dot" type="button" role="tab" aria-label="Go to slide <%- i + 1 %>" aria-selected="<%- i === 0 ? 'true' : 'false' %>"></button>
+<% }) %>
+</div>
+<button class="fc-btn fc-next" type="button" aria-label="Next slide">›</button>
+<button class="fc-btn fc-pause" type="button" aria-label="Pause rotation">❚❚</button>
+</div>
+</div>
+<script>
+(function () {
+var root = document.currentScript.previousElementSibling;
+var track = root.querySelector('.fc-track');
+var slides = Array.prototype.slice.call(root.querySelectorAll('.fc-slide'));
+var dots = Array.prototype.slice.call(root.querySelectorAll('.fc-dot'));
+var pauseBtn = root.querySelector('.fc-pause');
+var i = 0, timer = null, userPaused = false;
+var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function go(n) {
+i = (n + slides.length) % slides.length;
+track.style.transform = 'translateX(' + (-100 * i) + '%)';
+slides.forEach(function (s, k) {
+if (k === i) { s.removeAttribute('aria-hidden'); } else { s.setAttribute('aria-hidden', 'true'); }
+s.querySelectorAll('a').forEach(function (a) { if (!a.classList.contains('fc-media')) a.tabIndex = k === i ? 0 : -1; });
+});
+dots.forEach(function (d, k) { d.setAttribute('aria-selected', k === i ? 'true' : 'false'); });
+}
+function start() { if (reduce || userPaused) return; stop(); timer = setInterval(function () { go(i + 1); }, 7000); }
+function stop() { if (timer) clearInterval(timer); timer = null; }
+root.querySelector('.fc-prev').addEventListener('click', function () { go(i - 1); start(); });
+root.querySelector('.fc-next').addEventListener('click', function () { go(i + 1); start(); });
+dots.forEach(function (d, k) { d.addEventListener('click', function () { go(k); start(); }); });
+pauseBtn.addEventListener('click', function () {
+userPaused = !userPaused;
+pauseBtn.textContent = userPaused ? '▶' : '❚❚';
+pauseBtn.setAttribute('aria-label', userPaused ? 'Resume rotation' : 'Pause rotation');
+if (userPaused) { stop(); } else { start(); }
+});
+root.addEventListener('mouseenter', stop);
+root.addEventListener('mouseleave', start);
+root.addEventListener('focusin', stop);
+root.addEventListener('focusout', start);
+var x0 = null;
+root.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; stop(); }, { passive: true });
+root.addEventListener('touchend', function (e) {
+if (x0 === null) return;
+var dx = e.changedTouches[0].clientX - x0;
+if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1));
+x0 = null; start();
+});
+if (reduce) pauseBtn.hidden = true;
+go(0); start();
+})();
+</script>

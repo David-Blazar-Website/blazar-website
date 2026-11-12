@@ -28,6 +28,7 @@ Standing decisions for davidblazar.com. Check this before changing the site, and
 - Working papers: link the public version (EdWorkingPapers, etc.) when one exists; otherwise no link.
 - **Keep a copy of free versions on the site** (2026-11-12): free versions posted on sites David can't fix if they move (co-authors' sites, UMD, NSF PAR, CEPR reports) are hosted in `files/papers/` and linked there. EdWorkingPapers versions are linked directly, with no copy. A copy of each hosted file is in David's folder `Papers/Free Versions/`.
 - **File names** for free versions: `Authors_Year_Short-Title_Journal_Version.pdf`. Version is one of Accepted-Manuscript, Author-Manuscript, Earlier-Version, Working-Paper or CEPR-Report. Year and journal are those of the published article. Manuscripts made from David's Word files have a cover page with the version label, citation and DOI, and a title page with authors and affiliations as published. The cleaned Word files are in `Papers/Final Manuscripts/Cleaned/`.
+- Papers with no free version David can find (IJEMST 2018, English Education 2011, English Journal 2009) show only the journal link (2026-11-12).
 - Lagos & Blazar (2026, ER) links the 2021 EdWorkingPaper on ERIC (ED616814) as the free version, labeled as an earlier version (2026-11-12).
 
 ## Content sourcing

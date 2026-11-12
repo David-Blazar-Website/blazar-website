@@ -334,12 +334,15 @@
   image: images/research/jpam-2020-curriculum.svg
 - id: tcr-2020-coaching-scale
   status: published
-  title: 'Teacher coaching to improve instruction at scale: Opportunities and challenges in a policy context'
+  title: 'Teacher coaching to improve instruction at scale: Opportunities and challenges in policy contexts'
   authors: Blazar, D.
   year: 2020
   journal: Teachers College Record
   volume: '122'
   issue: '10'
+  pages: '100301'
+  free_label: Accepted manuscript
+  manuscript: files/papers/Blazar_2020_Teacher-Coaching-to-Improve-Instruction-at-Scale_TCR_Accepted-Manuscript.pdf
   topic: coaching
   image: images/research/tcr-2020-coaching-scale.svg
 - id: efp-2020-video
@@ -525,8 +528,8 @@
   volume: '48'
   pages: 16–29
   link: https://doi.org/10.1016/j.econedurev.2015.05.005
-  free_link: https://dash.harvard.edu/handle/1/27112692
-  free_label: Dissertation chapter, Harvard DASH
+  free_label: Accepted manuscript
+  manuscript: files/papers/Blazar_2015_Effective-Teaching-in-Elementary-Mathematics_EER_Accepted-Manuscript.pdf
   topic: instruction
   image: images/research/eer-2015-math.svg
 - id: er-2015-grade-assignments
@@ -553,6 +556,8 @@
   issue: '4'
   pages: 542–566
   link: https://doi.org/10.3102/0162373715579487
+  free_label: Accepted manuscript
+  manuscript: files/papers/Blazar-Kraft_2015_Exploring-Mechanisms-of-Effective-Teacher-Coaching_EEPA_Accepted-Manuscript.pdf
   topic: coaching
   image: images/research/eepa-2015-coaching-mechanisms.svg
 - id: aeraopen-2015-resources

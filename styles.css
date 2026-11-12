@@ -555,3 +555,34 @@ main.content.page-full { max-width: none; }
 }
 .paper-links > p { display: contents; }
 .research-page .paper-related { margin-top: 0.35rem; }
+
+/* ---------- Home carousel: tall portrait image beside the text on wide screens (2026-11-12) ---------- */
+/* The image takes the slide's full height and sets its own width (3:5), so nothing is cropped.
+   Below 1200px the About column gets tall and narrow, so the standard wide image is used instead. */
+@media (min-width: 1200px) {
+  .home-latest .fc-slide { display: flex; align-items: stretch; }
+  .home-latest .fc-media { flex: 0 0 auto; max-width: 52%; height: 100%; }
+  .home-latest .fc-media picture { display: block; height: 100%; }
+  .home-latest .fc-media img { height: 100%; width: auto; max-width: 100%; aspect-ratio: 3 / 5; object-fit: cover; }
+  .home-latest .fc-body { flex: 1 1 0; min-width: 0; justify-content: center; }
+  .home-latest .fc-summary { -webkit-line-clamp: 6; }
+}
+
+/* ---------- Media page: same compact two-column layout as Research (2026-11-12) ---------- */
+.media-page main.content { max-width: 1180px !important; margin-left: auto; margin-right: auto; }
+.media-page #title-block-header, .media-page main.content > * { grid-column: body-content-start / body-content-end; }
+.media-page .press-card { max-width: 880px; }
+.media-page .media-item { grid-template-columns: 132px 1fr; gap: 0.95rem; padding: 0.85rem 0; }
+.media-page .media-thumb img { border-radius: 6px; }
+.media-page .media-meta { font-size: 0.72rem; }
+.media-page .media-title { font-size: 0.95rem; line-height: 1.4; }
+.media-page .media-authors, .media-page .media-note { font-size: 0.8rem; }
+.media-page .media-cta { font-size: 0.82rem; margin-top: 0.25rem; }
+@media (min-width: 1000px) {
+  .media-page .media-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 2.5rem; }
+  .media-page .media-item:first-child { padding-top: 0.85rem; }
+}
+@media (max-width: 576px) {
+  .media-page .media-item { grid-template-columns: 96px 1fr; }
+  .media-page .media-thumb img { max-width: 96px; }
+}

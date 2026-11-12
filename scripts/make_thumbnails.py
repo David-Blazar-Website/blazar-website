@@ -1,7 +1,8 @@
 """Generate the SVG visuals used on the Research and Media pages and in the home-page carousel.
 
 Run from the repo root:  python3 scripts/make_thumbnails.py
-It reads data/research.yml and data/media.yml and writes images/research/*.svg and images/media/*.svg.
+It reads data/research.yml and data/media.yml and writes images/research/*.svg and images/media/*.svg,
+plus portrait copies of featured items in images/*/tall/ for the home-page carousel.
 
 - A research item with a `finding` block gets a key-finding bar chart drawn from the numbers in that block.
   Only use numbers that appear in the published paper.
@@ -121,8 +122,9 @@ def glyph(topic, c, cx=400, cy=215):
 
 def topic_card(item):
     bg, c, label = TOPICS[item.get("topic", "methods")]
-    s = svg_open(bg) + glyph(item.get("topic", "methods"), c)
-    s += f'<text x="400" y="420" text-anchor="middle" font-family="{SANS}" font-size="30" font-weight="600" letter-spacing="2" fill="{c}">{esc(label.upper())}</text>'
+    s = svg_open(bg) + glyph(item.get("topic", "methods"), c, cx=W / 2, cy=H * 0.43)
+    fs = 30 if W > H else 25
+    s += f'<text x="{W/2:.0f}" y="{H*0.84:.0f}" text-anchor="middle" font-family="{SANS}" font-size="{fs}" font-weight="600" letter-spacing="2" fill="{c}">{esc(label.upper())}</text>'
     return s + "</svg>"
 
 
@@ -131,6 +133,8 @@ def finding_chart(item):
     f = item["finding"]
     c = TOPICS[item.get("topic", "methods")][1]
     bars = f["bars"]
+    if H > W:
+        return finding_chart_tall(item, f, c, bars)
     s = svg_open(CREAM)
     y0 = 48
     for line in wrap(f["title"], 44):
@@ -159,6 +163,38 @@ def finding_chart(item):
     return s + "</svg>"
 
 
+def finding_chart_tall(item, f, c, bars):
+    """Portrait version for the home-page carousel: title on top, each label above its bar."""
+    s = svg_open(CREAM)
+    y0 = 64
+    for line in wrap(f["title"], 30):
+        s += f'<text x="40" y="{y0}" font-family="{SERIF}" font-size="34" font-weight="600" fill="{INK}">{esc(line)}</text>'
+        y0 += 42
+    note_lines = wrap(f["note"], 44) if f.get("note") else []
+    top, bottom = y0 + 30, H - 40 - 28 * len(note_lines)
+    n = len(bars)
+    slot = min(150, (bottom - top) / n)
+    top += ((bottom - top) - slot * n) / 2
+    bh = min(52, slot * 0.4)
+    x0, x1 = 40, W - 150
+    vmax = max(b[1] for b in bars)
+    unit = f.get("unit", "")
+    for i, bar in enumerate(bars):
+        lab, v = bar[0], bar[1]
+        fill = c if len(bar) < 3 or bar[2] == "a" else MUTED
+        ly = top + i * slot + 30
+        s += f'<text x="{x0}" y="{ly:.0f}" font-family="{SANS}" font-size="27" fill="{INK}">{esc(lab)}</text>'
+        y = ly + 14
+        w = max(6, (x1 - x0) * v / vmax)
+        s += f'<path d="M{x0} {y:.1f} h{w-4:.1f} a4 4 0 0 1 4 4 v{bh-8:.1f} a4 4 0 0 1 -4 4 h{-(w-4):.1f} Z" fill="{fill}"/>'
+        s += f'<text x="{x0+w+14:.1f}" y="{y+bh/2+11:.1f}" font-family="{SANS}" font-size="32" font-weight="700" fill="{INK}">{esc(f"{v:g}{unit}")}</text>'
+    y = H - 40 - 28 * (len(note_lines) - 1)
+    for line in note_lines:
+        s += f'<text x="40" y="{y:.0f}" font-family="{SANS}" font-size="21" fill="{MUTED}">{esc(line)}</text>'
+        y += 28
+    return s + "</svg>"
+
+
 def stat_card(item):
     """A single headline number. finding: {kind: stat, value, caption}"""
     f = item["finding"]
@@ -166,9 +202,11 @@ def stat_card(item):
     s = svg_open(bg)
     s += f'<text x="48" y="78" font-family="{SANS}" font-size="24" font-weight="600" letter-spacing="2" fill="{c}">{esc(label.upper())}</text>'
     size = min(150, int((W - 90) / (0.6 * len(f["value"]))))
-    s += f'<text x="44" y="250" font-family="{SERIF}" font-size="{size}" font-weight="700" fill="{c}">{esc(f["value"])}</text>'
-    y = 320
-    for line in wrap(f["caption"], 46)[:4]:
+    tall = H > W
+    vy = H * 0.42 if tall else 250
+    s += f'<text x="44" y="{vy:.0f}" font-family="{SERIF}" font-size="{size}" font-weight="700" fill="{c}">{esc(f["value"])}</text>'
+    y = vy + (90 if tall else 70)
+    for line in wrap(f["caption"], 34 if tall else 46)[:7 if tall else 4]:
         s += f'<text x="48" y="{y}" font-family="{SANS}" font-size="27" fill="{INK}">{esc(line)}</text>'
         y += 38
     return s + "</svg>"
@@ -180,11 +218,11 @@ def media_card(item):
     s += f'<rect x="28" y="28" width="{W-56}" height="{H-56}" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>'
     s += f'<text x="64" y="104" font-family="{SANS}" font-size="26" font-weight="600" letter-spacing="3" fill="#FFFFFF" fill-opacity="0.85">{esc(label.upper())}</text>'
     outlet = item.get("outlet_short", item["outlet"])
-    lines = wrap(outlet, 16)
+    lines = wrap(outlet, 12 if H > W else 16)
     # size the outlet name so the longest line fits inside the frame (about 0.62 em per character)
     longest = max(len(l) for l in lines)
-    size = min(92 if len(lines) == 1 else 70, int((W - 150) / (0.62 * longest)))
-    y = 290 - (len(lines) - 1) * size * 0.55
+    size = min(92 if len(lines) == 1 else (76 if H > W else 70), int((W - 150) / (0.62 * longest)))
+    y = H * 0.58 - (len(lines) - 1) * size * 0.55
     for line in lines:
         s += f'<text x="64" y="{y:.0f}" font-family="{SERIF}" font-size="{size}" font-weight="600" fill="#FFFFFF">{esc(line)}</text>'
         y += size * 1.1
@@ -192,21 +230,51 @@ def media_card(item):
     return s + "</svg>"
 
 
+def tall_path(path):
+    """images/media/x.svg -> images/media/tall/x.svg (portrait copy used by the home-page carousel)."""
+    folder, name = os.path.split(path)
+    return os.path.join(folder, "tall", name)
+
+
+def write_tall(item, make):
+    """Draw a 600x1000 portrait version for featured items, then restore the standard size."""
+    global W, H
+    W, H = 600, 1000
+    try:
+        out = tall_path(item["image"])
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+        open(out, "w").write(make(item))
+    finally:
+        W, H = 800, 500
+
+
+def research_svg(item):
+    f = item.get("finding")
+    return (stat_card(item) if f.get("kind") == "stat" else finding_chart(item)) if f else topic_card(item)
+
+
 def main():
     os.makedirs("images/research", exist_ok=True)
     os.makedirs("images/media", exist_ok=True)
+    # portrait copies are regenerated from scratch, so un-featured items drop out
+    for folder in ("images/research/tall", "images/media/tall"):
+        if os.path.isdir(folder):
+            for name in os.listdir(folder):
+                os.remove(os.path.join(folder, name))
     for item in yaml.safe_load(open("data/research.yml")):
         out = item["image"]
         if out in KEEP:
             continue
-        f = item.get("finding")
-        svg = (stat_card(item) if f.get("kind") == "stat" else finding_chart(item)) if f else topic_card(item)
-        open(out, "w").write(svg)
+        open(out, "w").write(research_svg(item))
+        if item.get("featured"):
+            write_tall(item, research_svg)
     for item in yaml.safe_load(open("data/media.yml")):
         out = item["image"]
         if out in KEEP:
             continue
         open(out, "w").write(media_card(item))
+        if item.get("featured"):
+            write_tall(item, media_card)
 
 
 if __name__ == "__main__":

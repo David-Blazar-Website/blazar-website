@@ -1,5 +1,7 @@
 ---
 title: "Media"
+page-layout: full
+body-classes: media-page
 listing:
   - id: opinion
     contents: data/media.yml

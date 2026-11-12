@@ -603,3 +603,7 @@ html { scroll-padding-top: 80px; }
 .research-page .topic-jump { margin-bottom: 1.6rem; }
 .research-page hr.section-rule, .media-page hr.section-rule { margin: 1.5rem 0 0.5rem 0; }
 .research-page h3.topic-head, .research-page #working-papers-section { scroll-margin-top: 90px; }
+
+/* ---------- Intro text and note boxes span the full content width (2026-11-12) ---------- */
+.research-intro { max-width: none; }
+.research-intro .brief-note, .media-page .press-card { max-width: none; }

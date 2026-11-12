@@ -35,7 +35,7 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 | `data/research.yml` | One entry per paper, in display order (working papers, then published newest first). Field guide at the top of the file |
 | `data/media.yml` | One entry per op-ed, podcast, news item or brief. Field guide at the top of the file |
 | `_listings/*.ejs` | Templates for the carousel, paper list and media list. In Quarto's EJS, `<%= %>` outputs raw HTML and `<%- %>` escapes. Keep template lines unindented, or Pandoc reads them as code blocks |
-| `scripts/make_thumbnails.py` | Writes `images/research/*.svg` and `images/media/*.svg` from the data files: a key-finding chart when a paper has a `finding:` block, otherwise a topic icon; a typographic card for media. Also writes portrait copies of featured items to `images/*/tall/` for the carousel |
+| `scripts/make_thumbnails.py` | Writes `images/research/*.svg` and `images/media/*.svg` from the data files: a key-finding chart when a paper has a `finding:` block, otherwise a topic icon; a typographic card for media. Also writes carousel copies of featured items: portraits in `images/*/tall/` and label-free media cards in `images/media/plain/` |
 | `images/` | Generated thumbnails (commit them; the publish workflow does not run the script) |
 | `files/` | `David-Blazar-CV.pdf` (linked from the navbar and home page), `headshot.jpg`, `favicon.svg` |
 | `_quarto.yml` | Site title, `site-url`, navbar (Home, Research, Media, CV), footer, social icons, theme, `resources` |
@@ -66,7 +66,7 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 - [ ] **Custom domain** `davidblazar.com` (GoDaddy). Done: `site-url` set; domain verified at the org level (TXT record `_github-pages-challenge-david-blazar-website`, keep it); custom domain entered in repo Settings → Pages. Remaining, only when David approves launch: at GoDaddy delete the "WebsiteBuilder Site" A record, add A records for `@` → 185.199.108.153, .109.153, .110.153, .111.153, and point `www` (CNAME) to `david-blazar-website.github.io`; then turn on Enforce HTTPS. Don't touch other records. No `CNAME` file is needed with Actions deploys.
 - [ ] Headshot: new 600×600 photo added 2026-11-12; David plans to replace it again soon.
 - Social links confirmed 2026-11-12 (Scholar user W73YpjsAAAAJ, LinkedIn david-blazar-69958ba). No ORCID.
-- Key-finding visuals: 22 papers have a chart or headline number; the rest use topic icons. Paper PDFs are in David's local folder (Documents/Claude/Personal Website/Papers).
+- Key-finding visuals: all 34 papers have a tailored card (chart, headline number, short list, or key idea). Paper PDFs are in David's local folder (Documents/Claude/Personal Website/Papers).
 - Free versions: eight accepted manuscripts are hosted in `files/papers/` (AJE 2017, EP 2017, ER 2015, ER 2020, EFP 2020, EEPA 2015, EER 2015, TCR 2020). IJEMST 2018, English Education 2011 and English Journal 2009 have no free version; David decided they show the journal link only (2026-11-12).
 - [ ] Not yet copied to `files/papers/` (Chrome blocked the downloads): the RER 2018 and EEPA 2017 manuscripts on matthewakraft.com, and the three Harvard CEPR working papers (AERJ 2016, Educational Assessment 2017 and 2012).
 - Figures added from David's image files (2026-11-12): EFP 2020 Figure 1; EEPA 2015 Figures 1–4 (in a Figures section before the appendices, with the published captions).

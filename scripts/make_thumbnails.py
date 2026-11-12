@@ -45,6 +45,8 @@ MEDIA_TYPES = {
     "brief":   ("#4F6B52", "Policy brief"),
 }
 
+CAROUSEL = False  # True while drawing the carousel copies (no type label: the carousel shows it as a tag)
+
 KEEP = set()  # e.g. {"images/research/jpam-2026-tam.svg"} once a hand-made figure exists
 
 
@@ -212,11 +214,58 @@ def stat_card(item):
     return s + "</svg>"
 
 
+def list_card(item):
+    """Two to four short findings or ideas. finding: {kind: list, title, items: [...]}"""
+    f = item["finding"]
+    bg, c, label = TOPICS[item.get("topic", "methods")]
+    tall = H > W
+    s = svg_open(bg)
+    s += f'<text x="48" y="{70 if tall else 62}" font-family="{SANS}" font-size="22" font-weight="600" letter-spacing="2" fill="{c}">{esc(label.upper())}</text>'
+    y = 136 if tall else 122
+    tsize = 40 if tall else 40
+    for line in wrap(f["title"], 24 if tall else 32):
+        s += f'<text x="48" y="{y}" font-family="{SERIF}" font-size="{tsize}" font-weight="700" fill="{INK}">{esc(line)}</text>'
+        y += tsize + 8
+    items = f["items"]
+    isize = 30 if tall else 31
+    width = 30 if tall else 42
+    lines = [wrap(it, width) for it in items]
+    y += 56 if tall else 26
+    for block in lines:
+        s += f'<rect x="48" y="{y - isize * 0.72:.0f}" width="8" height="{len(block) * (isize + 8) - 10}" rx="3" fill="{c}"/>'
+        for line in block:
+            s += f'<text x="76" y="{y:.0f}" font-family="{SANS}" font-size="{isize}" fill="{INK}">{esc(line)}</text>'
+            y += isize + 8
+        y += 26 if tall else 12
+    return s + "</svg>"
+
+
+def idea_card(item):
+    """A key idea in words, for papers without a headline number. finding: {kind: idea, headline, caption}"""
+    f = item["finding"]
+    bg, c, label = TOPICS[item.get("topic", "methods")]
+    tall = H > W
+    s = svg_open(bg)
+    s += f'<text x="48" y="78" font-family="{SANS}" font-size="24" font-weight="600" letter-spacing="2" fill="{c}">{esc(label.upper())}</text>'
+    hl = wrap(f["headline"], 12 if tall else 20)
+    hsize = min(96 if tall else 88, int((W - 100) / (0.55 * max(len(l) for l in hl))))
+    y = (H * 0.40 if tall else 200) - (len(hl) - 1) * hsize * 0.5
+    for line in hl:
+        s += f'<text x="44" y="{y:.0f}" font-family="{SERIF}" font-style="italic" font-weight="700" font-size="{hsize}" fill="{c}">{esc(line)}</text>'
+        y += hsize * 1.08
+    y += 30
+    for line in wrap(f["caption"], 34 if tall else 48)[:6]:
+        s += f'<text x="48" y="{y:.0f}" font-family="{SANS}" font-size="{27 if tall else 25}" fill="{INK}">{esc(line)}</text>'
+        y += 37
+    return s + "</svg>"
+
+
 def media_card(item):
     color, label = MEDIA_TYPES[item["type"]]
     s = svg_open(color)
     s += f'<rect x="28" y="28" width="{W-56}" height="{H-56}" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>'
-    s += f'<text x="64" y="104" font-family="{SANS}" font-size="26" font-weight="600" letter-spacing="3" fill="#FFFFFF" fill-opacity="0.85">{esc(label.upper())}</text>'
+    if not CAROUSEL:
+        s += f'<text x="64" y="104" font-family="{SANS}" font-size="26" font-weight="600" letter-spacing="3" fill="#FFFFFF" fill-opacity="0.85">{esc(label.upper())}</text>'
     outlet = item.get("outlet_short", item["outlet"])
     lines = wrap(outlet, 12 if H > W else 16)
     # size the outlet name so the longest line fits inside the frame (about 0.62 em per character)
@@ -237,27 +286,38 @@ def tall_path(path):
 
 
 def write_tall(item, make):
-    """Draw a 600x1000 portrait version for featured items, then restore the standard size."""
-    global W, H
-    W, H = 600, 1000
+    """Carousel copies of a featured item: a 600x1000 portrait (images/*/tall/) for wide screens and,
+    for media, a label-free standard card (images/media/plain/) for narrow screens."""
+    global W, H, CAROUSEL
+    CAROUSEL = True
     try:
+        W, H = 600, 1000
         out = tall_path(item["image"])
         os.makedirs(os.path.dirname(out), exist_ok=True)
         open(out, "w").write(make(item))
-    finally:
         W, H = 800, 500
+        if "status" not in item:
+            folder, name = os.path.split(item["image"])
+            out = os.path.join(folder, "plain", name)
+            os.makedirs(os.path.dirname(out), exist_ok=True)
+            open(out, "w").write(make(item))
+    finally:
+        W, H, CAROUSEL = 800, 500, False
 
 
 def research_svg(item):
     f = item.get("finding")
-    return (stat_card(item) if f.get("kind") == "stat" else finding_chart(item)) if f else topic_card(item)
+    if not f:
+        return topic_card(item)
+    kind = f.get("kind")
+    return {"stat": stat_card, "list": list_card, "idea": idea_card}.get(kind, finding_chart)(item)
 
 
 def main():
     os.makedirs("images/research", exist_ok=True)
     os.makedirs("images/media", exist_ok=True)
     # portrait copies are regenerated from scratch, so un-featured items drop out
-    for folder in ("images/research/tall", "images/media/tall"):
+    for folder in ("images/research/tall", "images/media/tall", "images/media/plain"):
         if os.path.isdir(folder):
             for name in os.listdir(folder):
                 os.remove(os.path.join(folder, name))

@@ -586,3 +586,20 @@ main.content.page-full { max-width: none; }
   .media-page .media-item { grid-template-columns: 96px 1fr; }
   .media-page .media-thumb img { max-width: 96px; }
 }
+
+/* ---------- Research topics: jump links and topic headings (2026-11-12) ---------- */
+.topic-jump { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.4rem 0 0.4rem 0; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.topic-jump a { font-size: 0.85rem; padding: 0.35rem 0.85rem; border-radius: 999px; border: 1px solid #E3C9BC; background: #F6E9E1; color: #953f21; text-decoration: none; }
+.topic-jump a:hover { background: #B5502D; border-color: #B5502D; color: #fff; }
+.research-page h3.topic-head { font-family: "Fraunces", Georgia, serif; font-size: 1.2rem; font-weight: 600; color: #B5502D; margin: 2rem 0 0.2rem 0; padding-bottom: 0.35rem; border-bottom: 1px solid #E8DED2; }
+.research-page h2 + h3.topic-head, .research-page h2 + .section h3.topic-head { margin-top: 0.8rem; }
+.research-page h3.topic-head .anchorjs-link { display: none; }
+html { scroll-padding-top: 80px; }
+
+/* ---------- Media: news list shows the newest 6 until "Show all" is clicked (2026-11-12) ---------- */
+.media-list.is-folded .media-more { display: none; }
+.media-show-all { margin: 1rem 0 0.5rem 0; padding: 0.45rem 1.1rem; border-radius: 999px; border: 1px solid #B5502D; background: transparent; color: #B5502D; font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 0.88rem; font-weight: 600; cursor: pointer; }
+.media-show-all:hover { background: #B5502D; color: #fff; }
+.research-page .topic-jump { margin-bottom: 1.6rem; }
+.research-page hr.section-rule, .media-page hr.section-rule { margin: 1.5rem 0 0.5rem 0; }
+.research-page h3.topic-head, .research-page #working-papers-section { scroll-margin-top: 90px; }

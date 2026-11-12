@@ -10,10 +10,43 @@ listing:
     sort: false
     type: custom
     template: _listings/research.ejs
-  - id: published
+  - id: pub-workforce
     contents: data/research.yml
     include:
       status: published
+      area: workforce
+    sort: false
+    type: custom
+    template: _listings/research.ejs
+  - id: pub-development
+    contents: data/research.yml
+    include:
+      status: published
+      area: development
+    sort: false
+    type: custom
+    template: _listings/research.ejs
+  - id: pub-teaching
+    contents: data/research.yml
+    include:
+      status: published
+      area: teaching
+    sort: false
+    type: custom
+    template: _listings/research.ejs
+  - id: pub-resources
+    contents: data/research.yml
+    include:
+      status: published
+      area: resources
+    sort: false
+    type: custom
+    template: _listings/research.ejs
+  - id: pub-early
+    contents: data/research.yml
+    include:
+      status: published
+      area: early
     sort: false
     type: custom
     template: _listings/research.ejs
@@ -27,7 +60,16 @@ David's research draws on education policy and economics. Using large administra
 :::
 :::
 
-## Working Papers
+<nav class="topic-jump" aria-label="Research topics">
+<a href="#working-papers-section">Working papers</a>
+<a href="#workforce">Teacher labor markets and educator diversity</a>
+<a href="#development">Coaching, evaluation, and teacher development</a>
+<a href="#teaching">Effective teaching and its effects on students</a>
+<a href="#resources">Resources, districts, and research design</a>
+<a href="#early">Earlier work</a>
+</nav>
+
+## Working Papers {#working-papers-section}
 
 ::: {#working-papers}
 :::
@@ -36,7 +78,29 @@ David's research draws on education policy and economics. Using large administra
 
 ## Published Articles
 
-::: {#published}
+### Teacher labor markets and educator diversity {#workforce .topic-head}
+
+::: {#pub-workforce}
+:::
+
+### Coaching, evaluation, and teacher development {#development .topic-head}
+
+::: {#pub-development}
+:::
+
+### Effective teaching and its effects on students {#teaching .topic-head}
+
+::: {#pub-teaching}
+:::
+
+### Resources, districts, and research design {#resources .topic-head}
+
+::: {#pub-resources}
+:::
+
+### Earlier work: Teaching English {#early .topic-head}
+
+::: {#pub-early}
 :::
 
 <p class="page-footnote">For the complete record, see the <a href="files/David-Blazar-CV.pdf">CV</a> or <a href="https://scholar.google.com/citations?user=W73YpjsAAAAJ&hl=en">Google Scholar</a>.</p>

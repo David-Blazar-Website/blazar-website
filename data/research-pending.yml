@@ -3,24 +3,28 @@
 # add its link and move the entry back into data/research.yml under Working Papers.
 - id: wp-teaching-tradeoffs
   status: working
+  area: teaching
   title: 'Teaching tradeoffs: Short-term gains, long-run consequences'
   authors: Blazar, D.
   topic: instruction
   image: images/research/wp-teaching-tradeoffs.svg
 - id: wp-307-trials
   status: working
+  area: resources
   title: 'Expanding educational opportunity for Black, Latinx, and low-income students: Evidence from 307 randomized trials on achievement, SEL, and attainment'
   authors: Blazar, D., Song, D., Waller, A., Carson, N., Zhao, J., & Galindo, C.
   topic: methods
   image: images/research/wp-307-trials.svg
 - id: wp-service-scholarships
   status: working
+  area: workforce
   title: Service scholarships grow the teacher workforce, but design determines who benefits
   authors: Blazar, D., & Yaow, Y. H.
   topic: pipeline
   image: images/research/wp-service-scholarships.svg
 - id: wp-paraprofessional
   status: working
+  area: workforce
   title: 'Aide-to-teacher pathways: Evidence from Maryland'
   authors: Morris, W. T., Montana, S., Dominguez-Mel, N., & Blazar, D.
   topic: pipeline
@@ -31,6 +35,7 @@
   image: images/research/wp-paraprofessional.svg
 - id: wp-science-of-reading
   status: working
+  area: teaching
   title: 'The science of reading and the teaching of reading: Exploring instructional practice and student achievement in early literacy classrooms'
   authors: Troyer, M., Blazar, D., Donovan, S., & Ahmed, W.
   topic: curriculum

@@ -4,6 +4,8 @@
 #
 # Fields
 #   status:      working | published
+#   area:        Research-page topic section: workforce | development | teaching | resources | early
+#                (headings are set in research.qmd)
 #   title, authors (APA author string), year, journal, volume, issue, pages
 #   online:      true for "Advance online publication" (no volume/issue yet)
 #   link:        journal version (DOI) for published papers; public version (e.g. EdWorkingPapers) for working papers
@@ -21,6 +23,7 @@
 
 - id: wp-localness
   status: working
+  area: workforce
   title: Teacher localness, early-career effectiveness, and retention
   authors: Dominguez-Mel, N., Morris, W. T., Montana, S., & Blazar, D.
   link: https://edworkingpapers.com/ai26-1501
@@ -37,6 +40,7 @@
   image: images/research/wp-localness.svg
 - id: wp-teacher-pay
   status: working
+  area: workforce
   title: 'Layered reforms and the structure of teacher pay: Descriptive evidence from Maryland'
   authors: Morris, W. T., & Blazar, D.
   link: https://caldercenter.org/publications/layered-reforms-and-structure-teacher-pay-descriptive-evidence-maryland
@@ -49,6 +53,7 @@
   image: images/research/wp-teacher-pay.svg
 - id: natcomms-2026-investments
   status: published
+  area: resources
   title: Disparities in childhood human capital investments in the United States
   authors: Blazar, D., Boudreaux, M., Klees, S., Rice, J. K., Titus, M., & Zhao, J.
   year: 2026
@@ -88,6 +93,7 @@
   summary: The widest gaps in what society invests in children open before kindergarten, in housing and child care. Public schooling narrows them.
 - id: eepa-2026-disparate-pathways
   status: published
+  area: workforce
   title: 'Disparate pathways: Understanding racial disparities in teaching'
   authors: Blazar, D., Anthenelli, M., Gao, W., Goings, R., & Gershenson, S.
   year: 2026
@@ -106,6 +112,7 @@
   image: images/research/eepa-2026-disparate-pathways.svg
 - id: er-2026-staff-diversity
   status: published
+  area: workforce
   title: 'Professional staff diversity and student outcomes: Extending our understanding of race/ethnicity-matching effects in education'
   authors: Lagos, F., & Blazar, D.
   year: 2026
@@ -125,6 +132,7 @@
   image: images/research/er-2026-staff-diversity.svg
 - id: jpam-2026-tam
   status: published
+  area: workforce
   title: 'Localized teacher recruitment through “grow-your-own”: Impacts of the high school Teacher Academy of Maryland program'
   authors: Blazar, D., Gao, W., Lagos, F., Goings, R., & Gershenson, S.
   year: 2026
@@ -172,6 +180,7 @@
   summary: Students with access to a high school “grow-your-own” program were 45% more likely to become teachers a decade later.
 - id: eepa-2025-evaluation-incentives
   status: published
+  area: development
   title: 'Differential responses to teacher evaluation incentives: Expectancy, race, experience, and task'
   authors: Blazar, D., Adnot, M., Anthenelli, M., & Zhong, X.
   year: 2025
@@ -193,6 +202,7 @@
   image: images/research/eepa-2025-evaluation-incentives.svg
 - id: aeraopen-2025-cte
   status: published
+  area: workforce
   title: 'Pathways into the CTE teaching profession: A descriptive analysis of degrees, licenses, and race in Maryland'
   authors: Blazar, D., Song, D., Goings, R., Plasman, J., & Gottfried, M.
   year: 2025
@@ -223,6 +233,7 @@
   image: images/research/aeraopen-2025-cte.svg
 - id: er-2024-black-teachers
   status: published
+  area: workforce
   title: Why Black teachers matter
   authors: Blazar, D.
   year: 2024
@@ -255,6 +266,7 @@
   image: images/research/er-2024-black-teachers.svg
 - id: efp-2024-coaching-personnel
   status: published
+  area: development
   title: Instructional coaching personnel and program scalability
   authors: Blazar, D., McNamara, D., & Blue, G.
   year: 2024
@@ -276,6 +288,7 @@
   image: images/research/efp-2024-coaching-personnel.svg
 - id: jree-2024-districts
   status: published
+  area: resources
   title: 'Effective school district policies and practices: Synthesizing theoretical frameworks and empirical findings across disciplines'
   authors: Blazar, D., & Schueler, B.
   year: 2024
@@ -290,6 +303,7 @@
   image: images/research/jree-2024-districts.svg
 - id: jte-2023-good-teaching
   status: published
+  area: teaching
   title: 'Challenges and tradeoffs of “good” teaching: The pursuit of multiple educational outcomes'
   authors: Blazar, D., & Pollard, C.
   year: 2023
@@ -311,6 +325,7 @@
   image: images/research/jte-2023-good-teaching.svg
 - id: jehr-2022-stemm
   status: published
+  area: workforce
   title: 'Exclusive versus mixed, general versus CTE: Building a new taxonomy of STEMM high school teachers'
   authors: Gottfried, M., Plasman, J., & Blazar, D.
   year: 2022
@@ -322,6 +337,7 @@
   image: images/research/jehr-2022-stemm.svg
 - id: er-2020-diverse-needs
   status: published
+  area: teaching
   title: Teaching to support students with diverse academic needs
   authors: Blazar, D., & Archer, C.
   year: 2020
@@ -345,6 +361,7 @@
   image: images/research/er-2020-diverse-needs.svg
 - id: jpam-2020-curriculum
   status: published
+  area: resources
   title: 'Curriculum reform in the Common Core era: Evaluating elementary math textbooks across six U.S. states'
   authors: Blazar, D., Heller, B., Kane, T. J., Polikoff, M., & Staiger, D. O., with Carrell, S., Goldhaber, D., Harris, D., Hitch, R., Holden, K. L., & Kurlaender, M.
   year: 2020
@@ -359,6 +376,7 @@
   image: images/research/jpam-2020-curriculum.svg
 - id: tcr-2020-coaching-scale
   status: published
+  area: development
   title: 'Teacher coaching to improve instruction at scale: Opportunities and challenges in policy contexts'
   authors: Blazar, D.
   year: 2020
@@ -373,6 +391,7 @@
   image: images/research/tcr-2020-coaching-scale.svg
 - id: efp-2020-video
   status: published
+  area: development
   title: Can video technology improve teacher evaluations? An experimental study
   authors: Kane, T. J., Blazar, D., Gehlbach, H., Greenberg, M., Quinn, D., & Thal, D.
   year: 2020
@@ -391,6 +410,7 @@
   image: images/research/efp-2020-video.svg
 - id: aeraopen-2019-experiments
   status: published
+  area: resources
   title: 'Balancing rigor, replication, and relevance: A case for multiple-cohort, longitudinal experiments'
   authors: Blazar, D., & Kraft, M. A.
   year: 2019
@@ -404,6 +424,7 @@
   image: images/research/aeraopen-2019-experiments.svg
 - id: efp-2018-validating
   status: published
+  area: teaching
   title: 'Validating teacher effects on students’ attitudes and behaviors: Evidence from random assignment of teachers to students'
   authors: Blazar, D.
   year: 2018
@@ -418,6 +439,7 @@
   image: images/research/efp-2018-validating.svg
 - id: ijemst-2018-video
   status: published
+  area: development
   title: Using tablets to explore the potential for video-based classroom observations for research and professional development
   authors: Blazar, D., Gilbert, B., Herlihy, C., & Gogolen, C.
   year: 2018
@@ -430,6 +452,7 @@
   image: images/research/ijemst-2018-video.svg
 - id: rer-2018-coaching-meta
   status: published
+  area: development
   title: 'The effect of teacher coaching on instruction and achievement: A meta-analysis of the causal evidence'
   authors: Kraft, M. A., Blazar, D., & Hogan, D.
   year: 2018
@@ -463,6 +486,7 @@
   image: images/research/rer-2018-coaching-meta.svg
 - id: ea-2017-dimensions
   status: published
+  area: teaching
   title: 'Attending to general and mathematics-specific dimensions of teaching: Exploring factors across two observation instruments'
   authors: Blazar, D., Braslow, D., Charalambous, C. Y., & Hill, H. C.
   year: 2017
@@ -477,6 +501,7 @@
   image: images/research/ea-2017-dimensions.svg
 - id: eepa-2017-attitudes
   status: published
+  area: teaching
   title: Teacher and teaching effects on students’ attitudes and behaviors
   authors: Blazar, D., & Kraft, M. A.
   year: 2017
@@ -510,6 +535,7 @@
   image: images/research/eepa-2017-attitudes.svg
 - id: er-2017-test-prep
   status: published
+  area: teaching
   title: Does test preparation mean low-quality instruction?
   authors: Blazar, D., & Pollard, C.
   year: 2017
@@ -528,6 +554,7 @@
   image: images/research/er-2017-test-prep.svg
 - id: ep-2017-coaching
   status: published
+  area: development
   title: 'Individualized coaching to improve teacher practice across grades and subjects: New experimental evidence'
   authors: Kraft, M. A., & Blazar, D.
   year: 2017
@@ -546,6 +573,7 @@
   image: images/research/ep-2017-coaching.svg
 - id: aje-2017-observations
   status: published
+  area: teaching
   title: 'Relationships between observations of elementary mathematics instruction and student achievement: Exploring variability across districts'
   authors: Lynch, K., Chin, M., & Blazar, D.
   year: 2017
@@ -560,6 +588,7 @@
   image: images/research/aje-2017-observations.svg
 - id: aerj-2016-value-added
   status: published
+  area: teaching
   title: What does it mean to be ranked a “high” or “low” value-added teacher? Observing differences in instructional quality across districts
   authors: Blazar, D., Litke, E., & Barmore, J.
   year: 2016
@@ -584,6 +613,7 @@
   image: images/research/aerj-2016-value-added.svg
 - id: eer-2015-math
   status: published
+  area: teaching
   title: 'Effective teaching in elementary mathematics: Identifying classroom practices that support student achievement'
   authors: Blazar, D.
   year: 2015
@@ -601,6 +631,7 @@
   image: images/research/eer-2015-math.svg
 - id: er-2015-grade-assignments
   status: published
+  area: workforce
   title: 'Grade assignments and the teacher pipeline: A low-cost lever to improve student achievement?'
   authors: Blazar, D.
   year: 2015
@@ -625,6 +656,7 @@
   image: images/research/er-2015-grade-assignments.svg
 - id: eepa-2015-coaching-mechanisms
   status: published
+  area: development
   title: 'Exploring mechanisms of effective teacher coaching: A tale of two cohorts from a randomized experiment'
   authors: Blazar, D., & Kraft, M. A.
   year: 2015
@@ -643,6 +675,7 @@
   image: images/research/eepa-2015-coaching-mechanisms.svg
 - id: aeraopen-2015-resources
   status: published
+  area: resources
   title: 'Resources for teaching: Examining personal and institutional predictors of high-quality instruction'
   authors: Hill, H. C., Blazar, D., & Lynch, K.
   year: 2015
@@ -656,6 +689,7 @@
   image: images/research/aeraopen-2015-resources.svg
 - id: ea-2012-validating
   status: published
+  area: teaching
   title: 'Validating arguments for observational instruments: Attending to multiple sources of variation'
   authors: Hill, H. C., Charalambous, C. Y., Blazar, D., McGinn, D., Beisiegel, M., Humez, A., Kraft, M., Litke, E., & Lynch, K.
   year: 2012
@@ -670,6 +704,7 @@
   image: images/research/ea-2012-validating.svg
 - id: ee-2011-theatre
   status: published
+  area: early
   title: 'Using theater to engage cultural identity: Implications for students and teachers'
   authors: Blazar, D.
   year: 2011
@@ -682,6 +717,7 @@
   image: images/research/ee-2011-theatre.svg
 - id: ej-2009-angels
   status: published
+  area: early
   title: 'Self-discovery through character connections: Opening up to gayness in Angels in America'
   authors: Blazar, D.
   year: 2009

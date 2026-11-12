@@ -39,14 +39,15 @@
   image: images/research/wp-service-scholarships.svg
 - id: wp-localness
   status: working
-  title: Teacher preparation, localness, and student achievement
-  authors: Dominguez, N., Morris, W., Montana, S., & Blazar, D.
+  title: Teacher localness, early-career effectiveness, and retention
+  authors: Dominguez-Mel, N., Morris, W. T., Montana, S., & Blazar, D.
+  link: https://edworkingpapers.com/ai26-1501
   topic: pipeline
   image: images/research/wp-localness.svg
 - id: wp-paraprofessional
   status: working
-  title: 'The emerging case for investing in the paraprofessional-to-teacher pipeline: Evidence from Maryland'
-  authors: Montana, S., Dominguez, N., Morris, W., & Blazar, D.
+  title: 'Aide-to-teacher pathways: Evidence from Maryland'
+  authors: Morris, W. T., Montana, S., Dominguez-Mel, N., & Blazar, D.
   topic: pipeline
   finding:
     kind: stat
@@ -80,6 +81,8 @@
   link: https://doi.org/10.1038/s41467-026-70316-3
   open_access: true
   related:
+  - label: 'Commentary: The Conversation'
+    link: https://theconversation.com/are-schools-a-great-equalizer-they-help-kids-catch-up-but-wealthier-children-still-pull-ahead-295330
   - label: 'Commentary: The Hill'
     link: https://thehill.com/opinion/congress-blog/economy-budget/6017347-childhood-investment-gap-analysis/
   topic: inequality
@@ -119,6 +122,9 @@
   journal: Educational Researcher
   online: true
   link: https://doi.org/10.3102/0013189X261434481
+  related:
+  - label: 'Podcast: Faculti'
+    link: https://faculti.net/staff-diversity-beyond-teachers-boosts-minority-student-outcomes
   topic: diversity
   image: images/research/er-2026-staff-diversity.svg
 - id: jpam-2026-tam
@@ -172,6 +178,9 @@
   link: https://doi.org/10.3102/01623737241298666
   free_link: https://edworkingpapers.com/ai24-1068
   free_label: EdWorkingPapers
+  related:
+  - label: 'Commentary: Brookings'
+    link: https://www.brookings.edu/articles/learning-from-teacher-evaluations-that-work/
   topic: evaluation
   finding:
     kind: stat
@@ -220,6 +229,9 @@
   link: https://doi.org/10.3102/0013189X241261336
   free_link: https://edworkingpapers.com/ai21-501
   free_label: EdWorkingPapers, earlier version
+  related:
+  - label: 'Commentary: The Conversation'
+    link: https://theconversation.com/black-teachers-improve-outcomes-for-all-students-but-the-profession-remains-largely-white-281716
   topic: diversity
   finding:
     title: Effects of having a Black teacher in upper elementary school
@@ -286,6 +298,8 @@
   year: 2022
   journal: Journal of Education Human Resources
   link: https://doi.org/10.3138/jehr-2022-0006
+  free_link: https://par.nsf.gov/biblio/10424430
+  free_label: Accepted manuscript, NSF Public Access Repository
   topic: pipeline
   image: images/research/jehr-2022-stemm.svg
 - id: er-2020-diverse-needs
@@ -359,6 +373,8 @@
   issue: '3'
   pages: 281–309
   link: https://doi.org/10.1162/edfp_a_00251
+  free_link: https://education.umd.edu/media/8445/download
+  free_label: Author manuscript, UMD
   topic: sel
   image: images/research/efp-2018-validating.svg
 - id: ijemst-2018-video
@@ -383,7 +399,12 @@
   issue: '4'
   pages: 547–588
   link: https://doi.org/10.3102/0034654318759268
+  free_link: https://scholar.harvard.edu/files/mkraft/files/kraft_blazar_hogan_2017_teacher_coaching_meta_analysis_wp.pdf
+  free_label: Working paper, Matthew Kraft’s site
   note: Most-read article in Review of Educational Research in 2018 · Cited in the Economic Report of the President
+  related:
+  - label: 'Commentary: Education Next'
+    link: https://www.educationnext.org/taking-teacher-coaching-to-scale-can-personalized-training-become-standard-practice/
   topic: coaching
   finding:
     title: Average effect of teacher coaching across 60 causal studies
@@ -405,6 +426,8 @@
   issue: '2'
   pages: 71–94
   link: https://doi.org/10.1080/10627197.2017.1309274
+  free_link: https://cepr.harvard.edu/resource/attending-general-and-content-specific-dimensions-teaching-exploring-factors-across-two
+  free_label: Working paper, Harvard CEPR
   topic: observation
   image: images/research/ea-2017-dimensions.svg
 - id: eepa-2017-attitudes
@@ -417,7 +440,14 @@
   issue: '1'
   pages: 146–170
   link: https://doi.org/10.3102/0162373716670260
+  free_link: https://scholar.harvard.edu/sites/scholar.harvard.edu/files/mkraft/files/blazar_kraft_2017_teacher_and_teaching_effects_on_students_attitudes_and_behaviors_eepa.pdf
+  free_label: Author manuscript, Matthew Kraft’s site
   note: Most-read article in Educational Evaluation and Policy Analysis in 2017
+  related:
+  - label: 'Commentary: Brookings'
+    link: https://www.brookings.edu/articles/should-noncognitive-measures-be-used-for-teacher-accountability/
+  - label: 'Commentary: Shanker Institute'
+    link: https://www.shankerinstitute.org/blog/social-and-emotional-skills-school-pivoting-accountability-development
   topic: sel
   image: images/research/eepa-2017-attitudes.svg
 - id: er-2017-test-prep
@@ -430,6 +460,8 @@
   issue: '8'
   pages: 420–433
   link: https://doi.org/10.3102/0013189X17732753
+  free_link: https://education.umd.edu/media/8296/download
+  free_label: Author manuscript, UMD
   topic: instruction
   image: images/research/er-2017-test-prep.svg
 - id: ep-2017-coaching
@@ -469,6 +501,8 @@
   issue: '2'
   pages: 324–359
   link: https://doi.org/10.3102/0002831216630407
+  free_link: https://cepr.harvard.edu/resource/what-does-it-mean-be-ranked-high-or-low-value-added-teacher-observing-differences
+  free_label: Working paper, Harvard CEPR
   topic: evaluation
   image: images/research/aerj-2016-value-added.svg
 - id: eer-2015-math
@@ -480,6 +514,8 @@
   volume: '48'
   pages: 16–29
   link: https://doi.org/10.1016/j.econedurev.2015.05.005
+  free_link: https://dash.harvard.edu/handle/1/27112692
+  free_label: Dissertation chapter, Harvard DASH
   topic: instruction
   image: images/research/eer-2015-math.svg
 - id: er-2015-grade-assignments
@@ -504,6 +540,8 @@
   issue: '4'
   pages: 542–566
   link: https://doi.org/10.3102/0162373715579487
+  free_link: https://scholar.harvard.edu/sites/scholar.harvard.edu/files/mkraft/files/exploring_mechanisms_of_effective_teacher_coaching.pdf
+  free_label: Author manuscript, Matthew Kraft’s site
   topic: coaching
   image: images/research/eepa-2015-coaching-mechanisms.svg
 - id: aeraopen-2015-resources
@@ -529,6 +567,8 @@
   issue: 2–3
   pages: 88–106
   link: https://doi.org/10.1080/10627197.2012.715019
+  free_link: https://cepr.harvard.edu/resource/validating-arguments-observational-instruments-attending-multiple-sources-variation
+  free_label: Working paper, Harvard CEPR
   topic: observation
   image: images/research/ea-2012-validating.svg
 - id: ee-2011-theatre

@@ -130,14 +130,14 @@
   date_label: February 2026
   link: https://jpamscloserlook.podbean.com/e/the-teacher-academy-of-maryland-a-grow-your-own-gyo-teacher-program/
   image: images/media/jpam-2026-closer-look.svg
-- id: faculti-interview
+- id: faculti-staff-diversity
   type: podcast
-  title: Video interview
+  title: Staff diversity beyond teachers boosts minority student outcomes
   outlet: Faculti
   date: '2026-01-01'
   date_label: ''
-  link: https://doi.org/10.64240/40402de41d
-  image: images/media/faculti-interview.svg
+  link: https://faculti.net/staff-diversity-beyond-teachers-boosts-minority-student-outcomes
+  image: images/media/faculti-staff-diversity.svg
 - id: k12dive-2026-apprenticeship
   type: news
   title: The emerging promise of teacher apprenticeship programs

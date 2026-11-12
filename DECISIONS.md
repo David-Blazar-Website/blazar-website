@@ -17,12 +17,14 @@ Standing decisions for davidblazar.com. Check this before changing the site, and
 - **Research page** (2026-11-11): note at the top pointing to the shorter versions on the Maryland Equity Project and MLDS Center sites; then Working Papers; then Published Articles, newest first. Full-length papers only.
 - **Media page** (2026-11-12): press-inquiries line (dblazar@umd.edu), then **Opinion & Commentary**, **Podcasts & Interviews**, **In the News** (its own section), and **Policy Briefs** (Maryland Equity Project and MLDS Center).
 - **Commentary lives on the Media page once and is cross-linked from Research** (2026-11-12). A paper's entry shows "Related" links to the op-eds, briefs and podcasts about it, so readers see them in both places. Each paper's `related:` list in `data/research.yml` holds a label and link for each piece. Only link a piece to a paper when the piece is clearly about that study.
+- **Maryland Equity Project briefs are listed without links for now** (2026-11-12): David is refreshing the MEP website and brief formatting; add links after that.
 - External briefs and commentary (Brookings, Education Next, IZA World of Labor, Urban Institute, Albert Shanker Institute, The Conversation, The Hill) go under **Opinion & Commentary**. Only Maryland Equity Project and MLDS Center briefs go under **Policy Briefs**.
 
 ## Links to papers (hierarchy, 2026-11-12)
 1. **Open-access journal article:** one link to the journal version, marked *Open access*.
 2. **Paywalled article with a free version elsewhere** (EdWorkingPapers, NBER, IZA, SSRN, university repository): two clearly labeled links, *Journal version* (may require a subscription) and *Free version* (naming where it's posted).
 3. **Paywalled article with no free version:** *Journal version*, plus a free manuscript hosted on the site (`files/papers/`). Use David's **accepted manuscript** (the version after peer review, before the publisher's copyediting and typesetting), with a cover line giving the citation and DOI. Don't post the publisher's PDF, and don't rebuild a "clean" copy from the publisher's typeset text. If no accepted manuscript is in David's folder, list the paper for David to find one.
+- Acceptable free versions (rule b): working papers and author manuscripts on EdWorkingPapers, NBER/IZA/SSRN, Harvard CEPR, co-authors' sites, NSF PAR, Harvard DASH, or UMD when the file is a manuscript. Don't use publisher PDFs hosted elsewhere (including UMD's copies) as the "free version" (2026-11-12).
 - Working papers: link the public version (EdWorkingPapers, etc.) when one exists; otherwise no link.
 
 ## Content sourcing
@@ -30,6 +32,7 @@ Standing decisions for davidblazar.com. Check this before changing the site, and
 - Link the **original outlet** first. For a republished op-ed, mention a major republication (e.g., *The Washington Post*) as a second link; don't list minor republications.
 - Working papers on the site must also be on the CV.
 - The CV PDF on the site is the current version (October 2026). The editable Word file and the paper PDFs are in David's local folder `Documents/Claude/Personal Website` (papers in `Papers/`, unposted working papers in `Papers/Working Papers/`), not in the public repo.
+- Working papers use the title on EdWorkingPapers (or the latest draft) when it differs from the CV; David updates the CV (2026-11-12). Current author orders come from David (e.g., the aide-to-teacher paper: Morris, Montana, Dominguez-Mel, Blazar).
 - Titles, pages and DOIs follow the published article when the CV differs (e.g., EFP 2020 "Can video technology improve teacher evaluations?").
 
 ## Visuals

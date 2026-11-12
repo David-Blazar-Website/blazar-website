@@ -52,6 +52,57 @@
     value: $60,000
     caption: Maryland’s new teacher salary floor produced no detectable compression in pay
   image: images/research/wp-teacher-pay.svg
+- id: wp-student-absences
+  status: working
+  area: resources
+  title: 'The causal effect of student absences post pandemic: Evidence from three school systems'
+  authors: Yaow, Y. H., Gershenson, S., Blazar, D., & Hutt, E.
+  link: https://edworkingpapers.com/ai26-1490
+  topic: attendance
+  finding:
+    kind: stat
+    value: ≈40% smaller
+    caption: Drop after the pandemic in the effect of tenth-grade absences on high school graduation in Maryland. Effects on test scores shrank only 5–20%.
+  image: images/research/wp-student-absences.svg
+- id: wp-cs-staffing
+  status: working
+  area: workforce
+  title: 'When demand outpaces supply: Flexible staffing and the making of Maryland’s high school CS teacher workforce'
+  authors: Yoo, J., Blazar, D., & Liu, J.
+  link: https://edworkingpapers.com/ai26-1469
+  topic: pipeline
+  finding:
+    title: Growth in Maryland high school computer science, 2012–13 to 2023–24
+    unit: '%'
+    bars:
+    - - Students taking CS
+      - 225
+    - - CS teachers
+      - 140
+      - b
+    note: Growth in each group's share of all students or teachers.
+  image: images/research/wp-cs-staffing.svg
+- id: wp-cs-for-all
+  status: working
+  area: resources
+  title: 'Computer science for all? The impact of high school computer science courses on college majors and earnings'
+  authors: Liu, J., Conrad, C., & Blazar, D.
+  link: https://edworkingpapers.com/ai24-904
+  related:
+  - label: 'Commentary: Brookings'
+    link: https://www.brookings.edu/articles/how-computer-science-for-all-initiatives-affect-students-college-and-career-outcomes/
+  topic: curriculum
+  finding:
+    title: Effect of taking a high-quality high school CS course
+    unit: ' pts'
+    bars:
+    - - Declaring a CS major
+      - 10.2
+    - - Earning a CS bachelor's
+      - 5.5
+      - b
+    note: Percentage points. Exposure also raised earnings at age 24 by about 8%.
+  image: images/research/wp-cs-for-all.svg
 - id: natcomms-2026-investments
   status: published
   area: resources
@@ -439,7 +490,7 @@
   image: images/research/efp-2020-video.svg
 - id: aeraopen-2019-experiments
   status: published
-  area: resources
+  area: development
   title: 'Balancing rigor, replication, and relevance: A case for multiple-cohort, longitudinal experiments'
   authors: Blazar, D., & Kraft, M. A.
   year: 2019
@@ -730,7 +781,7 @@
   image: images/research/eepa-2015-coaching-mechanisms.svg
 - id: aeraopen-2015-resources
   status: published
-  area: resources
+  area: teaching
   title: 'Resources for teaching: Examining personal and institutional predictors of high-quality instruction'
   authors: Hill, H. C., Blazar, D., & Lynch, K.
   year: 2015

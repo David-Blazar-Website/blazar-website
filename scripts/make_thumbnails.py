@@ -36,6 +36,7 @@ TOPICS = {
     "methods":     ("#EAEAE6", "#4D5450", "Research design"),
     "literature":  ("#F1E7DB", "#8A5A35", "Teaching English"),
     "pay":         ("#EEF0E2", "#5F6B2A", "Teacher pay"),
+    "attendance":  ("#E6EAF1", "#4A5D7A", "Student attendance"),
 }
 
 MEDIA_TYPES = {
@@ -117,6 +118,10 @@ def glyph(topic, c, cx=400, cy=215):
         g += '<path d="M45 195 L 215 60" stroke-opacity="0.55" stroke-width="7"/>'
     elif topic == "literature":
         g += f'<text x="120" y="190" text-anchor="middle" font-family="{SERIF}" font-size="230" fill="{c}" stroke="none">“</text>'
+    elif topic == "attendance":
+        g += '<rect x="25" y="45" width="190" height="165" rx="14"/><path d="M25 90 H 215 M70 25 v40 M170 25 v40"/>'
+        for i, (x, y) in enumerate(((70, 125), (120, 125), (170, 125), (70, 170), (120, 170))):
+            g += f'<circle cx="{x}" cy="{y}" r="11" fill="{c}" fill-opacity="{0.35 if i == 3 else 1}" stroke="none"/>'
     elif topic == "pay":
         g += f'<circle cx="120" cy="120" r="92"/><text x="120" y="160" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="120" fill="{c}" stroke="none">$</text>'
     return g + "</g>"

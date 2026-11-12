@@ -65,7 +65,7 @@ David's research draws on education policy and economics. Using large administra
 <a href="#workforce">Teacher labor markets and educator diversity</a>
 <a href="#development">Coaching, evaluation, and teacher development</a>
 <a href="#teaching">Effective teaching and its effects on students</a>
-<a href="#resources">Resources, districts, and research design</a>
+<a href="#resources">Policy, resources, and student opportunity</a>
 <a href="#early">Earlier work</a>
 </nav>
 
@@ -93,7 +93,7 @@ David's research draws on education policy and economics. Using large administra
 ::: {#pub-teaching}
 :::
 
-### Resources, districts, and research design {#resources .topic-head}
+### Policy, resources, and student opportunity {#resources .topic-head}
 
 ::: {#pub-resources}
 :::

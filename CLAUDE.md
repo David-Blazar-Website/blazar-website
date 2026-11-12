@@ -30,8 +30,8 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 | File | Contents |
 |---|---|
 | `index.qmd` | Home: headshot, title, roles, social buttons, "Latest" carousel (featured items from both data files), About bio, research tags |
-| `research.qmd` | Note pointing to MEP and MLDS short versions; topic jump links; Working Papers; Published Articles in topic sections (one listing per `area:` value, from `data/research.yml`). `data/research-pending.yml` holds working papers not yet shown |
-| `media.qmd` | Press-inquiries note; Opinion & Commentary, Podcasts & Interviews, In the News (all from `data/media.yml`; news shows the newest 6 with a "Show all" button; briefs are hidden for now) |
+| `research.qmd` | Note pointing to MEP and MLDS short versions; order-by and topic controls (script at the bottom of the page); Working Papers; Published Articles newest first (from `data/research.yml`; the script regroups them by `area:`). `data/research-pending.yml` holds working papers not yet shown |
+| `media.qmd` | Press-inquiries note; Opinion & Commentary, Podcasts & Interviews, In the News (all from `data/media.yml`; news shows the newest 10 with a "Show all" button; briefs are hidden for now) |
 | `data/research.yml` | One entry per paper, in display order (working papers, then published newest first). Field guide at the top of the file |
 | `data/media.yml` | One entry per op-ed, podcast, news item or brief. Field guide at the top of the file |
 | `_listings/*.ejs` | Templates for the carousel, paper list and media list. In Quarto's EJS, `<%= %>` outputs raw HTML and `<%- %>` escapes. Keep template lines unindented, or Pandoc reads them as code blocks |

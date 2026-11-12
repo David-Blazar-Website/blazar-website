@@ -1,5 +1,6 @@
 <%
 const bold = (a) => (a || "").replace("Blazar, D.", "<strong>Blazar, D.</strong>");
+const AREA_LABELS = {"workforce": "Teacher workforce & diversity", "development": "Coaching & evaluation", "teaching": "Effective teaching", "resources": "Policy & resources", "early": "Teaching English"};
 %>
 <ul class="paper-list">
 <% for (const item of items) {
@@ -16,7 +17,7 @@ if (item.online) source += " Advance online publication.";
 // the thumbnail opens the full key-finding card (see the viewer in research.qmd)
 const fullCard = item.image.replace(/\/([^\/]+)$/, "/full/$1");
 %>
-<li class="paper" id="<%- item.id %>">
+<li class="paper" id="<%- item.id %>" data-area="<%- item.area %>">
 <a class="paper-thumb card-zoom" href="<%= fullCard %>" title="Enlarge the key-finding card" aria-label="Enlarge the key-finding card"><img src="<%= item.image %>" alt="" loading="lazy"></a>
 <div class="paper-body">
 <p class="paper-cite"><%= bold(item.authors) %> (<%- working ? "Working paper" : item.year %>). <% if (working) { %><em><%- item.title %></em>.<% } else { %><%- item.title %>. <%= source %><% } %></p>
@@ -30,6 +31,7 @@ const fullCard = item.image.replace(/\/([^\/]+)$/, "/full/$1");
 <% if (!working && !item.open_access && item.link) { %><a class="paper-btn paper-btn-quiet" href="<%= item.link %>">Journal version</a><% if (!(item.free_link || item.manuscript)) { %><span class="paywall-note">Subscription may be required</span><% } %><% } %>
 </div>
 <% } %>
+<% if (AREA_LABELS[item.area]) { %><p class="paper-tags"><a class="paper-tag" href="#" data-area="<%- item.area %>"><%- AREA_LABELS[item.area] %></a></p><% } %>
 <% if (item.related) { %>
 <p class="paper-related">Related: <% item.related.forEach((r, k) => { %><%- k ? " · " : "" %><a href="<%= r.link %>"><%- r.label %></a><% }) %></p>
 <% } %>

@@ -35,14 +35,14 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 | `data/research.yml` | One entry per paper, in display order (working papers, then published newest first). Field guide at the top of the file |
 | `data/media.yml` | One entry per op-ed, podcast, news item or brief. Field guide at the top of the file |
 | `_listings/*.ejs` | Templates for the carousel, paper list and media list. In Quarto's EJS, `<%= %>` outputs raw HTML and `<%- %>` escapes. Keep template lines unindented, or Pandoc reads them as code blocks |
-| `scripts/make_thumbnails.py` | Writes `images/research/*.svg` and `images/media/*.svg` from the data files: a key-finding chart when a paper has a `finding:` block, otherwise a topic icon; a typographic card for media. Also writes carousel copies of featured items: portraits in `images/*/tall/` and label-free media cards in `images/media/plain/` |
+| `scripts/make_thumbnails.py` | Writes `images/research/*.svg` and `images/media/*.svg` from the data files: a big-visual-only thumbnail per paper plus the full key-finding card in `images/research/full/` (opened from the thumbnail); a typographic card for media. Also writes carousel copies of featured items: portraits in `images/*/tall/` and label-free media cards in `images/media/plain/` |
 | `images/` | Generated thumbnails (commit them; the publish workflow does not run the script) |
 | `files/` | `David-Blazar-CV.pdf` (linked from the navbar and home page), `headshot.jpg`, `favicon.svg` |
 | `_quarto.yml` | Site title, `site-url`, navbar (Home, Research, Media, CV), footer, social icons, theme, `resources` |
 | `styles.scss` / `styles.css` | Theme and component styles |
 
 ### Adding things
-- **New paper or working paper:** add an entry to `data/research.yml` in the right place, with `area:` for its Research-page topic section and `topic:` for its icon. To feature it in the carousel, add `featured: true`, a `date`, and a one-sentence `summary`. A `finding:` block turns its thumbnail into a key-finding chart; only use numbers that appear in the paper. Then `python3 scripts/make_thumbnails.py`.
+- **New paper or working paper:** add an entry to `data/research.yml` in the right place, with `area:` for its Research-page topic section and `topic:` for its icon. To feature it in the carousel, add `featured: true`, a `date`, and a one-sentence `summary`. Add a one-sentence `key_finding:` (shown under the citation) and a `finding:` block for its key-finding card; only use numbers and claims that appear in the paper. Then `python3 scripts/make_thumbnails.py`.
 - **New op-ed, podcast or press item:** add an entry to `data/media.yml` with `type:`; set `featured: true` and a `summary` for the newest few so the carousel stays fresh, and remove `featured` from older ones (the carousel shows up to 8, newest first). Then run the thumbnail script.
 - Prefer the original outlet's URL; when only a republication is verified, use it and say so in `note:`.
 - Don't use photos from news articles (they're licensed to the publisher). Use the generated cards, a figure redrawn from the paper's own numbers, or a freely licensed photo with credit.

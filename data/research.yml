@@ -16,6 +16,7 @@
 #                the same pieces are listed on the Media page)
 #   note:        optional line under the citation (awards, coverage)
 #   topic:       icon theme used by scripts/make_thumbnails.py when there is no `finding`
+#   key_finding: one plain sentence shown under the citation ("Key finding: ..."); use only what the paper says
 #   finding:     key-finding visual from the paper's own numbers: bars (title, unit, bars: [[label, value]], note)
 #                or a stat card (kind: stat, value, caption), a short list (kind: list, title, items)
 #                or, for papers without a headline number, a key idea (kind: idea, headline, caption)
@@ -33,6 +34,7 @@
     link: https://fordhaminstitute.org/national/commentary/hiring-teachers-local-community-may-not-always-be-very-best-option
   - label: 'News: FutureEd'
     link: https://www.future-ed.org/research-notes-local-teacher-hires-stay-longer-are-less-effective-study-finds/
+  key_finding: New Maryland teachers with university-based preparation outperformed young conditionally certified teachers in math by 0.06 SD.
   topic: pipeline
   finding:
     kind: stat
@@ -46,6 +48,7 @@
   authors: Morris, W. T., & Blazar, D.
   link: https://caldercenter.org/publications/layered-reforms-and-structure-teacher-pay-descriptive-evidence-maryland
   note: CALDER Working Paper No. 348-1126
+  key_finding: Maryland's new $60,000 teacher salary floor produced no detectable compression in pay.
   topic: pay
   finding:
     kind: stat
@@ -58,6 +61,7 @@
   title: 'The causal effect of student absences post pandemic: Evidence from three school systems'
   authors: Yaow, Y. H., Gershenson, S., Blazar, D., & Hutt, E.
   link: https://edworkingpapers.com/ai26-1490
+  key_finding: After the pandemic, the effect of tenth-grade absences on high school graduation in Maryland was about 40% smaller, while effects on test scores shrank only 5–20%.
   topic: attendance
   finding:
     kind: stat
@@ -70,6 +74,7 @@
   title: 'When demand outpaces supply: Flexible staffing and the making of Maryland’s high school CS teacher workforce'
   authors: Yoo, J., Blazar, D., & Liu, J.
   link: https://edworkingpapers.com/ai26-1469
+  key_finding: From 2012–13 to 2023–24, the share of Maryland high school students taking computer science grew 225%, while the share of teachers teaching it grew 140%.
   topic: pipeline
   finding:
     title: Growth in Maryland high school computer science, 2012–13 to 2023–24
@@ -91,6 +96,7 @@
   related:
   - label: 'Commentary: Brookings'
     link: https://www.brookings.edu/articles/how-computer-science-for-all-initiatives-affect-students-college-and-career-outcomes/
+  key_finding: Taking a high-quality high school CS course raised the chance of declaring a CS major by 10.2 percentage points and of earning a CS bachelor's degree by 5.5 points.
   topic: curriculum
   finding:
     title: Effect of taking a high-quality high school CS course
@@ -129,6 +135,7 @@
     link: https://nepc.colorado.edu/publication/newsletter-child-cost-050726
   - label: 'News: Spotlight on Poverty'
     link: https://spotlightonpoverty.org/spotlight-exclusives/new-study-examines-the-investment-gap-for-children-in-poverty
+  key_finding: The investment gap between children in the poorest and richest quarters of families is 24% from birth to age 5 and 12% from ages 5 to 18.
   topic: inequality
   finding:
     title: Investment gap between children in the poorest and richest quarter of families
@@ -156,6 +163,7 @@
   related:
   - label: 'Commentary: The Conversation'
     link: https://theconversation.com/black-teachers-improve-outcomes-for-all-students-but-the-profession-remains-largely-white-281716
+  key_finding: Bringing teacher and student demographics closer together would take policy effects of 20% or more on students' educational milestones.
   topic: diversity
   finding:
     kind: stat
@@ -176,6 +184,7 @@
   related:
   - label: 'Podcast: Faculti'
     link: https://faculti.net/staff-diversity-beyond-teachers-boosts-minority-student-outcomes
+  key_finding: The test-score effects of a diverse professional staff are about one-fifth the size of the effects of diverse teachers.
   topic: diversity
   finding:
     kind: stat
@@ -212,6 +221,7 @@
     link: https://www.edweek.org/leadership/4-keys-to-building-a-pipeline-from-high-school-to-the-teaching-profession/2024/06
   - label: 'News: Fordham Institute'
     link: https://fordhaminstitute.org/national/commentary/maryland-grow-your-own-teacher-program-may-be-win-win-win
+  key_finding: High schools offering the Teacher Academy of Maryland raised the share of students who later became teachers by 45%, and by 82% for Black girls.
   topic: pipeline
   finding:
     title: 'Teacher Academy of Maryland: increase in students later becoming teachers'
@@ -246,6 +256,7 @@
   related:
   - label: 'Commentary: Brookings'
     link: https://www.brookings.edu/articles/learning-from-teacher-evaluations-that-work/
+  key_finding: In DC, White novice teachers improved by 0.6 SD in response to dismissal threats; Black novices faced the most threats and fewest rewards, and did not respond.
   topic: evaluation
   finding:
     kind: stat
@@ -264,6 +275,7 @@
   pages: 1–20
   link: https://doi.org/10.1177/23328584251361382
   open_access: true
+  key_finding: 68% of Maryland's CTE teachers hold alternative licenses (vs. 36% of other teachers), and 37% are Black (vs. 22%).
   topic: pipeline
   finding:
     title: CTE teachers compared with other teachers in Maryland
@@ -303,6 +315,7 @@
     link: https://www.weareteachers.com/black-teachers-impact/
   - label: 'News: Fordham Institute'
     link: https://fordhaminstitute.org/national/commentary/evidence-suggests-teachers-color-improve-outcomes-students-all-races
+  key_finding: Having a Black teacher raised Black students' self-efficacy (0.9 SD) and engagement (0.7 SD), and all students' test scores (0.2 SD).
   topic: diversity
   finding:
     title: Effects of having a Black teacher in upper elementary school
@@ -332,6 +345,7 @@
   related:
   - label: 'News: NCTQ'
     link: https://nctq.org/blog/If-you-want-to-help-new-teachers-improve,-invest-in-great-coaches
+  key_finding: Individual coaches differed by 0.25–0.3 SD in how much they changed new teachers' practice.
   topic: coaching
   finding:
     kind: stat
@@ -351,6 +365,7 @@
   link: https://doi.org/10.1080/19345747.2023.2269923
   free_link: https://edworkingpapers.com/ai22-581
   free_label: EdWorkingPapers, earlier version
+  key_finding: Quantitative studies link higher teacher salaries, data use, and school autonomy and parental choice in district-wide turnarounds to better outcomes.
   topic: districts
   finding:
     kind: list
@@ -376,6 +391,7 @@
   related:
   - label: 'News: NCTQ'
     link: https://www.nctq.org/research-insights/measuring-good-teaching-is-complicated/
+  key_finding: Teachers' effects on math test scores and on student engagement were negatively correlated (−.24 to −.43).
   topic: instruction
   finding:
     kind: stat
@@ -392,6 +408,7 @@
   link: https://doi.org/10.3138/jehr-2022-0006
   free_label: Accepted manuscript
   manuscript: files/papers/Gottfried-Plasman-Blazar_2022_Exclusive-versus-Mixed-STEMM-Teachers_JEHR_Accepted-Manuscript.pdf
+  key_finding: About 85% of Maryland's STEMM teachers teach only general STEMM courses and about 4% only CTE STEMM courses.
   topic: pipeline
   finding:
     title: Maryland's STEMM teachers, by the courses they teach
@@ -417,6 +434,7 @@
   link: https://doi.org/10.3102/0013189X20931226
   free_label: Accepted manuscript
   manuscript: files/papers/Blazar-Archer_2020_Teaching-Students-with-Diverse-Academic-Needs_ER_Accepted-Manuscript.pdf
+  key_finding: Ambitious math instruction was linked to larger test-score gains for English learners (0.055 SD) than for general education students (0.019 SD).
   topic: instruction
   finding:
     title: Effect of ambitious math instruction on state math test scores (SD)
@@ -441,6 +459,7 @@
   link: https://doi.org/10.1002/pam.22257
   free_label: Harvard CEPR report
   manuscript: files/papers/Blazar-et-al_2020_Curriculum-Reform-in-the-Common-Core-Era_JPAM_CEPR-Report.pdf
+  key_finding: Teachers in 94% of elementary schools used the district-adopted textbook in most lessons, yet achievement gains differed little across math textbooks.
   topic: curriculum
   finding:
     kind: stat
@@ -460,6 +479,7 @@
   link: https://journals.sagepub.com/doi/abs/10.1177/016146812012201001
   free_label: Accepted manuscript
   manuscript: files/papers/Blazar_2020_Teacher-Coaching-to-Improve-Instruction-at-Scale_TCR_Accepted-Manuscript.pdf
+  key_finding: Coaches can build leadership capacity in their systems, but top-down hierarchies and competing reforms can get in the way.
   topic: coaching
   finding:
     kind: list
@@ -482,6 +502,7 @@
   link: https://doi.org/10.1162/edfp_a_00289
   free_label: Accepted manuscript
   manuscript: files/papers/Kane-et-al_2020_Can-Video-Improve-Teacher-Evaluations_EFP_Accepted-Manuscript.pdf
+  key_finding: Teachers randomly assigned to video-based observations were about 10 percentage points more likely to stay in their school.
   topic: observation
   finding:
     kind: stat
@@ -500,6 +521,7 @@
   pages: 1–18
   link: https://doi.org/10.1177/2332858419876252
   open_access: true
+  key_finding: In a three-cohort coaching experiment, changes in coaches, content and duration coincided with large differences in effects across cohorts.
   topic: methods
   finding:
     kind: list
@@ -522,6 +544,7 @@
   link: https://doi.org/10.1162/edfp_a_00251
   free_label: Author manuscript
   manuscript: files/papers/Blazar_2018_Validating-Teacher-Effects-on-Attitudes-and-Behaviors_EFP_Author-Manuscript.pdf
+  key_finding: With teachers randomly assigned to classes, a 1 SD more effective teacher raised students' happiness in class by about 0.30 SD.
   topic: sel
   finding:
     kind: stat
@@ -539,6 +562,7 @@
   issue: '2'
   pages: 122–135
   link: https://doi.org/10.18404/ijemst.408935
+  key_finding: Classroom video can support 1:1 coaching, practical feedback cycles for principals, and new measures of teacher effectiveness.
   topic: observation
   finding:
     kind: list
@@ -571,6 +595,7 @@
     link: https://hechingerreport.org/every-teacher-need-coach/
   - label: 'News: Education Week (2026)'
     link: https://www.edweek.org/leadership/a-major-teacher-coaching-program-flopped-what-went-wrong/2026/10
+  key_finding: Across 60 causal studies, coaching improved instruction by 0.49 SD and student achievement by 0.18 SD.
   topic: coaching
   finding:
     title: Average effect of teacher coaching across 60 causal studies
@@ -595,6 +620,7 @@
   link: https://doi.org/10.1080/10627197.2017.1309274
   free_link: https://cepr.harvard.edu/resource/attending-general-and-content-specific-dimensions-teaching-exploring-factors-across-two
   free_label: Working paper, Harvard CEPR
+  key_finding: In more than 2,000 lessons scored on two instruments, the best-fitting models kept both general and math-specific dimensions of teaching.
   topic: observation
   finding:
     kind: stat
@@ -620,6 +646,7 @@
     link: https://www.brookings.edu/articles/should-noncognitive-measures-be-used-for-teacher-accountability/
   - label: 'Commentary: Shanker Institute'
     link: https://www.shankerinstitute.org/blog/social-and-emotional-skills-school-pivoting-accountability-development
+  key_finding: Teachers' effects on students' happiness in class (0.31 SD) were larger than their effects on math test scores (0.18 SD).
   topic: sel
   finding:
     title: How much teachers affect each outcome (SD of teacher effects)
@@ -648,6 +675,7 @@
   link: https://doi.org/10.3102/0013189X17732753
   free_label: Author manuscript
   manuscript: files/papers/Blazar-Pollard_2017_Does-Test-Preparation-Mean-Low-Quality-Instruction_ER_Author-Manuscript.pdf
+  key_finding: Each 1 SD more days of test preparation was linked to 0.10 SD less ambitious math instruction.
   topic: instruction
   finding:
     kind: stat
@@ -667,6 +695,7 @@
   link: https://doi.org/10.1177/0895904816631099
   free_label: Accepted manuscript
   manuscript: files/papers/Kraft-Blazar_2017_Individualized-Coaching-New-Experimental-Evidence_EP_Accepted-Manuscript.pdf
+  key_finding: Teachers randomly assigned to coaching scored 0.59 SD higher on an index of effective teaching practices.
   topic: coaching
   finding:
     kind: stat
@@ -686,6 +715,7 @@
   link: https://doi.org/10.1086/692662
   free_label: Accepted manuscript
   manuscript: files/papers/Lynch-Chin-Blazar_2017_Observations-and-Achievement-Across-Districts_AJE_Accepted-Manuscript.pdf
+  key_finding: How well observed instruction predicted state test scores ranged from −0.05 to 0.13 across five districts, and was significant in only two.
   topic: observation
   finding:
     kind: stat
@@ -705,6 +735,7 @@
   link: https://doi.org/10.3102/0002831216630407
   free_link: https://cepr.harvard.edu/resource/what-does-it-mean-be-ranked-high-or-low-value-added-teacher-observing-differences
   free_label: Working paper, Harvard CEPR
+  key_finding: Ranked against all four districts, 44% of District 3's teachers fell in the bottom quartile and 13% in the top.
   topic: evaluation
   finding:
     title: District 3 teachers ranked against all four districts
@@ -729,6 +760,7 @@
   link: https://doi.org/10.1016/j.econedurev.2015.05.005
   free_label: Accepted manuscript
   manuscript: files/papers/Blazar_2015_Effective-Teaching-in-Elementary-Mathematics_EER_Accepted-Manuscript.pdf
+  key_finding: 1 SD more inquiry-oriented instruction raised students' math achievement by 0.10 SD.
   topic: instruction
   finding:
     kind: stat
@@ -748,6 +780,7 @@
   link: https://doi.org/10.3102/0013189X15580944
   free_label: Accepted manuscript
   manuscript: files/papers/Blazar_2015_Grade-Assignments-and-the-Teacher-Pipeline_ER_Accepted-Manuscript.pdf
+  key_finding: About 16% of teachers in the lowest-achieving schools switch grades each year, versus 13% in the highest-achieving schools.
   topic: pipeline
   finding:
     title: Teachers who switch grades from one year to the next, by school achievement
@@ -773,6 +806,7 @@
   link: https://doi.org/10.3102/0162373715579487
   free_label: Accepted manuscript
   manuscript: files/papers/Blazar-Kraft_2015_Exploring-Mechanisms-of-Effective-Teacher-Coaching_EEPA_Accepted-Manuscript.pdf
+  key_finding: Coaching improved teaching practice by 0.56 SD in the first cohort but had no effect in the second, larger cohort.
   topic: coaching
   finding:
     kind: stat
@@ -791,6 +825,7 @@
   pages: 1–23
   link: https://doi.org/10.1177/2332858415617703
   open_access: true
+  key_finding: Teacher and district resources explained 41% of the variation in ambitious math instruction and 20% in teacher errors, but little else.
   topic: instruction
   finding:
     title: Share of variation in instruction explained by teacher and district resources
@@ -816,6 +851,7 @@
   link: https://doi.org/10.1080/10627197.2012.715019
   free_link: https://cepr.harvard.edu/resource/validating-arguments-observational-instruments-attending-multiple-sources-variation
   free_label: Working paper, Harvard CEPR
+  key_finding: Lesson content did not affect rater agreement, but validity evidence varied with the rater pool, observation procedure and district.
   topic: observation
   finding:
     kind: list
@@ -835,6 +871,7 @@
   issue: '3'
   pages: 293–303
   link: https://www.jstor.org/stable/23017094
+  key_finding: A unit built around the musical In the Heights helped a new teacher and his Washington Heights students explore cultural identity through performance.
   topic: literature
   finding:
     kind: idea
@@ -852,6 +889,7 @@
   issue: '4'
   pages: 77–84
   link: https://www.jstor.org/stable/40503269
+  key_finding: Performance pedagogy with Angels in America as a way to open high school students' minds to LGBTQ issues.
   topic: literature
   finding:
     kind: idea

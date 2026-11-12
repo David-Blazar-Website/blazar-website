@@ -15,7 +15,7 @@ const ctaFor = (item) => item.status ? "Read the paper" : (item.type === "podcas
 <% items.forEach((item, i) => { %>
 <article class="fc-slide" role="group" aria-roledescription="slide" aria-label="<%- (i + 1) + ' of ' + items.length %>" <%- i === 0 ? '' : 'aria-hidden=true' %>>
 <a class="fc-media" href="<%= linkFor(item) %>" tabindex="-1" aria-hidden="true">
-<picture><source media="(min-width: 1200px)" srcset="<%= item.image.replace(/\/([^\/]+)$/, '/tall/$1') %>"><img src="<%= item.status ? item.image : item.image.replace(/\/([^\/]+)$/, '/plain/$1') %>" alt="" loading="<%- i === 0 ? 'eager' : 'lazy' %>"></picture>
+<picture><source media="(min-width: 1200px)" srcset="<%= item.image.replace(/\/([^\/]+)$/, '/tall/$1') %>"><img src="<%= item.image.replace(/\/([^\/]+)$/, item.status ? '/full/$1' : '/plain/$1') %>" alt="" loading="<%- i === 0 ? 'eager' : 'lazy' %>"></picture>
 </a>
 <div class="fc-body">
 <span class="fc-tag <%- tagClass(item) %>"><%- labelFor(item) %></span>

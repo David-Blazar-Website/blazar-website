@@ -3,6 +3,7 @@
 Run from the repo root:  python3 scripts/make_thumbnails.py
 It reads data/research.yml and data/media.yml and writes images/research/*.svg and images/media/*.svg,
 plus portrait copies of featured items in images/*/tall/ for the home-page carousel.
+Research thumbnails are a big-visual-only version; the full card is in images/research/full/.
 
 - A research item with a `finding` block gets a key-finding bar chart drawn from the numbers in that block.
   Only use numbers that appear in the published paper.
@@ -310,6 +311,55 @@ def write_tall(item, make):
         W, H, CAROUSEL = 800, 500, False
 
 
+def mini_svg(item):
+    """Small Research-page thumbnail: only the big visual (number, bars, headline or icon), no small text.
+    The words go in the paper's key_finding line, and clicking opens the full card."""
+    f = item.get("finding") or {}
+    topic = item.get("topic", "methods")
+    bg, c, label = TOPICS[topic]
+    kind = f.get("kind")
+    if kind == "stat":
+        v = f["value"]
+        size = min(230, int((W - 70) / (0.56 * len(v))))
+        return svg_open(bg) + f'<text x="{W/2:.0f}" y="{H/2 + size*0.34:.0f}" text-anchor="middle" font-family="{SERIF}" font-size="{size}" font-weight="700" fill="{c}">{esc(v)}</text></svg>'
+    if kind == "idea":
+        hl = wrap(f["headline"], 11)
+        size = min(150, int((W - 80) / (0.52 * max(len(l) for l in hl))))
+        y = H / 2 - (len(hl) - 1) * size * 0.52 + size * 0.34
+        s = svg_open(bg)
+        for line in hl:
+            s += f'<text x="{W/2:.0f}" y="{y:.0f}" text-anchor="middle" font-family="{SERIF}" font-style="italic" font-weight="700" font-size="{size}" fill="{c}">{esc(line)}</text>'
+            y += size * 1.04
+        return s + "</svg>"
+    if f.get("bars"):
+        bars = f["bars"][:4]
+        unit = f.get("unit", "")
+        s = svg_open(CREAM)
+        n = len(bars)
+        top, bottom = 50, H - 50
+        slot = (bottom - top) / n
+        bh = min(90, slot * 0.62)
+        vsize = min(78, int(bh * 0.95))
+        vals = [f"{b[1]:g}{unit}" for b in bars]
+        x0, x1 = 50, W - 50 - 18 - 0.66 * vsize * max(len(v) for v in vals)
+        vmax = max(b[1] for b in bars)
+        for i, bar in enumerate(bars):
+            fill = c if len(bar) < 3 or bar[2] == "a" else MUTED
+            y = top + i * slot + (slot - bh) / 2
+            w = max(10, (x1 - x0) * bar[1] / vmax)
+            s += f'<rect x="{x0}" y="{y:.1f}" width="{w:.1f}" height="{bh:.1f}" rx="8" fill="{fill}"/>'
+            s += f'<text x="{x0 + w + 18:.1f}" y="{y + bh/2 + vsize*0.36:.1f}" font-family="{SANS}" font-size="{vsize}" font-weight="700" fill="{INK}">{esc(vals[i])}</text>'
+        return s + "</svg>"
+    # lists and anything else: the topic icon, larger and without its label
+    return svg_open(bg) + f'<g transform="translate({W/2:.0f},{H/2:.0f}) scale(1.45) translate(-400,-215)">' + glyph(topic, c) + "</g></svg>"
+
+
+def full_path(path):
+    """images/research/x.svg -> images/research/full/x.svg (the full card, opened from the thumbnail)."""
+    folder, name = os.path.split(path)
+    return os.path.join(folder, "full", name)
+
+
 def research_svg(item):
     f = item.get("finding")
     if not f:
@@ -326,11 +376,13 @@ def main():
         if os.path.isdir(folder):
             for name in os.listdir(folder):
                 os.remove(os.path.join(folder, name))
+    os.makedirs("images/research/full", exist_ok=True)
     for item in yaml.safe_load(open("data/research.yml")):
         out = item["image"]
         if out in KEEP:
             continue
-        open(out, "w").write(research_svg(item))
+        open(out, "w").write(mini_svg(item))
+        open(full_path(out), "w").write(research_svg(item))
         if item.get("featured"):
             write_tall(item, research_svg)
     for item in yaml.safe_load(open("data/media.yml")):

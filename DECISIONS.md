@@ -44,7 +44,7 @@ Standing decisions for davidblazar.com. Check this before changing the site, and
 - Titles, pages and DOIs follow the published article when the CV differs (e.g., EFP 2020 "Can video technology improve teacher evaluations?").
 
 ## Visuals
-- **Research thumbnails:** every paper has a card tailored to its findings (2026-11-12), drawn in the site's style from the paper itself: a chart or headline number using the paper's own numbers, a short list of findings, or, for the two early English-teaching essays, a key-idea card. A topic icon is only a fallback for a new paper until its card is made.
+- **Research thumbnails** (2026-11-12): every paper has a key-finding card drawn from the paper itself (a chart or headline number using the paper's own numbers, a short list of findings, or, for the two early English-teaching essays, a key-idea card). On the Research page the thumbnail shows only the big visual, with no small text; the words are in a readable "Key finding:" sentence under the citation (`key_finding:` in research.yml); clicking the thumbnail opens the full card enlarged, not the paper.
 - **Carousel images don't repeat the slide's tag** (2026-11-12): the tag (*Opinion*, *In the news*…) appears once, above the title, so the carousel copies of media cards leave the type label off.
 - **Media thumbnails:** typographic cards naming the outlet, colored by type (2026-11-12, David approved). No photos taken from news articles (they're licensed to the publisher).
 - Palette and fonts: cream `#FAF6EF`, terracotta `#B5502D`, near-black `#232323`; Fraunces headings, Inter body.

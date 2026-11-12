@@ -104,3 +104,26 @@ David's research draws on education policy and economics. Using large administra
 :::
 
 <p class="page-footnote">For the complete record, see the <a href="files/David-Blazar-CV.pdf">CV</a> or <a href="https://scholar.google.com/citations?user=W73YpjsAAAAJ&hl=en">Google Scholar</a>.</p>
+
+<dialog class="card-viewer" aria-label="Key-finding card">
+<button class="card-viewer-close" type="button" aria-label="Close">×</button>
+<img src="" alt="">
+<p class="card-viewer-caption"></p>
+</dialog>
+<script>
+(function () {
+var dlg = document.querySelector('.card-viewer');
+var img = dlg.querySelector('img'), cap = dlg.querySelector('.card-viewer-caption');
+document.addEventListener('click', function (e) {
+var a = e.target.closest('a.card-zoom');
+if (!a || !dlg.showModal) return;
+e.preventDefault();
+var f = a.closest('.paper').querySelector('.paper-finding');
+img.src = a.getAttribute('href');
+img.alt = f ? f.textContent : '';
+cap.textContent = f ? f.textContent : '';
+dlg.showModal();
+});
+dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.closest('.card-viewer-close')) dlg.close(); });
+})();
+</script>

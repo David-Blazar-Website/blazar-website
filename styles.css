@@ -607,3 +607,5 @@ html { scroll-padding-top: 80px; }
 /* ---------- Intro text and note boxes span the full content width (2026-11-12) ---------- */
 .research-intro { max-width: none; }
 .research-intro .brief-note, .media-page .press-card { max-width: none; }
+/* topic jump links stretch to fill each row, so the row spans the full content width (2026-11-12) */
+.research-page .topic-jump a { flex: 1 1 auto; text-align: center; }

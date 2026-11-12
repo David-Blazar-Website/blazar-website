@@ -8,6 +8,7 @@ project:
     - files/David-Blazar-CV.pdf
     - files/headshot.jpg
     - files/favicon.svg
+    - files/papers/
 
 website:
   title: "David Blazar"

@@ -67,4 +67,6 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 - [ ] Higher-resolution headshot (the current one is 260×260 px, from the UMD directory).
 - [ ] Confirm the Bluesky handle (`davidblazar.bsky.social`) and the other social links; consider adding ORCID.
 - [ ] Key-finding visuals: 11 papers have them; the rest use topic icons. Paper PDFs are in David's local folder (Documents/Claude/Personal Website/Papers).
-- [ ] Accepted manuscripts for paywalled papers with no free version (rule c in DECISIONS.md), hosted in `files/papers/`.
+- [ ] Free versions still missing: TCR 2020, IJEMST 2018, English Education 2011, English Journal 2009, and EEPA 2015 (Blazar & Kraft). The EEPA 2015 manuscript was on Matthew Kraft's old Harvard Scholar site, which no longer loads, and his new site (matthewakraft.com) has no PDF for it. Five accepted manuscripts are now hosted in `files/papers/` (AJE 2017, EP 2017, ER 2015, ER 2020, EFP 2020).
+- [ ] Not yet copied to `files/papers/` (Chrome blocked the downloads): the RER 2018 and EEPA 2017 manuscripts on matthewakraft.com, and the three Harvard CEPR working papers (AERJ 2016, Educational Assessment 2017 and 2012). Harvard DASH (EER 2015 dissertation chapter) did not load on 2026-11-12; check the link.
+- [ ] EFP 2020 manuscript is missing Figure 1 (the Word file has only its title and notes).

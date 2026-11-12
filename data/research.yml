@@ -122,6 +122,8 @@
   journal: Educational Researcher
   online: true
   link: https://doi.org/10.3102/0013189X261434481
+  free_link: https://files.eric.ed.gov/fulltext/ED616814.pdf
+  free_label: EdWorkingPapers, earlier version
   related:
   - label: 'Podcast: Faculti'
     link: https://faculti.net/staff-diversity-beyond-teachers-boosts-minority-student-outcomes
@@ -298,8 +300,8 @@
   year: 2022
   journal: Journal of Education Human Resources
   link: https://doi.org/10.3138/jehr-2022-0006
-  free_link: https://par.nsf.gov/biblio/10424430
-  free_label: Accepted manuscript, NSF Public Access Repository
+  free_label: Accepted manuscript
+  manuscript: files/papers/Gottfried-Plasman-Blazar_2022_Exclusive-versus-Mixed-STEMM-Teachers_JEHR_Accepted-Manuscript.pdf
   topic: pipeline
   image: images/research/jehr-2022-stemm.svg
 - id: er-2020-diverse-needs
@@ -312,6 +314,8 @@
   issue: '5'
   pages: 297–311
   link: https://doi.org/10.3102/0013189X20931226
+  free_label: Accepted manuscript
+  manuscript: files/papers/Blazar-Archer_2020_Teaching-Students-with-Diverse-Academic-Needs_ER_Accepted-Manuscript.pdf
   topic: instruction
   image: images/research/er-2020-diverse-needs.svg
 - id: jpam-2020-curriculum
@@ -324,8 +328,8 @@
   issue: '4'
   pages: 966–1019
   link: https://doi.org/10.1002/pam.22257
-  free_link: https://cepr.harvard.edu/curriculum
   free_label: Harvard CEPR report
+  manuscript: files/papers/Blazar-et-al_2020_Curriculum-Reform-in-the-Common-Core-Era_JPAM_CEPR-Report.pdf
   topic: curriculum
   image: images/research/jpam-2020-curriculum.svg
 - id: tcr-2020-coaching-scale
@@ -348,6 +352,8 @@
   issue: '3'
   pages: 397–427
   link: https://doi.org/10.1162/edfp_a_00289
+  free_label: Accepted manuscript
+  manuscript: files/papers/Kane-et-al_2020_Can-Video-Improve-Teacher-Evaluations_EFP_Accepted-Manuscript.pdf
   topic: observation
   image: images/research/efp-2020-video.svg
 - id: aeraopen-2019-experiments
@@ -373,8 +379,8 @@
   issue: '3'
   pages: 281–309
   link: https://doi.org/10.1162/edfp_a_00251
-  free_link: https://education.umd.edu/media/8445/download
-  free_label: Author manuscript, UMD
+  free_label: Author manuscript
+  manuscript: files/papers/Blazar_2018_Validating-Teacher-Effects-on-Attitudes-and-Behaviors_EFP_Author-Manuscript.pdf
   topic: sel
   image: images/research/efp-2018-validating.svg
 - id: ijemst-2018-video
@@ -399,7 +405,7 @@
   issue: '4'
   pages: 547–588
   link: https://doi.org/10.3102/0034654318759268
-  free_link: https://scholar.harvard.edu/files/mkraft/files/kraft_blazar_hogan_2017_teacher_coaching_meta_analysis_wp.pdf
+  free_link: https://www.matthewakraft.com/s/The-Effect-of-Teacher-Coaching.pdf
   free_label: Working paper, Matthew Kraft’s site
   note: Most-read article in Review of Educational Research in 2018 · Cited in the Economic Report of the President
   related:
@@ -440,7 +446,7 @@
   issue: '1'
   pages: 146–170
   link: https://doi.org/10.3102/0162373716670260
-  free_link: https://scholar.harvard.edu/sites/scholar.harvard.edu/files/mkraft/files/blazar_kraft_2017_teacher_and_teaching_effects_on_students_attitudes_and_behaviors_eepa.pdf
+  free_link: https://www.matthewakraft.com/s/Teacher-and-Teaching-Effects-on-Students-Attitudes-and-Behaviors.pdf
   free_label: Author manuscript, Matthew Kraft’s site
   note: Most-read article in Educational Evaluation and Policy Analysis in 2017
   related:
@@ -460,8 +466,8 @@
   issue: '8'
   pages: 420–433
   link: https://doi.org/10.3102/0013189X17732753
-  free_link: https://education.umd.edu/media/8296/download
-  free_label: Author manuscript, UMD
+  free_label: Author manuscript
+  manuscript: files/papers/Blazar-Pollard_2017_Does-Test-Preparation-Mean-Low-Quality-Instruction_ER_Author-Manuscript.pdf
   topic: instruction
   image: images/research/er-2017-test-prep.svg
 - id: ep-2017-coaching
@@ -474,6 +480,8 @@
   issue: '7'
   pages: 1033–1068
   link: https://doi.org/10.1177/0895904816631099
+  free_label: Accepted manuscript
+  manuscript: files/papers/Kraft-Blazar_2017_Individualized-Coaching-New-Experimental-Evidence_EP_Accepted-Manuscript.pdf
   topic: coaching
   finding:
     kind: stat
@@ -489,6 +497,9 @@
   volume: '123'
   issue: '4'
   pages: 615–646
+  link: https://doi.org/10.1086/692662
+  free_label: Accepted manuscript
+  manuscript: files/papers/Lynch-Chin-Blazar_2017_Observations-and-Achievement-Across-Districts_AJE_Accepted-Manuscript.pdf
   topic: observation
   image: images/research/aje-2017-observations.svg
 - id: aerj-2016-value-added
@@ -528,6 +539,8 @@
   issue: '4'
   pages: 213–227
   link: https://doi.org/10.3102/0013189X15580944
+  free_label: Accepted manuscript
+  manuscript: files/papers/Blazar_2015_Grade-Assignments-and-the-Teacher-Pipeline_ER_Accepted-Manuscript.pdf
   topic: pipeline
   image: images/research/er-2015-grade-assignments.svg
 - id: eepa-2015-coaching-mechanisms
@@ -540,8 +553,6 @@
   issue: '4'
   pages: 542–566
   link: https://doi.org/10.3102/0162373715579487
-  free_link: https://scholar.harvard.edu/sites/scholar.harvard.edu/files/mkraft/files/exploring_mechanisms_of_effective_teacher_coaching.pdf
-  free_label: Author manuscript, Matthew Kraft’s site
   topic: coaching
   image: images/research/eepa-2015-coaching-mechanisms.svg
 - id: aeraopen-2015-resources

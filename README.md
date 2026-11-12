@@ -36,7 +36,7 @@ Output goes to `_site/`.
 5. **Media page** — `media.qmd` is new. The "In the News" section is intentionally thin (just what turned up in a general search) — David will know about interviews, podcast appearances, or press hits that don't show up that way.
 6. **Socials** — currently linked: email (dblazar@umd.edu), Bluesky (@davidblazar.bsky.social — found by handle/description match, not confirmed by David), LinkedIn, Google Scholar, EdWorkingPapers, UMD faculty profile, Maryland Equity Project. Confirm these are current, add/remove as needed (e.g., ORCID).
 7. **Teaching** — course list and advising roster on `teaching.qmd` reflect the July 2025 CV; both will drift as semesters pass.
-8. **Site URL / deploy** — `_quarto.yml` has a placeholder `site-url`. If publishing to GitHub Pages: `quarto publish gh-pages`.
+8. **Site URL / deploy** — `site-url` is `https://davidblazar.com`. Publishing is automatic: every push to `main` runs `.github/workflows/publish.yml`, which renders the site and deploys it to GitHub Pages (Repo Settings → Pages → Source must be "GitHub Actions"). No need to run `quarto publish`. To redeploy without a change, use "Run workflow" on the Actions tab.
 
 ## Design notes
 

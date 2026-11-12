@@ -6,8 +6,8 @@ project:
 
 website:
   title: "David Blazar"
-  site-url: "https://david-blazar-website.github.io/blazar-website"
-  description: "David Blazar, Associate Professor of Education Policy, University of Maryland College of Education"
+  site-url: "https://davidblazar.com"
+  description: "David Blazar, Malen Professor for Urban Education Policy, College of Education, University of Maryland, College Park"
   favicon: files/favicon.svg
   navbar:
     background: light

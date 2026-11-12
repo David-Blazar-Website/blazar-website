@@ -3,7 +3,7 @@
 Personal academic website for David Blazar (University of Maryland College of Education), built with [Quarto](https://quarto.org) and hosted on GitHub Pages.
 
 - **Repo:** https://github.com/David-Blazar-Website/blazar-website. The org owners are David Blazar (`davidblazar`) and Wesley Morris (`WesleyTMorris`).
-- **Live site:** https://david-blazar-website.github.io/blazar-website/ (until a custom domain is attached; see To-do).
+- **Live site:** https://davidblazar.com once DNS is switched over (held until David approves launch). The default address, https://david-blazar-website.github.io/blazar-website/, redirects there.
 - More than one person edits this repo, so **always `git pull` before changing anything.**
 
 ## Workflow
@@ -11,17 +11,16 @@ Personal academic website for David Blazar (University of Maryland College of Ed
 ```
 git pull                      # get the other person's changes first
 quarto preview                # local preview with live reload
-# ...edit .qmd files...
+# ...edit files...
 git add -A && git commit -m "Short description of the change"
-git push origin main          # source of truth is main
-quarto publish gh-pages       # renders and pushes the built site to gh-pages
+git push origin main          # publishing happens automatically
 ```
 
-- `main` holds the source. `gh-pages` holds only the built site and is written by `quarto publish gh-pages`, so never edit it by hand.
-- Pushing to `main` does **not** update the live site; you have to run `quarto publish gh-pages` as well. Pages builds take about 1 minute.
+- `main` holds the source. Every push to `main` runs `.github/workflows/publish.yml`, which renders the site and deploys it to GitHub Pages (about 1–2 minutes). Check progress on the repo's Actions tab; "Run workflow" there redeploys without a change.
+- Repo Settings → Pages → Source must be "GitHub Actions". `quarto publish gh-pages` is no longer used, and the old `gh-pages` branch can be deleted once the Actions deploy is confirmed.
 - `_site/` and `.quarto/` are build output and are in `.gitignore`. Don't commit them.
 - Keep commits small, with a message saying what changed.
-- After publishing, open the live URL and check that the change shows up.
+- After a deploy, open the live URL and check that the change shows up.
 
 ## Structure
 
@@ -52,13 +51,8 @@ quarto publish gh-pages       # renders and pushes the built site to gh-pages
 - When you replace the CV PDF, update the "Last updated" date on `cv.qmd`.
 
 ## To-do
-- [ ] **Custom domain** (David has purchased one; the name and registrar are still needed).
-  1. Add a `CNAME` file containing the domain, and list it under `project: resources:` in `_quarto.yml` so `quarto publish` keeps it.
-  2. Set `site-url` in `_quarto.yml`.
-  3. Add the DNS records at the registrar: A records for the bare domain pointing to 185.199.108.153, .109.153, .110.153 and .111.153, plus `www` as a CNAME to `david-blazar-website.github.io`. Don't touch existing email (MX) records.
-  4. Set the domain under repo Settings → Pages, verify the domain at the org level, and turn on Enforce HTTPS.
+- [ ] **Custom domain** `davidblazar.com` (GoDaddy). Done: `site-url` set; domain verified at the org level (TXT record `_github-pages-challenge-david-blazar-website`, keep it); custom domain entered in repo Settings → Pages. Remaining, only when David approves launch: at GoDaddy delete the "WebsiteBuilder Site" A record, add A records for `@` → 185.199.108.153, .109.153, .110.153, .111.153, and point `www` (CNAME) to `david-blazar-website.github.io`; then turn on Enforce HTTPS. Don't touch other records. No `CNAME` file is needed with Actions deploys.
 - [ ] Higher-resolution headshot (the current one is 260×260 px, from the UMD directory).
 - [ ] Current CV PDF (the site currently has the July 2025 version).
 - [ ] Confirm the Bluesky handle (`davidblazar.bsky.social`) and the other social links; consider adding ORCID.
 - [ ] Check Work in Progress and the course and advising lists each semester.
-- [ ] Optional: a GitHub Action to publish automatically on every push to `main`, so editors don't need Quarto installed.

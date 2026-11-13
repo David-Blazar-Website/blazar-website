@@ -3,7 +3,7 @@
 Standing decisions for davidblazar.com. Check this before changing the site, and add to it when David makes a new call. Newest decisions are marked with their date. `CLAUDE.md` covers the mechanics (files, workflow, writing rules); this file covers *what David has decided*.
 
 ## Launch and hosting
-- **Not live until David says so** (2026-11-11). Don't change GoDaddy DNS or merge to `main` in a way that would publish at davidblazar.com before he approves launch.
+- **Live at https://davidblazar.com since 2026-11-12.** David approved launch that day. GoDaddy DNS points `@` (four A records, 185.199.108–111.153) and `www` (CNAME to `david-blazar-website.github.io`) to GitHub Pages; Enforce HTTPS is on. Edits now go straight to `main`, which publishes them.
 - Hosting: GitHub Pages, published by GitHub Actions on every push to `main`. Domain verified at the **organization** level (not personal), because the repo belongs to the `David-Blazar-Website` org.
 - Automated updates (scheduled tasks) only open pull requests for review. They never merge, and never touch DNS or Pages settings.
 

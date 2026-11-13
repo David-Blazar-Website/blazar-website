@@ -3,7 +3,7 @@
 Personal academic website for David Blazar (University of Maryland College of Education), built with [Quarto](https://quarto.org) and hosted on GitHub Pages.
 
 - **Repo:** https://github.com/David-Blazar-Website/blazar-website. The org owners are David Blazar (`davidblazar`) and Wesley Morris (`WesleyTMorris`).
-- **Live site:** https://davidblazar.com once DNS is switched over (held until David approves launch). The default address, https://david-blazar-website.github.io/blazar-website/, redirects there.
+- **Live site:** https://davidblazar.com (launched 2026-11-12, HTTPS enforced). The default address, https://david-blazar-website.github.io/blazar-website/, redirects there.
 - More than one person edits this repo, so **always `git pull` before changing anything.**
 - **Read `DECISIONS.md` first.** It records what David has decided about the site (structure, link rules, what goes where). Add to it when he makes a new call.
 
@@ -63,7 +63,7 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 - When you replace the CV, replace `files/David-Blazar-CV.pdf`. The editable Word version is in David's local folder (Documents/Claude/Personal Website), not in this public repo.
 
 ## To-do
-- [ ] **Custom domain** `davidblazar.com` (GoDaddy). Done: `site-url` set; domain verified at the org level (TXT record `_github-pages-challenge-david-blazar-website`, keep it); custom domain entered in repo Settings → Pages. Remaining, only when David approves launch: at GoDaddy delete the "WebsiteBuilder Site" A record, add A records for `@` → 185.199.108.153, .109.153, .110.153, .111.153, and point `www` (CNAME) to `david-blazar-website.github.io`; then turn on Enforce HTTPS. Don't touch other records. No `CNAME` file is needed with Actions deploys.
+- [x] **Custom domain** `davidblazar.com` (GoDaddy), live 2026-11-12. DNS: four A records for `@` → 185.199.108.153, .109.153, .110.153, .111.153 and `www` CNAME → `david-blazar-website.github.io`; Enforce HTTPS on. Keep the TXT record `_github-pages-challenge-david-blazar-website`, and don't touch other GoDaddy records. No `CNAME` file is needed with Actions deploys.
 - [ ] Headshot: new 600×600 photo added 2026-11-12; David plans to replace it again soon.
 - Social links confirmed 2026-11-12 (Scholar user W73YpjsAAAAJ, LinkedIn david-blazar-69958ba). No ORCID.
 - Key-finding visuals: all 34 papers have a tailored card (chart, headline number, short list, or key idea). Paper PDFs are in David's local folder (Documents/Claude/Personal Website/Papers).

@@ -184,12 +184,12 @@
   related:
   - label: 'Podcast: Faculti'
     link: https://faculti.net/staff-diversity-beyond-teachers-boosts-minority-student-outcomes
-  key_finding: The test-score effects of a diverse professional staff are about one-fifth the size of the effects of diverse teachers.
+  key_finding: The test-score effects of a racially diverse professional staff are about one-fifth the size of the effects of racially diverse teachers.
   topic: diversity
   finding:
     kind: stat
     value: 1/5
-    caption: Size of the test-score effects of a diverse professional staff, relative to the effects of diverse teachers
+    caption: Size of the test-score effects of a racially diverse professional staff, relative to the effects of racially diverse teachers
   image: images/research/er-2026-staff-diversity.svg
 - id: jpam-2026-tam
   status: published

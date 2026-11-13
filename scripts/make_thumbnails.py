@@ -24,7 +24,7 @@ SANS = "'Helvetica Neue', Helvetica, Arial, sans-serif"
 
 # Topic -> (background, accent, label)
 TOPICS = {
-    "diversity":   ("#F3E3D9", "#B5502D", "Educator diversity"),
+    "diversity":   ("#F3E3D9", "#B5502D", "Educator racial diversity"),
     "pipeline":    ("#E6ECE4", "#4F6B52", "Teacher pipeline"),
     "coaching":    ("#E4EAF0", "#3E5C76", "Coaching & development"),
     "evaluation":  ("#F2EAD8", "#9A6B1F", "Evaluation & incentives"),

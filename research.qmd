@@ -36,7 +36,7 @@ David's research draws on education policy and economics. Using large administra
 <div class="rc-group rc-topics" role="group" aria-label="Show topic">
 <span class="rc-label">Show</span>
 <button type="button" class="rc-btn" data-area="all" aria-pressed="true">All topics</button>
-<button type="button" class="rc-btn" data-area="workforce" aria-pressed="false">Teacher workforce & diversity</button>
+<button type="button" class="rc-btn" data-area="workforce" aria-pressed="false">Teacher workforce & racial diversity</button>
 <button type="button" class="rc-btn" data-area="development" aria-pressed="false">Coaching & evaluation</button>
 <button type="button" class="rc-btn" data-area="teaching" aria-pressed="false">Effective teaching</button>
 <button type="button" class="rc-btn" data-area="resources" aria-pressed="false">Policy & resources</button>
@@ -85,7 +85,7 @@ dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.cl
 // Research page: order papers by date or by topic, and filter by topic (2026-11-12).
 // Without JavaScript the page shows every paper, newest first.
 (function () {
-var AREAS = [["workforce", "Teacher labor markets and educator diversity"], ["development", "Coaching, evaluation, and teacher development"], ["teaching", "Effective teaching and its effects on students"], ["resources", "Policy, resources, and student opportunity"], ["early", "Earlier work: Teaching English"]];
+var AREAS = [["workforce", "Teacher labor markets and educator racial diversity"], ["development", "Coaching, evaluation, and teacher development"], ["teaching", "Effective teaching and its effects on students"], ["resources", "Policy, resources, and student opportunity"], ["early", "Earlier work: Teaching English"]];
 var controls = document.querySelector('.research-controls');
 var pubList = document.querySelector('#listing-published .paper-list');
 if (!controls || !pubList) return;

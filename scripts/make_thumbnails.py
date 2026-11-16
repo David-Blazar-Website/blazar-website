@@ -3,7 +3,8 @@
 Run from the repo root:  python3 scripts/make_thumbnails.py
 It reads data/research.yml and data/media.yml and writes images/research/*.svg and images/media/*.svg,
 plus portrait copies of featured items in images/*/tall/ for the home-page carousel.
-Research thumbnails are a big-visual-only version; the full card is in images/research/full/.
+Research thumbnails carry a plain-language label (finding.short) over one big visual; the full card is in
+images/research/full/.
 
 - A research item with a `finding` block gets a key-finding bar chart drawn from the numbers in that block.
   Only use numbers that appear in the published paper.
@@ -311,22 +312,37 @@ def write_tall(item, make):
         W, H, CAROUSEL = 800, 500, False
 
 
+def mini_head(text, c):
+    """Plain-language label across the top of a small thumbnail: what the visual measures."""
+    lines = wrap(text, 30)[:2]
+    s, y = "", 68
+    for line in lines:
+        s += f'<text x="36" y="{y}" font-family="{SANS}" font-size="44" font-weight="700" fill="{INK}">{esc(line)}</text>'
+        y += 52
+    s += f'<rect x="36" y="{y - 28}" width="64" height="6" rx="3" fill="{c}"/>'
+    return s, y + 4
+
+
 def mini_svg(item):
-    """Small Research-page thumbnail: only the big visual (number, bars, headline or icon), no small text.
-    The words go in the paper's key_finding line, and clicking opens the full card."""
+    """Small Research-page thumbnail: a plain-language label (finding.short) on top, then one big visual
+    (number, labeled bars, headline or icon). The full card opens on click."""
     f = item.get("finding") or {}
     topic = item.get("topic", "methods")
     bg, c, label = TOPICS[topic]
     kind = f.get("kind")
+    short = f.get("short") or f.get("title") or label
     if kind == "stat":
+        head, y0 = mini_head(short, c)
         v = f["value"]
-        size = min(230, int((W - 70) / (0.56 * len(v))))
-        return svg_open(bg) + f'<text x="{W/2:.0f}" y="{H/2 + size*0.34:.0f}" text-anchor="middle" font-family="{SERIF}" font-size="{size}" font-weight="700" fill="{c}">{esc(v)}</text></svg>'
+        size = min(170, int((W - 80) / (0.56 * len(v))))
+        cy = y0 + (H - y0) / 2 + size * 0.34
+        return svg_open(bg) + head + f'<text x="{W/2:.0f}" y="{cy:.0f}" text-anchor="middle" font-family="{SERIF}" font-size="{size}" font-weight="700" fill="{c}">{esc(v)}</text></svg>'
     if kind == "idea":
-        hl = wrap(f["headline"], 11)
-        size = min(150, int((W - 80) / (0.52 * max(len(l) for l in hl))))
-        y = H / 2 - (len(hl) - 1) * size * 0.52 + size * 0.34
-        s = svg_open(bg)
+        head, y0 = mini_head(short, c)
+        hl = wrap(f["headline"], 13)
+        size = min(120, int((W - 80) / (0.52 * max(len(l) for l in hl))))
+        y = y0 + (H - y0) / 2 - (len(hl) - 1) * size * 0.52 + size * 0.34
+        s = svg_open(bg) + head
         for line in hl:
             s += f'<text x="{W/2:.0f}" y="{y:.0f}" text-anchor="middle" font-family="{SERIF}" font-style="italic" font-weight="700" font-size="{size}" fill="{c}">{esc(line)}</text>'
             y += size * 1.04
@@ -334,24 +350,41 @@ def mini_svg(item):
     if f.get("bars"):
         bars = f["bars"][:4]
         unit = f.get("unit", "")
-        s = svg_open(CREAM)
+        head, y0 = mini_head(short, c)
+        s = svg_open(CREAM) + head
         n = len(bars)
-        top, bottom = 50, H - 50
+        top, bottom = y0 + 8, H - 26
         slot = (bottom - top) / n
-        bh = min(90, slot * 0.62)
-        vsize = min(78, int(bh * 0.95))
+        lsize = 31 if n > 2 else 36
+        bh = min(52, slot - lsize - 16)
+        vsize = min(46, int(bh * 0.9) + 6)
         vals = [f"{b[1]:g}{unit}" for b in bars]
-        x0, x1 = 50, W - 50 - 18 - 0.66 * vsize * max(len(v) for v in vals)
+        x0, x1 = 40, W - 40 - 14 - 0.62 * vsize * max(len(v) for v in vals)
         vmax = max(b[1] for b in bars)
         for i, bar in enumerate(bars):
             fill = c if len(bar) < 3 or bar[2] == "a" else MUTED
-            y = top + i * slot + (slot - bh) / 2
+            ly = top + i * slot + lsize
+            s += f'<text x="{x0}" y="{ly:.0f}" font-family="{SANS}" font-size="{lsize}" fill="{INK}">{esc(bar[0])}</text>'
+            y = ly + 8
             w = max(10, (x1 - x0) * bar[1] / vmax)
-            s += f'<rect x="{x0}" y="{y:.1f}" width="{w:.1f}" height="{bh:.1f}" rx="8" fill="{fill}"/>'
-            s += f'<text x="{x0 + w + 18:.1f}" y="{y + bh/2 + vsize*0.36:.1f}" font-family="{SANS}" font-size="{vsize}" font-weight="700" fill="{INK}">{esc(vals[i])}</text>'
+            s += f'<rect x="{x0}" y="{y:.1f}" width="{w:.1f}" height="{bh:.1f}" rx="6" fill="{fill}"/>'
+            s += f'<text x="{x0 + w + 14:.1f}" y="{y + bh/2 + vsize*0.36:.1f}" font-family="{SANS}" font-size="{vsize}" font-weight="700" fill="{INK}">{esc(vals[i])}</text>'
         return s + "</svg>"
-    # lists and anything else: the topic icon, larger and without its label
-    return svg_open(bg) + f'<g transform="translate({W/2:.0f},{H/2:.0f}) scale(1.45) translate(-400,-215)">' + glyph(topic, c) + "</g></svg>"
+    if kind == "list":
+        head, y0 = mini_head(short, c)
+        s = svg_open(bg) + head
+        y = y0 + 40
+        for it in f["items"][:3]:
+            block = wrap(it, 36)[:2]
+            s += f'<rect x="40" y="{y - 24}" width="7" height="{len(block) * 36 - 6}" rx="3" fill="{c}"/>'
+            for line in block:
+                s += f'<text x="62" y="{y:.0f}" font-family="{SANS}" font-size="28" fill="{INK}">{esc(line)}</text>'
+                y += 36
+            y += 18
+        return s + "</svg>"
+    # no finding: the topic icon with its label
+    return (svg_open(bg) + f'<g transform="translate({W/2:.0f},{H/2 - 20:.0f}) scale(1.2) translate(-400,-215)">' + glyph(topic, c) + "</g>"
+            + f'<text x="{W/2:.0f}" y="{H - 52}" text-anchor="middle" font-family="{SANS}" font-size="32" font-weight="700" letter-spacing="2" fill="{c}">{esc(label.upper())}</text></svg>')
 
 
 def full_path(path):

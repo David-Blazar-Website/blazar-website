@@ -159,6 +159,14 @@
   image: images/media/edweek-2026-coaching.svg
   featured: true
   summary: Education Week on a large coaching program that showed no benefits; David notes that coaching effects tend to shrink as programs grow.
+- id: edsurge-2026-tutoring-funding
+  type: news
+  title: Can high-impact tutoring survive post-pandemic funding loss?
+  outlet: EdSurge
+  date: 2026-10-15
+  date_label: October 2026
+  link: https://www.edsurge.com/news/can-high-impact-tutoring-survive-post-pandemic-funding-loss
+  image: images/media/edsurge-2026-tutoring-funding.svg
 - id: edweek-2026-academies
   type: news
   title: High school teacher academies work. But there’s a break in the pipeline

@@ -1,0 +1,34 @@
+<script>
+/* Open external sites and files (PDFs, etc.) in a new tab; pages on this site stay in the same tab. */
+(function () {
+  function shouldOpenNewTab(a) {
+    var href = a.getAttribute('href');
+    if (!href || href.charAt(0) === '#' || /^(mailto|tel|javascript):/i.test(href)) return false;
+    var url;
+    try { url = new URL(href, window.location.href); } catch (e) { return false; }
+    if (!/^https?:$/.test(url.protocol)) return false;
+    if (url.host !== window.location.host) return true;
+    return /\.(pdf|docx?|xlsx?|pptx?|csv|zip)$/i.test(url.pathname);
+  }
+  function mark(a) {
+    if (a.dataset.newTab === 'done') return;
+    a.dataset.newTab = 'done';
+    if (a.hasAttribute('target') || !shouldOpenNewTab(a)) return;
+    a.setAttribute('target', '_blank');
+    var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+    ['noopener', 'noreferrer'].forEach(function (r) { if (rel.indexOf(r) < 0) rel.push(r); });
+    a.setAttribute('rel', rel.join(' '));
+  }
+  function markAll(root) { (root || document).querySelectorAll('a[href]').forEach(mark); }
+  document.addEventListener('DOMContentLoaded', function () {
+    markAll();
+    new MutationObserver(function (muts) {
+      muts.forEach(function (m) { m.addedNodes.forEach(function (n) {
+        if (n.nodeType !== 1) return;
+        if (n.matches && n.matches('a[href]')) mark(n);
+        markAll(n);
+      }); });
+    }).observe(document.body, { childList: true, subtree: true });
+  });
+})();
+</script>

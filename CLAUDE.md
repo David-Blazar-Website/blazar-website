@@ -48,6 +48,7 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 - Don't use photos from news articles (they're licensed to the publisher). Use the generated cards, a figure redrawn from the paper's own numbers, or a freely licensed photo with credit.
 
 ### Conventions
+- **Links:** `_includes/new-tab-links.html` (loaded on every page via `include-after-body`) opens links to other sites and to files (PDFs, etc.) in a new tab; pages on this site stay in the same tab. Don't add `target` by hand.
 - Citations are assembled in APA style by `_listings/research.ejs` from the data fields; David's name is bolded automatically.
 - **Social links** appear in three places: the `_quarto.yml` navbar, the `_quarto.yml` footer, and the social buttons on `index.qmd`. Change all three together.
 - Other classes: `.hero`, `.social-row` / `.social-btn`, `.tag-row` / `.tag-chip`, `.section-rule`, `.brief-note`, `.press-card`.

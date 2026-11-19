@@ -60,3 +60,4 @@ format:
     page-layout: article
     fontsize: 1.05rem
     linkcolor: "#B5502D"
+    include-after-body: _includes/new-tab-links.html

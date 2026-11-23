@@ -31,9 +31,9 @@ Three pages, driven by two data files. To add or change a paper or media item, e
 |---|---|
 | `index.qmd` | Home: headshot, title, roles, social buttons, "Latest" carousel (featured items from both data files), About bio, research tags |
 | `research.qmd` | Note pointing to MEP and MLDS short versions; order-by and topic controls (script at the bottom of the page); Working Papers; Published Articles newest first (from `data/research.yml`; the script regroups them by `area:`). `data/research-pending.yml` holds working papers not yet shown |
-| `media.qmd` | Press-inquiries note; Opinion & Commentary, Podcasts & Interviews, In the News (all from `data/media.yml`; news shows the newest 10 with a "Show all" button; briefs are hidden for now) |
+| `media.qmd` | Press-inquiries note; Opinion & Commentary, Podcasts & Interviews, Videos, In the News (all from `data/media.yml`; news shows the newest 10 with a "Show all" button; briefs are hidden for now) |
 | `data/research.yml` | One entry per paper, in display order (working papers, then published newest first). Field guide at the top of the file |
-| `data/media.yml` | One entry per op-ed, podcast, news item or brief. Field guide at the top of the file |
+| `data/media.yml` | One entry per op-ed, podcast, video, news item or brief. Field guide at the top of the file |
 | `_listings/*.ejs` | Templates for the carousel, paper list and media list. In Quarto's EJS, `<%= %>` outputs raw HTML and `<%- %>` escapes. Keep template lines unindented, or Pandoc reads them as code blocks |
 | `scripts/make_thumbnails.py` | Writes `images/research/*.svg` and `images/media/*.svg` from the data files: a thumbnail per paper (plain-language label from `finding.short` over one big visual) plus the full key-finding card in `images/research/full/` (opened from the thumbnail); a typographic card for media. Also writes carousel copies of featured items: portraits in `images/*/tall/` and label-free media cards in `images/media/plain/` |
 | `images/` | Generated thumbnails (commit them; the publish workflow does not run the script) |

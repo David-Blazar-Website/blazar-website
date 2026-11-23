@@ -44,6 +44,7 @@ TOPICS = {
 MEDIA_TYPES = {
     "opinion": ("#B5502D", "Opinion"),
     "podcast": ("#3E5C76", "Podcast"),
+    "video":   ("#6A4C7A", "Video"),
     "news":    ("#1F2421", "In the news"),
     "brief":   ("#4F6B52", "Policy brief"),
 }

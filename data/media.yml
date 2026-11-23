@@ -3,7 +3,7 @@
 # items with `featured: true` also appear in the home-page carousel.
 #
 # Fields
-#   type:        opinion | podcast | news | brief
+#   type:        opinion | podcast | video | news | brief
 #   title, outlet, date (YYYY-MM-DD, or YYYY-MM-01 when only the month is known), date_label
 #   link:        the piece itself (prefer the original outlet)
 #   authors:     for co-written pieces
@@ -138,6 +138,46 @@
   date_label: February 2026
   link: https://jpamscloserlook.podbean.com/e/the-teacher-academy-of-maryland-a-grow-your-own-gyo-teacher-program/
   image: images/media/jpam-2026-closer-look.svg
+- id: brainwaves-2026-equalizer
+  type: video
+  title: 'The great equalizer: What schools can and cannot do about inequality'
+  outlet: The Brainwaves Video Anthology
+  outlet_short: Brainwaves
+  date: 2026-11-20
+  date_label: November 2026
+  link: https://www.youtube.com/watch?v=27t1Tm4oTDU
+  image: images/media/brainwaves-2026-equalizer.svg
+  featured: true
+  summary: The resource gap between richer and poorer children is widest before kindergarten. Schools cut it in half, but can’t close it alone.
+- id: brainwaves-2026-fessler
+  type: video
+  title: 'Teachers make a difference: Mr. Fessler'
+  outlet: The Brainwaves Video Anthology
+  outlet_short: Brainwaves
+  date: 2026-11-20
+  date_label: November 2026
+  link: https://www.youtube.com/watch?v=QdrCwlvbpkk
+  image: images/media/brainwaves-2026-fessler.svg
+- id: edtalks-2023-black-teachers
+  type: video
+  title: Why Black teachers matter
+  outlet: Terrapin EdTalks, UMD College of Education
+  outlet_short: Terrapin EdTalks
+  date: 2023-05-22
+  date_label: May 2023
+  link: https://www.youtube.com/watch?v=NebpmXN9rnU
+  image: images/media/edtalks-2023-black-teachers.svg
+- id: baltsun-2026-vacancies
+  type: news
+  title: Maryland cuts teacher vacancies, but $60,000 salary floor brings new pressure
+  outlet: The Baltimore Sun
+  outlet_short: Baltimore Sun
+  date: 2026-11-21
+  date_label: November 2026
+  link: https://www.baltimoresun.com/2026/11/21/teacher-salaries-bluprint-impact-determined/
+  image: images/media/baltsun-2026-vacancies.svg
+  featured: true
+  summary: The Baltimore Sun on Maryland’s $60,000 teacher salary floor. Vacancies are down statewide, but some districts have cut staff to pay for it.
 - id: fordham-2026-localness
   type: news
   title: Hiring teachers from the local community may not always be the very best option

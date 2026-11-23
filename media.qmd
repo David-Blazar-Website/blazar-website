@@ -17,6 +17,13 @@ listing:
     sort: "date desc"
     type: custom
     template: _listings/media.ejs
+  - id: videos
+    contents: data/media.yml
+    include:
+      type: video
+    sort: "date desc"
+    type: custom
+    template: _listings/media.ejs
   - id: news
     contents: data/media.yml
     include:
@@ -40,6 +47,13 @@ listing:
 ## Podcasts & Interviews
 
 ::: {#podcasts}
+:::
+
+<hr class="section-rule">
+
+## Videos
+
+::: {#videos}
 :::
 
 <hr class="section-rule">

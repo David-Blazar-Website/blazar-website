@@ -22,17 +22,6 @@
   authors: Blazar, D., & Yaow, Y. H.
   topic: pipeline
   image: images/research/wp-service-scholarships.svg
-- id: wp-paraprofessional
-  status: working
-  area: workforce
-  title: 'Aide-to-teacher pathways: Evidence from Maryland'
-  authors: Morris, W. T., Montana, S., Dominguez-Mel, N., & Blazar, D.
-  topic: pipeline
-  finding:
-    kind: stat
-    value: 1 in 3–4
-    caption: Schools lose roughly one aide position for every three to four aides who become teachers
-  image: images/research/wp-paraprofessional.svg
 - id: wp-science-of-reading
   status: working
   area: teaching

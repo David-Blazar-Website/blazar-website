@@ -5,9 +5,9 @@ if (item.type === "opinion") return "Opinion";
 return "In the news";
 };
 const tagClass = (item) => item.status ? "tag-research" : (item.type === "opinion" ? "tag-opinion" : "tag-news");
-const sourceFor = (item) => item.status ? item.journal : (item.type === "podcast" ? item.outlet + " (podcast)" : item.outlet);
+const sourceFor = (item) => item.status ? item.journal : (item.type === "podcast" ? item.outlet + " (podcast)" : item.type === "video" ? item.outlet + " (video)" : item.outlet);
 const linkFor = (item) => item.status ? (item.link || "research.html") : (item.link || "media.html");
-const ctaFor = (item) => item.status ? "Read the paper" : (item.type === "podcast" ? "Listen" : "Read");
+const ctaFor = (item) => item.status ? "Read the paper" : (item.type === "podcast" ? "Listen" : item.type === "video" ? "Watch" : "Read");
 %>
 <div class="feature-carousel" role="region" aria-roledescription="carousel" aria-label="Latest research, opinion and news">
 <div class="fc-viewport">

@@ -47,7 +47,7 @@ Standing decisions for davidblazar.com. Check this before changing the site, and
 ## Visuals
 - **Research thumbnails** (2026-11-12; revised 2026-11-16): every paper has a key-finding card drawn from the paper itself (a chart or headline number using the paper's own numbers, a short list of findings, or, for the two early English-teaching essays, a key-idea card). **Every thumbnail says what it measures** (David, 2026-11-16): a plain-language label across the top (`finding.short`, two lines of about 30 characters at most) and labeled bars, so a non-researcher can read it without the paper. Thumbnails are 236 px wide on the Research page so the label is legible. The "Key finding:" sentence stays under the citation, and clicking the thumbnail opens the full card enlarged.
 - **Carousel images don't repeat the slide's tag** (2026-11-12): the tag (*Opinion*, *In the news*…) appears once, above the title, so the carousel copies of media cards leave the type label off.
-- **Media thumbnails:** typographic cards naming the outlet, colored by type (2026-11-12, David approved). No photos taken from news articles (they're licensed to the publisher).
+- **Media thumbnails:** typographic cards naming the outlet, colored by type (2026-11-12, David approved). Podcasts, videos and interviews all use the same slate blue `#3E5C76`, so that section reads as one set (2026-11-23). No photos taken from news articles (they're licensed to the publisher).
 - Palette and fonts: cream `#FAF6EF`, terracotta `#B5502D`, near-black `#232323`; Fraunces headings, Inter body.
 
 ## Upkeep

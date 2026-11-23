@@ -14,7 +14,7 @@ const fold = items.length > SHOW && items[0].type === "news";
 <p class="media-title"><% if (item.link) { %><a href="<%= item.link %>"><%- item.title %></a><% } else { %><%- item.title %><% } %></p>
 <% if (item.authors) { %><p class="media-authors"><%= bold(item.authors) %></p><% } %>
 <% if (item.note) { %><p class="media-note"><%- item.note %></p><% } %>
-<% if (item.link) { %><a class="media-cta" href="<%= item.link %>"><%- cta[item.type] %> →</a><% } %><% if (item.also_link) { %><a class="media-cta media-also" href="<%= item.also_link %>">Also in <%- item.also_label %> →</a><% } %>
+<% if (item.links) { %><% item.links.forEach((l) => { %><a class="media-cta media-multi" href="<%= l.link %>"><%- cta[item.type] %>: <%- l.label %> →</a><% }) %><% } else if (item.link) { %><a class="media-cta" href="<%= item.link %>"><%- cta[item.type] %> →</a><% } %><% if (item.also_link) { %><a class="media-cta media-also" href="<%= item.also_link %>">Also in <%- item.also_label %> →</a><% } %>
 </div>
 </li>
 <% }) %>

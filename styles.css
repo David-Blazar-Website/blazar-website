@@ -461,6 +461,7 @@
 .paper-related { margin: 0.45rem 0 0 0; font-size: 0.85rem; color: #5a5a5a; }
 .paper-related a { text-decoration: none; font-weight: 500; }
 .media-also { margin-left: 1rem; color: #5a5a5a !important; font-weight: 500; }
+.media-multi { display: block; }
 
 /* ---------- Home layout: About beside the carousel ---------- */
 .home-grid {
